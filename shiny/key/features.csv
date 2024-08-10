@@ -160,7 +160,7 @@ Beckerina,Head,frons_bristles,Are there conspicuous bristles between the anterio
 Conicera,Head,frons_furrow,Is there a median furrow extending outside the region of the supra-antennal bristles,No (e.g. 6)
 Conicera,Males,antennae,Is the third segment of the antennae drawn out into an elongated neck?,Yes
 Conicera,Head,arista,Is the arista inserted apically or dorsally,Apically
-Triple,Head,arista,Is the arista inserted apically or dorsally,Dorsally (in a pre-apical position)
+Triphleba,Head,arista,Is the arista inserted apically or dorsally,Dorsally (in a pre-apical position)
 Gymnophora,Head,frons_bristles,Are there conspicuous bristles between the anterior ocellus and the base of the antennae?,No
 Gymnoptera,Head,frons_furrow,Is there a median furrow extending outside the region of the supra-antennal bristles,No (e.g. 6)
 Gymnoptera,Males,antennae,Is the third segment of the antennae drawn out into an elongated neck?,No
