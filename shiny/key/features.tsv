@@ -1,0 +1,182 @@
+genus	body_section	body_part	question	answer
+Aenigmatias	Wingless females	ocelli	Are the ocelli present?	No
+Aenigmatias	Wingless females	head_shape	Is the head significantly shorter than it is broad?	Yes (15)
+Aenigmatias	Wingless females	frons	Are there bristle like hairs at the sides of the frons in front of the eyes?	No
+Aenigmatias	Wingless females	thoracic_notum	Which description best fits the thoracis notum?	"Broader and longer than the head, with a convex anterior margin (15)"
+Aenigmatias	Wingless females	tergite_5	"Is abdominal tergite 5 divided into two parts, with the anterior part being a semi-circular flap attached only along its straight, anterior edge?"	No
+Chonocephalus	Wingless females	ocelli	Are the ocelli present?	No
+Chonocephalus	Wingless females	head_shape	Is the head significantly shorter than it is broad?	No (29)
+Chonocephalus	Wingless females	frons	Are there bristle like hairs at the sides of the frons in front of the eyes?	Yes
+Chonocephalus	Wingless females	thoracic_notum	Which description best fits the thoracis notum?	"As broad as the head but clearly shorter, with a somewhat concave anterior margin (29)"
+Chonocephalus	Wingless females	tergite_5	"Is abdominal tergite 5 divided into two parts, with the anterior part being a semi-circular flap attached only along its straight, anterior edge?"	No
+Puliciphora	Wingless females	ocelli	Are the ocelli present?	Yes
+Puliciphora	Wingless females	tergite_5	"Is abdominal tergite 5 divided into two parts, with the anterior part being a semi-circular flap attached only along its straight, anterior edge?"	No
+Aenigmatias	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	"Between 5 and 10 hairs on dorsal face, which may be quite fine (21, 22)"
+Aenigmatias	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	Over 10 hairs on the dorsal face
+Anevrina	Wings	vein_3_fork	Is vein 3 forked?	"Yes (20, 69, 145 to 149, and 179)"
+Anevrina	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	"Between 5 and 10 hairs on dorsal face, which may be quite fine (21, 22)"
+Beckerina	Wings	vein_3_fork	Is vein 3 forked?	"Yes (20, 69, 145 to 149, and 179)"
+Beckerina	Wings	vein_6	"Is there a sudden bend in the middle of vein 6, opposite and opposed to the basal curve of vein 5?"	No
+Beckerina	Wings	costa	" ""Does the costa thicken somewhat distally?"""	Yes (20)
+Beckerina	Wings	costal_cilia	"""Are the costal cilia clearly longer than vein 2?"""	Yes
+Beckerina	Wings	wing_membrane	What colour is the wing membrane?	Conspicuously darkened
+Borophaga	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	"Between 5 and 10 hairs on dorsal face, which may be quite fine (21, 22)"
+Borophaga	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	Over 10 hairs on the dorsal face
+Chaetopleurophora	Wings	vein_3_fork	Is vein 3 forked?	"Yes (20, 69, 145 to 149, and 179)"
+Chaetopleurophora	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	Single hair at base on the dorsal face
+Chaetopleurophora	Wings	vein_6	"Is there a sudden bend in the middle of vein 6, opposite and opposed to the basal curve of vein 5?"	No
+Chonocephalus	Wings	vein_3_fork	Is vein 3 forked?	"""No (25 and 127)"""
+Chonocephalus	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	Between 0 and 3 hairs restricted to basal quarter
+Chonocephalus	Wings	vein_3_end	"""Does vein 3 end in a small clear vesicle just beyond the point where it meets the costa?"""	Yes (25)
+Chonocephalus	Wings	vein_4	"""Is the base of vein 4 obliterated?"""	Yes
+Chonocephalus	Wings	vein_6	"Is there a sudden bend in the middle of vein 6, opposite and opposed to the basal curve of vein 5?"	No
+Chonocephalus	Wings	wing_membrane	What colour is the wing membrane?	Strongly greyish or brownish
+Conicera	Wings	vein_sc	Does vein Sc end before meeting vein 1?	Yes
+Conicera	Wings	vein_3_fork	Is vein 3 forked?	"""No (25 and 127)"""
+Conicera	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	Between 0 and 3 hairs restricted to basal quarter
+Conicera	Wings	vein_6	"Is there a sudden bend in the middle of vein 6, opposite and opposed to the basal curve of vein 5?"	No
+Diplonevra	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	Between 0 and 3 hairs restricted to basal quarter
+Diplonevra	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	A bristle like hair at base and 1-4 finer hairs before the fork
+Diplonevra	Wings	vein_6	"Is there a sudden bend in the middle of vein 6, opposite and opposed to the basal curve of vein 5?"	No
+Dohrniphora	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	Between 0 and 3 hairs restricted to basal quarter
+Dohrniphora	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	A bristle like hair at base and 1-4 finer hairs before the fork
+Dohrniphora	Wings	vein_6	"Is there a sudden bend in the middle of vein 6, opposite and opposed to the basal curve of vein 5?"	No
+Gymnophora	Wings	vein_3_fork	Is vein 3 forked?	"Yes (20, 69, 145 to 149 and 179)"
+Gymnophora	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	Between 0 and 3 hairs restricted to basal quarter
+Gymnophora	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	A bristle like hair at base and 1-4 finer hairs before the fork
+Gymnophora	Wings	vein_6	"Is there a sudden bend in the middle of vein 6, opposite and opposed to the basal curve of vein 5?"	No
+Gymnophora	Wings	wing_membrane	What colour is the wing membrane?	Strongly greyish or brownish
+Gymnoptera	Wings	vein_sc	Does vein Sc end before meeting vein 1?	No
+Gymnoptera	Wings	vein_3_fork	Is vein 3 forked?	"""No (25 and 127)"""
+Gymnoptera	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	Between 0 and 3 hairs restricted to basal quarter
+Gymnoptera	Wings	vein_6	"Is there a sudden bend in the middle of vein 6, opposite and opposed to the basal curve of vein 5?"	No
+Hypocera	Wings	vein_3_fork	Is vein 3 forked?	"""No (25 and 127)"""
+Hypocera	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	3 to 5 hairs extending from the base along the dorsal face
+Hypocera	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	"Between 5 and 10 hairs on dorsal face, which may be quite fine (21, 22)"
+Megaselia	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	Between 0 and 3 hairs restricted to basal quarter
+Megaselia	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	A bristle like hair at base and 1-4 finer hairs before the fork
+Megaselia	Wings	vein_6	"Is there a sudden bend in the middle of vein 6, opposite and opposed to the basal curve of vein 5?"	No
+Metopina	Wings	vein_6	"Is there a sudden bend in the middle of vein 6, opposite and opposed to the basal curve of vein 5?"	Yes (76 to 78)
+Phalacrotophora	Wings	vein_3_fork	Is vein 3 forked?	"Yes (20, 69, 145 to 149 and 179)"
+Phalacrotophora	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	Between 0 and 3 hairs restricted to basal quarter
+Phalacrotophora	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	A bristle like hair at base and 1-4 finer hairs before the fork
+Phalacrotophora	Wings	vein_6	"Is there a sudden bend in the middle of vein 6, opposite and opposed to the basal curve of vein 5?"	No
+Phora	Wings	vein_3_fork	Is vein 3 forked?	"""No (25 and 127)"""
+Phora	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	Between 0 and 3 hairs restricted to basal quarter
+Phora	Wings	vein_6	"Is there a sudden bend in the middle of vein 6, opposite and opposed to the basal curve of vein 5?"	No
+Pseudacteon	Wings	vein_3_fork	Is vein 3 forked?	"""No (25 and 127)"""
+Pseudacteon	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	Between 0 and 3 hairs restricted to basal quarter
+Pseudacteon	Wings	vein_6	"Is there a sudden bend in the middle of vein 6, opposite and opposed to the basal curve of vein 5?"	No
+Puliciphora	Wings	vein_3_fork	Is vein 3 forked?	"""No (25 and 127)"""
+Puliciphora	Wings	vein_3_hairs	Which of these best describes the hairs on vein 3	Between 0 and 3 hairs restricted to basal quarter
+Puliciphora	Wings	vein_3_end	"""Does vein 3 end in a small clear vesicle just beyond the point where it meets the costa?"""	No (127)
+Puliciphora	Wings	vein_4	"""Is the base of vein 4 obliterated?"""	No
+Puliciphora	Wings	vein_6	"Is there a sudden bend in the middle of vein 6, opposite and opposed to the basal curve of vein 5?"	No
+Puliciphora	Wings	wing_membrane	What colour is the wing membrane?	Slightly greyish
+Spiniphora	Wings	vein_3_fork	Is vein 3 forked?	"Yes (20, 69, 145 to 149 and 179)"
+Spiniphora	Wings	vein_6	"Is there a sudden bend in the middle of vein 6, opposite and opposed to the basal curve of vein 5?"	No
+Triphleba	Wings	vein_3_fork	Is vein 3 forked?	"Yes (20, 69, 145 to 149 and 179)"
+Triphleba	Wings	vein_6	"Is there a sudden bend in the middle of vein 6, opposite and opposed to the basal curve of vein 5?"	No
+Woodiphora	Wings	vein_3_fork	Is vein 3 forked?	"Yes (20, 69, 145 to 149 and 179)"
+Woodiphora	Wings	vein_6	"Is there a sudden bend in the middle of vein 6, opposite and opposed to the basal curve of vein 5?"	No
+Woodiphora	Wings	costa	Does the costa thicken somewhat distally?	No (179)
+Woodiphora	Wings	costal_cilia	"""Are the costal cilia clearly longer than vein 2?"""	No
+Woodiphora	Wings	wing_membrane	What colour is the wing membrane?	Slightly greyish
+Beckerina	Thorax	mesopleural_hair	" ""Which option best describes the mesopleuron?"""	Bare
+Beckerina	Thorax	mesopleural_furrow	" ""Is the mesopleural furrow present and centrally placed"""	Yes (9)
+Chaetopleurophora	Thorax	mesopleural_hair	" ""Which option best describes the mesopleuron?"""	With hairs and a single long bristle near the posterior margin (9)
+Chaetopleurophora	Thorax	mesopleural_furrow	" ""Is the mesopleural furrow present and centrally placed"""	No (10)
+Chonocephalus	Thorax	mesopleural_furrow	" ""Is the mesopleural furrow present and centrally placed"""	Yes (9)
+Diplonevra	Thorax	mesopleural_hair	" ""Which option best describes the mesopleuron?"""	Bare
+Diplonevra	Thorax	mesopleural_furrow	" ""Is the mesopleural furrow present and centrally placed"""	No (10)
+Dohrniphora	Thorax	mesopleural_hair	" ""Which option best describes the mesopleuron?"""	With some hairs on the upper part
+Dohrniphora	Thorax	mesopleural_furrow	" ""Is the mesopleural furrow present and centrally placed"""	No (10)
+Gymnophora	Thorax	mesopleural_hair	" ""Which option best describes the mesopleuron?"""	With a patch of fine hairs near the dorsal edge
+Gymnophora	Thorax	mesopleural_furrow	" ""Is the mesopleural furrow present and centrally placed"""	Yes (9)
+Hypocera	Thorax	mesopleural_hair	" ""Which option best describes the mesopleuron?"""	With hairs and a single long bristle near the posterior margin (9)
+Megaselia	Thorax	mesopleural_furrow	" ""Is the mesopleural furrow present and centrally placed"""	Yes (9)
+Phalacrotophora	Thorax	mesopleural_furrow	" ""Is the mesopleural furrow present and centrally placed"""	Yes (9)
+Phora	Thorax	mesopleural_furrow	" ""Is the mesopleural furrow present and centrally placed"""	No (10)
+Pseudacteon	Thorax	mesopleural_furrow	" ""Is the mesopleural furrow present and centrally placed"""	Yes (9)
+Puliciphora	Thorax	mesopleural_furrow	" ""Is the mesopleural furrow present and centrally placed"""	Yes (9)
+Spiniphora	Thorax	mesopleural_hair	" ""Which option best describes the mesopleuron?"""	Bare
+Spiniphora	Thorax	mesopleural_furrow	" ""Is the mesopleural furrow present and centrally placed"""	No (10)
+Triphleba	Thorax	mesopleural_hair	" ""Which option best describes the mesopleuron?"""	Bare
+Triphleba	Thorax	mesopleural_furrow	" ""Is the mesopleural furrow present and centrally placed"""	No (10)
+Woodiphora	Thorax	mesopleural_hair	" ""Which option best describes the mesopleuron?"""	Bare
+Woodiphora	Thorax	mesopleural_furrow	" ""Is the mesopleural furrow present and centrally placed"""	Yes (9)
+Aenigmatias	Legs	hind_tibia_bristles	Which option best describes the bristles on the hind tibia?	No isolated bristles other than the apical bristles (30)
+Anevrina	Legs	hind_tibia_hair	Which option best describes the hair on the dorsal face of the hind tibia?	Simply haired (30)
+Anevrina	Legs	hind_tibia_bristles	Which option best describes the bristles on the hind tibia?	Isolated bristles (40 to 43)
+Beckerina	Legs	hind_tibia_hair	Which option best describes the hair on the dorsal face of the hind tibia?	Simply haired (30)
+Beckerina	Legs	hind_tibia_bristles	Which option best describes the bristles on the hind tibia?	No isolated bristles other than the apical bristles (30)
+Borophaga	Legs	hind_tibia_hair	Which option best describes the hair on the dorsal face of the hind tibia?	1 dorsal hair palisade (12)
+Borophaga	Legs	hind_tibia_bristles	Which option best describes the bristles on the hind tibia?	Isolated bristles (40 to 43)
+Chaetopleurophora	Legs	hind_tibia_hair	Which option best describes the hair on the dorsal face of the hind tibia?	Simply haired (30)
+Chaetopleurophora	Legs	hind_tibia_hair	Which option best describes the hair on the dorsal face of the hind tibia?	Transverse combs of stoutish hairs (75)
+Chaetopleurophora	Legs	hind_tibia_bristles	Which option best describes the bristles on the hind tibia?	Isolated bristles (40 to 43)
+Chonocephalus	Legs	hind_tibia_hair	Which option best describes the hair on the dorsal face of the hind tibia?	Simply haired (30)
+Chonocephalus	Legs	hind_tibia_bristles	Which option best describes the bristles on the hind tibia?	No isolated bristles other than the apical bristles (30)
+Conicera	Legs	hind_tibia_bristles	Which option best describes the bristles on the hind tibia?	At least 2 true-dorsal bristles and one antero-dorsal bristle near the upper true-dorsal bristle (40 to 43)
+Conicera	Legs	mid_tibia_dorsal_bristles	How many true-dorsal bristles are on the mid tibia?	0 or 1
+Diplonevra	Legs	hind_tibia_hair	Which option best describes the hair on the dorsal face of the hind tibia?	2 to 3 dorsal hair palisades (12p)
+Diplonevra	Legs	hind_tibia_bristles	Which option best describes the bristles on the hind tibia?	Isolated bristles (40 to 43)
+Dohrniphora	Legs	hind_tibia_hair	Which option best describes the hair on the dorsal face of the hind tibia?	1 dorsal hair palisade (12)
+Dohrniphora	Legs	hind_tibia_bristles	Which option best describes the bristles on the hind tibia?	Isolated bristles (40 to 43)
+Gymnophora	Legs	hind_tibia_hair	Which option best describes the hair on the dorsal face of the hind tibia?	Simply haired (30)
+Gymnophora	Legs	hind_tibia_bristles	Which option best describes the bristles on the hind tibia?	No isolated bristles other than the apical bristles (30)
+Gymnoptera	Legs	hind_tibia_bristles	Which option best describes the bristles on the hind tibia?	"2 antero-dorsal bristles only, one situated near the end of the upper third and one near the middle"
+Gymnoptera	Legs	mid_tibia_dorsal_bristles	How many true-dorsal bristles are on the mid tibia?	0 or 1
+Hypocera	Legs	hind_tibia_hair	Transverse combs of of stoutish hairs on dorsal face	Transverse combs of of stoutish hairs (75)
+Megaselia	Legs	hind_tibia_hair	Which option best describes the hair on the dorsal face of the hind tibia?	1 dorsal hair palisade (12)
+Megaselia	Legs	hind_tibia_bristles	Which option best describes the bristles on the hind tibia?	A row of bristle like hairs on either side of the hair palisade
+Megaselia	Legs	hind_tibia_bristles	Which option best describes the bristles on the hind tibia?	A row of bristle like hairs behind the hair palisade
+Megaselia	Legs	fore_metatarsus	Is the fore metatarsus clearly longer than the fifth tarsal segment?	Yes
+Megaselia	Legs	hind_tibia_bristles	Which option best describes the bristles on the hind tibia?	No isolated bristles other than the apical bristles (30)
+Phalacrotophora	Legs	hind_tibia_hair	Which option best describes the hair on the dorsal face of the hind tibia?	1 dorsal hair palisade (12)
+Phalacrotophora	Legs	hind_tibia_bristles	Which option best describes the bristles on the hind tibia?	A row of bristle like hairs on either side of the hair palisade
+Phora	Legs	hind_tibia_hair	Which option best describes the hair on the dorsal face of the hind tibia?	Simply haired (30)
+Phora	Legs	mid_tibia_dorsal_bristles	How many true-dorsal bristles are on the mid tibia?	2 or more
+Phora	Legs	fore_metatarsus	Is the fore metatarsus clearly longer than the fifth tarsal segment?	No
+Phora	Legs	hind_tibia_bristles	Which option best describes the bristles on the hind tibia?	Isolated bristles (40 to 43)
+Pseudacteon	Legs	hind_tibia_bristles	Which option best describes the bristles on the hind tibia?	No isolated bristles other than the apical bristles (30)
+Pseudacteon	Legs	hind_tibia_bristles	Which option best describes the bristles on the hind tibia?	A row of bristle like hairs on either side of the hair palisade
+Pseudacteon	Legs	hind_tibia_bristles	Which option best describes the bristles on the hind tibia?	A row of bristle like hairs behind the hair palisade
+Puliciphora	Legs	hind_tibia_hair	Which option best describes the hair on the dorsal face of the hind tibia?	Simply haired (30)
+Puliciphora	Legs	hind_tibia_bristles	Which option best describes the bristles on the hind tibia?	No isolated bristles other than the apical bristles (30)
+Spiniphora	Legs	hind_tibia_hair	Which option best describes the hair on the dorsal face of the hind tibia?	Simply haired (30)
+Spiniphora	Legs	mid_tibia_anterior_bristles	Which option best describes the forward facing bristle on the mid tibia?	Clearly longer than the width of the tibia at the point of insertion
+Spiniphora	Legs	fore_tibia_bristles	"Is there a bristle in upper two thirds that is shorter than maximum breadth of the tibia, with a row of short, robust, near dorsal spines just below this?"	Yes (11)
+Spiniphora	Legs	fore_tarsi	"Is there a clearly differentiated, short, dorsal, apical spur?"	Yes (11)
+Spiniphora	Legs	hind_tibia_bristles	Which option best describes the bristles on the hind tibia?	Isolated bristles (40 to 43)
+Triphleba	Legs	hind_tibia_hair	Which option best describes the hair on the dorsal face of the hind tibia?	Simply haired (30)
+Triphleba	Legs	mid_tibia_anterior_bristles	Which option best describes the forward facing bristle on the mid tibia?	Shorter than the width of the tibia at the point of insertion
+Triphleba	Legs	fore_tibia_bristles	"Is there a bristle in upper two thirds that is shorter than maximum breadth of the tibia, with a row of short, robust, near dorsal spines just below this?"	No
+Triphleba	Legs	fore_tarsi	"Is there a clearly differentiated, short, dorsal, apical spur?"	No
+Triphleba	Legs	hind_tibia_bristles	Which option best describes the bristles on the hind tibia?	Isolated bristles (40 to 43)
+Woodiphora	Legs	hind_tibia_hair	Which option best describes the hair on the dorsal face of the hind tibia?	Simply haired (30)
+Woodiphora	Legs	hind_tibia_bristles	Which option best describes the bristles on the hind tibia?	No isolated bristles other than the apical bristles (30)
+Beckerina	Head	frons_bristles	Are there conspicuous bristles between the anterior ocellus and the base of the antennae?	Yes (6)
+Conicera	Head	frons_furrow	Is there a median furrow extending outside the region of the supra-antennal bristles	No (e.g. 6)
+Conicera	Males	antennae	Is the third segment of the antennae drawn out into an elongated neck?	Yes
+Conicera	Head	arista	Is the arista inserted apically or dorsally	Apically
+Triple	Head	arista	Is the arista inserted apically or dorsally	Dorsally (in a pre-apical position)
+Gymnophora	Head	frons_bristles	Are there conspicuous bristles between the anterior ocellus and the base of the antennae?	No
+Gymnoptera	Head	frons_furrow	Is there a median furrow extending outside the region of the supra-antennal bristles	No (e.g. 6)
+Gymnoptera	Males	antennae	Is the third segment of the antennae drawn out into an elongated neck?	No
+Gymnoptera	Head	arista	Is the arista inserted apically	Apically
+Megaselia	Females	sternites	Does segment 6 have a distinct sternite?	No
+Megaselia	Head	palp_bristle	Is the longest bristle on the palp more robust than upper occipital?	Yes
+Phalacrotophora	Head	palp_bristle	Is the longest bristle on the palp more robust than upper occipital?	No
+Phora	Head	frons_furrow	Is there a median furrow extending outside the region of the supra-antennal bristles	Yes (124 to 126)
+Woodiphora	Head	frons_bristles	Are there conspicuous bristles between the anterior ocellus and the base of the antennae?	Yes (6)
+Megaselia	Females	segment_3	Which description best fits the papillae on segment 3?	Present but do not fit the description above
+Megaselia	Females	segment_5	Does segment 5 have a complex gland opening?	No
+Megaselia	Females	segments_5_and_6	Are there tergites on segments 5 and 6?	Yes
+Phalacrotophora	Females	segment_3	Which description best fits the papillae on segment 3?	"Small, oval-to-round papillae on each side towards the front margin"
+Phalacrotophora	Females	segments_5_and_6	Are there tergites on segments 5 and 6?	No
+Phalacrotophora	Females	segment_5	Does segment 5 have a complex gland opening?	Yes
+Pseudacteon	Females	Female	Does the ovipositor curve downwards to a point?	Yes
+Pseudacteon	Females	sternites	Does segment 6 have a distinct sternite?	Yes
+Megaselia	Males	proctiger	Does the proctiger end in finely feathered bristles that are more robust than the hairs on the cerci?	No (weaker than 7)
+Phalacrotophora	Males	proctiger	Does the proctiger end in finely feathered bristles that are more robust than the hairs on the cerci?	"Yes (97, 98)"
