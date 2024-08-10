@@ -2,9 +2,6 @@ library(shiny)
 library(DT)
 library(tidyverse)
 
-fork <- features %>%
-  filter(body_part == "vein_3_fork")
-unique(fork$answer)
 server <- function(input, output) {
   
    question_results <- reactive({
@@ -16,13 +13,11 @@ server <- function(input, output) {
 
      total <- data.frame("genus",
                          "matched_features",
-                         "unmatched_features",
-                         "unanswered_question")%>%
+                         "unmatched_features")%>%
        filter(row_number() != 1)
      colnames(total) <- c("genus",
                           "matched_features",
-                          "unmatched_features",
-                          "unanswered_question")
+                          "unmatched_features")
      g <- features
 
      if(!is.null(input$vein_3_fork)) {
@@ -42,23 +37,10 @@ server <- function(input, output) {
          mutate(unanswered_question = case_when(1==2 ~ ""))
        total <- full_join(total, new_total,  by = c("genus",
                                                     "matched_features",
-                                                    "unmatched_features",
-                                                    "unanswered_question"))
-     } else {
+                                                    "unmatched_features"))
+     } 
        
-       new_total <- g %>%
-         filter(body_part == "vein_3_fork")%>%
-         rename(unanswered_question = question) %>%
-         distinct(genus, unanswered_question)%>%
-         mutate(matched_features = case_when(1==2 ~ ""),
-                unmatched_features = case_when(1==2 ~ ""))
-       
-       total <- full_join(total, new_total,  by = c("genus",
-                                                    "matched_features",
-                                                    "unmatched_features",
-                                                    "unanswered_question"))
-     }
-
+ 
      total_matched_features <- total %>%
        filter(!is.na(matched_features))%>%
        distinct(genus, matched_features) %>%
@@ -74,9 +56,9 @@ server <- function(input, output) {
        arrange(matched_features) %>%
        mutate(row = paste("n", as.character(row_number()), sep = "")) %>%
        pivot_wider(names_from = row, values_from = matched_features)  %>%
-       unite(matched_features, -genus, sep = "; ", na.rm = TRUE) %>%
+       unite(matched_features, -genus, sep = "\t", na.rm = TRUE) %>%
        distinct(genus, matched_features)
-     print(head(matched_feature_list))
+
      genera <- full_join(genera, matched_feature_list, by = "genus") 
      
      }
@@ -89,25 +71,24 @@ server <- function(input, output) {
        arrange(unmatched_features) %>%
        mutate(row = paste("n", as.character(row_number()), sep = "")) %>%
        pivot_wider(names_from = row, values_from = unmatched_features) %>%
-       unite(unmatched_features, -genus, sep = "; ", na.rm = TRUE) %>%
+       unite(unmatched_features, -genus, sep = "\t", na.rm = TRUE) %>%
        distinct(genus, unmatched_features)
-     print(head(unmatched_feature_list))
+
      genera <- full_join(genera, unmatched_feature_list, by = "genus") 
      
      }
 
-     if(length(unique(total$unanswered_question)) > 1) {
-     unanswered_question_list <- total %>%
-       filter(!is.na(unanswered_question))%>%
+     unanswered_question_list <- features %>%
+       filter(!(question %in% c(unique(total$matched_features), unique(total$unmatched_features))))%>%
+       rename(unanswered_question = question) %>%
        distinct(genus, unanswered_question) %>%
        group_by(genus)%>%
        arrange(unanswered_question) %>%
        mutate(row = paste("n", as.character(row_number()), sep = "")) %>%
        pivot_wider(names_from = row, values_from = unanswered_question) %>%
-       unite(unanswered_question, -genus, sep = "; ", na.rm = TRUE)
+       unite(unanswered_question, -genus, sep = " ", na.rm = TRUE) 
      genera <- full_join(genera, unanswered_question_list, by = "genus") 
-     
-     }
+
     
      genera
      })

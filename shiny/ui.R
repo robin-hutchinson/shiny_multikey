@@ -55,7 +55,7 @@ ui <- fluidPage(titlePanel("Key to UK Phoridae Genera", windowTitle = "UK Phorid
                            radioButtons("costal_cilia", "Are the costal cilia clearly longer than vein 2?", choices = c("Yes", "No"), selected = character(0)),
                            radioButtons("vein_sc", "Does vein Sc end before meeting vein 1?", choices = c("Yes", "No"), selected = character(0)),
                            radioButtons("vein_3_fork", "Is vein 3 forked?", choices = c("Yes (20, 69, 145 to 149, and 179)", "No (25 and 127)"), selected = character(0)),
-                           radioButtons("vein_3_hairs", "Which of these best describes the hairs on vein 3", choices = c("Single hair at base on the dorsal face",
+                           radioButtons("vein_3_hairs", "Which of these best describes the hairs on vein 3?", choices = c("Single hair at base on the dorsal face",
                                                                                                                          "Between 0 and 3 hairs restricted to basal quarter", 
                                                                                                                          "3 to 5 hairs extending from the base along the dorsal face",
                                                                                                                          "A bristle like hair at base and 1-4 finer hairs before the fork",
@@ -105,6 +105,10 @@ ui <- fluidPage(titlePanel("Key to UK Phoridae Genera", windowTitle = "UK Phorid
                                         ),
                            mainPanel(img(src="15.jpeg"),
                                      img(src="29.jpeg"),
-                                     img(src="128.jpeg")))
+                                     img(src="128.jpeg"))
+                           ),
+                  tabPanel("Results table", 
+                           dataTableOutput("results")
+                  )
                 ),
                 mainPanel(dataTableOutput("results")))
