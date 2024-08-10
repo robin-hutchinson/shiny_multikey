@@ -32,5 +32,5 @@ feature_table <- feature_table %>%
   mutate(meaning = str_to_sentence(meaning),
          body_part = str_to_sentence(gsub("_", " ", body_part)),
          body_section = str_to_sentence(gsub("_", " ", body_section))) 
-write.csv(feature_table, "genera/features.csv", row.names = FALSE)
+write.csv(feature_table, "shiny/key/features.csv", row.names = FALSE)
 rm(sheets, columns, i)

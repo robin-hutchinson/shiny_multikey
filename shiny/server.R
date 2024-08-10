@@ -2,7 +2,7 @@ library(shiny)
 library(DT)
 library(tidyverse)
 
-features <- read.csv("genera/features.csv")
+features <- read.csv("key/features.csv")
 server <- function(input, output) {
   
    features_absent <- reactive({
