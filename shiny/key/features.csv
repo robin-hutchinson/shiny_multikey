@@ -10,7 +10,7 @@ Chonocephalus,Wingless females,frons,Are there bristle like hairs at the sides o
 Chonocephalus,Wingless females,thoracic_notum,Which description best fits the thoracis notum?,"As broad as the head but clearly shorter, with a somewhat concave anterior margin (29)"
 Chonocephalus,Wingless females,tergite_5,"Is abdominal tergite 5 divided into two parts, with the anterior part being a semi-circular flap attached only along its straight, anterior edge?",No
 Puliciphora,Wingless females,ocelli,Are the ocelli present?,Yes
-Puliciphora,Wingless females,tergite_5,"Is abdominal tergite 5 divided into two parts, with the anterior part being a semi-circular flap attached only along its straight, anterior edge?",No
+Puliciphora,Wingless females,tergite_5,"Is abdominal tergite 5 divided into two parts, with the anterior part being a semi-circular flap attached only along its straight, anterior edge?",Yes (128)
 Aenigmatias,Wings,vein_3_hairs,Which of these best describes the hairs on vein 3,"Between 5 and 10 hairs on dorsal face, which may be quite fine (21, 22)"
 Aenigmatias,Wings,vein_3_hairs,Which of these best describes the hairs on vein 3,Over 10 hairs on the dorsal face
 Anevrina,Wings,vein_3_fork,Is vein 3 forked?,"Yes (20, 69, 145 to 149, and 179)"
@@ -127,7 +127,7 @@ Gymnophora,Legs,hind_tibia_hair,Which option best describes the hair on the dors
 Gymnophora,Legs,hind_tibia_bristles,Which option best describes the bristles on the hind tibia?,No isolated bristles other than the apical bristles (30)
 Gymnoptera,Legs,hind_tibia_bristles,Which option best describes the bristles on the hind tibia?,"2 antero-dorsal bristles only, one situated near the end of the upper third and one near the middle"
 Gymnoptera,Legs,mid_tibia_dorsal_bristles,How many true-dorsal bristles are on the mid tibia?,0 or 1
-Hypocera,Legs,hind_tibia_hair,Transverse combs of of stoutish hairs on dorsal face,Transverse combs of of stoutish hairs (75)
+Hypocera,Legs,hind_tibia_hair,Which option best describes the hair on the dorsal face of the hind tibia?,Transverse combs of of stoutish hairs (75)
 Megaselia,Legs,hind_tibia_hair,Which option best describes the hair on the dorsal face of the hind tibia?,1 dorsal hair palisade (12)
 Megaselia,Legs,hind_tibia_bristles,Which option best describes the bristles on the hind tibia?,A row of bristle like hairs on either side of the hair palisade
 Megaselia,Legs,hind_tibia_bristles,Which option best describes the bristles on the hind tibia?,A row of bristle like hairs behind the hair palisade
@@ -159,12 +159,12 @@ Woodiphora,Legs,hind_tibia_bristles,Which option best describes the bristles on 
 Beckerina,Head,frons_bristles,Are there conspicuous bristles between the anterior ocellus and the base of the antennae?,Yes (6)
 Conicera,Head,frons_furrow,Is there a median furrow extending outside the region of the supra-antennal bristles,No (e.g. 6)
 Conicera,Males,antennae,Is the third segment of the antennae drawn out into an elongated neck?,Yes
-Conicera,Head,arista,Is the arista inserted apically or dorsally,Apically
-Triphleba,Head,arista,Is the arista inserted apically or dorsally,Dorsally (in a pre-apical position)
+Conicera,Head,arista,Is the arista inserted apically or dorsally?,Apically
+Triphleba,Head,arista,Is the arista inserted apically or dorsally?,Dorsally (in a pre-apical position)
 Gymnophora,Head,frons_bristles,Are there conspicuous bristles between the anterior ocellus and the base of the antennae?,No
 Gymnoptera,Head,frons_furrow,Is there a median furrow extending outside the region of the supra-antennal bristles,No (e.g. 6)
 Gymnoptera,Males,antennae,Is the third segment of the antennae drawn out into an elongated neck?,No
-Gymnoptera,Head,arista,Is the arista inserted apically,Apically
+Gymnoptera,Head,arista,Is the arista inserted apically or dorsally?,Apically
 Megaselia,Females,sternites,Does segment 6 have a distinct sternite?,No
 Megaselia,Head,palp_bristle,Is the longest bristle on the palp more robust than upper occipital?,Yes
 Phalacrotophora,Head,palp_bristle,Is the longest bristle on the palp more robust than upper occipital?,No
