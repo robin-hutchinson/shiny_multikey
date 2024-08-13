@@ -1,4 +1,8 @@
+?textOutput
+
 ui <- fluidPage(titlePanel("Key to UK Phoridae Genera", windowTitle = "UK Phoridae Key"),
+                mainPanel(htmlOutput("description")),
+                sidebarPanel(htmlOutput("suggestions")),
                 tabsetPanel(
                   tabPanel("Head",
                            sidebarPanel(radioButtons("arista", "Is the arista inserted apically or dorsally?", choices = c("Apically", "Dorsally (in a pre-apical position)"), selected = character(0)),
@@ -108,7 +112,6 @@ ui <- fluidPage(titlePanel("Key to UK Phoridae Genera", windowTitle = "UK Phorid
                                      img(src="128.jpeg"))
                            ),
                   tabPanel("Results table", 
-                           dataTableOutput("results")
+                           htmlOutput("results")
                   )
-                ),
-                mainPanel(dataTableOutput("results")))
+                ))
