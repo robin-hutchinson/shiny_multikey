@@ -1,5 +1,7 @@
 library(tidyverse)
 
+features <- read.csv("shiny/key/features.csv")
+
 images <- read.csv("shiny/key/images.csv") %>%
   mutate(image = paste(as.character(image), image_type, sep = "."))
 
