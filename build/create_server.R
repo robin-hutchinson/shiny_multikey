@@ -1,4 +1,7 @@
+library(tidyverse)
+
 qs <- unique(features$body_part)
+
 full_script <- c("library(shiny)
 library(DT)
 library(knitr)
