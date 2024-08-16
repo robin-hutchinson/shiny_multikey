@@ -21,6 +21,7 @@ jobs:
           packages: |
             any::tidyverse 
             any::shinylive
+            any::httpuv
 
       - name: Check out repository
         uses: actions/checkout@v4
