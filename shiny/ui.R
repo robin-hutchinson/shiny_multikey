@@ -181,8 +181,7 @@ radioButtons('segments_5_and_6', 'Are there tergites on segments 5 and 6?', choi
 'No'), selected = character(0)),
 radioButtons('Female', 'Does the ovipositor curve downwards to a point?', choices = c(
 'Yes', 
-'', 
-'Yes'), selected = character(0))),
+'No'), selected = character(0))),
 mainPanel(
 ))
 ,
