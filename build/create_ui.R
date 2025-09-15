@@ -5,7 +5,7 @@ features <- read.csv("shiny/key/features.csv")
 images <- read.csv("shiny/key/images.csv") %>%
   mutate(image = paste(as.character(image), image_type, sep = "."))
 
-full_script <- c("ui <- fluidPage(titlePanel('Phalacrotophora of UK', windowTitle = 'Example Window Title'),
+full_script <- c("ui <- fluidPage(titlePanel('UK Phalacrotophora', windowTitle = 'Example Window Title'),
                 mainPanel(htmlOutput('description')),
                 sidebarPanel(htmlOutput('suggestions')),
                 tabsetPanel(")
