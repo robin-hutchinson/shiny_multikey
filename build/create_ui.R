@@ -6,6 +6,7 @@ images <- read.csv("shiny/key/images.csv") %>%
   mutate(image = paste(as.character(image), image_type, sep = "."))
 
 full_script <- c("library(shiny)
+library(hms)
 library(bslib)
 library(DT)
 library(knitr)
