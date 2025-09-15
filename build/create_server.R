@@ -5,6 +5,7 @@ features <- read.csv("shiny/key/features.csv")
 qs <- unique(features$body_part)
 
 full_script <- c("library(shiny)
+library(hms)
 library(bslib)
 library(DT)
 library(knitr)
