@@ -3,7 +3,7 @@ Building a shiny app for developing a polythetic keys
 
 The example is set up to identify flies in the genera Phalacrotophora (Diptera: Phoridae). To create a shiny app for your own taxon group, follow these steps:
 
-1) Fork the repository
+1) Click "Use this template" to create a new version of the repo on your page.
 2) Go to the shiny/key subdirectory 
 3) In features.csv, add the questions and features relevant to your taxa:
    taxa = the taxon you are keying to
