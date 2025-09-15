@@ -5,7 +5,14 @@ features <- read.csv("shiny/key/features.csv")
 images <- read.csv("shiny/key/images.csv") %>%
   mutate(image = paste(as.character(image), image_type, sep = "."))
 
-full_script <- c("ui <- page_fluid(tags$h1('UK Phalacrotophora'),
+full_script <- c("library(shiny)
+library(bslib)
+library(DT)
+library(knitr)
+library(kableExtra)
+library(tidyverse)
+
+ui <- bslib::page_fluid(tags$h1('UK Phalacrotophora'),
                  tags$br(), # line break
                  tags$a('Use the characteristics below to separate out the 4 species of Phalacrotophora (Diptera: Phoridae) known to occur in the UK.'),
                  tags$br(), # line break
