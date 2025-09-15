@@ -3,9 +3,10 @@ library(DT)
 library(knitr)
 library(kableExtra)
 library(tidyverse)
-features <- read.csv('key/features.csv')
 
 server <- function(input, output) {
+
+  features <- read.csv('key/features.csv')
   
   question_results <- reactive({
     
