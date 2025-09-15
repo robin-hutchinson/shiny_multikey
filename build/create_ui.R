@@ -5,10 +5,15 @@ features <- read.csv("shiny/key/features.csv")
 images <- read.csv("shiny/key/images.csv") %>%
   mutate(image = paste(as.character(image), image_type, sep = "."))
 
-full_script <- c("ui <- fluidPage(titlePanel('UK Phalacrotophora', windowTitle = 'Example Window Title'),
-                mainPanel(htmlOutput('description')),
-                sidebarPanel(htmlOutput('suggestions')),
-                tabsetPanel(")
+full_script <- c("ui <- page_fluid(tags$h1('UK Phalacrotophora'),
+                 tags$br(), # line break
+                 tags$a("Use the characteristics below to separate out the 4 species of Phalacrotophora (Diptera: Phoridae) known to occur in the UK."),
+                 tags$br(), # line break
+                 tags$br(), # line break
+                 tags$a("Male specimens of P. delageae and P. berolinensis cannot be reliably separated - record these as an aggregate unless a female is also collected."),
+                 tags$br(), # line break
+                 tags$br(), # line break
+                 navset_card_underline(")
 
 sections <- unique(features$body_section)
 
@@ -16,8 +21,8 @@ for(i in 1:length(sections)){
   
   tab <- sections[i]
   full_script <- c(full_script,
-                   paste("tabPanel('", tab, "',
-                           sidebarPanel(", sep = ""))
+                   paste("nav_panel('", tab, "',
+                           layout_columns(card(", sep = ""))
   
   tabs <- features %>%
     filter(body_section == tab)
@@ -48,7 +53,7 @@ for(i in 1:length(sections)){
   }
 
   full_script[length(full_script)] <- gsub(",$", "),", full_script[length(full_script)])
-  full_script <- c(full_script, "mainPanel(")
+  full_script <- c(full_script, "card(")
   tab_image <- images %>%
     filter(body_section == tab)
   if(nrow(tab_image) >= 1) {
@@ -59,11 +64,11 @@ for(i in 1:length(sections)){
     full_script <- c(full_script, 
                      paste("img(src='",
                            ims[m],
-                           "'),", sep = ""))
+                           "', width = 250),", sep = ""))
     
   }
   
-  full_script[length(full_script)] <- gsub(",$", "))", full_script[length(full_script)])
+  full_script[length(full_script)] <- gsub(",$", "),col_widths = c(4, 8))", full_script[length(full_script)])
   
   
   } else {  full_script <- c(full_script, "))")}
@@ -73,12 +78,8 @@ for(i in 1:length(sections)){
 }
 
 full_script <- c(full_script,
-                 "                  tabPanel('Results table', 
-                           sidebarPanel(htmlOutput('results1')), 
-                           sidebarPanel(htmlOutput('results2')), 
-                           sidebarPanel(htmlOutput('results3'))
-                  )
-                ))")
+                 "layout_columns(card(htmlOutput('results1')), 
+                                 card(htmlOutput('results2'))))")
   
 write_lines(full_script, 'shiny/ui.R')  
   
