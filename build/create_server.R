@@ -117,48 +117,7 @@ full_script <- c(full_script,
     genera
   })
   
-  suggestions <- reactive({
-    
-    possibles <- question_results() %>%
-      filter(unmatched_features == '' |
-               is.na(unmatched_features)) %>%
-      distinct(taxa)
 
-    question_options <- features %>%
-        filter(taxa %in% possibles$taxa) %>%
-        distinct(question, answer) %>%
-        count(question) %>%
-        filter(n == 1)
-
-    question_coverage <- features %>%
-      filter(taxa %in% possibles$taxa)
-    
-    if(!is.null(question_options$question)) {
-      
-      question_coverage <- question_coverage %>%
-        filter(!(question %in% question_options$question))
-      
-    }
-    question_coverage <-  question_coverage  %>%
-      distinct(taxa, question) %>%
-      count(question) %>%
-      rename(taxa_by_question = n)
-
-    group_evenness <- features %>%
-      filter(taxa %in% possibles$taxa) %>%
-      distinct(taxa, question, answer) %>%
-      group_by(question) %>%
-      count(answer) %>%
-      mutate(split_evenness = sd(n)) %>%
-      distinct(question, split_evenness) %>%
-      left_join(question_coverage, by = 'question') %>%
-      arrange(desc(taxa_by_question), split_evenness)
-
-    best_3 <- group_evenness[c(1:3), 'question' ]
- 
-    paste('The three questions that best separate the remaining taxa are:',group_evenness[1, 'question' ], group_evenness[2, 'question' ], group_evenness[3, 'question' ], sep = '<br/><br/>')
-    
-  })
   results <- reactive(
                  {available_features <- question_results() %>%
       mutate(matched_features_count = str_count(matched_features, '<br/>'),
@@ -180,13 +139,13 @@ full_script <- c(full_script,
     results1 <- results() %>%
       filter(row_number() == 1)
     
-    HTML(paste('The closest match to the selected features is ',
+    HTML(paste('The closest match is ',
                results1$taxa,
                '.<br/><br/>',
-               'This taxa matched on the following characteristics:<br/>',
+               'This taxa matched on the following questions:<br/>',
                results1$matched_features,
                '<br/><br/>',
-               'It did not match on the features below:<br/>',
+               'It did not match on the questions below:<br/>',
                results1$unmatched_features,
                sep = ''
                
@@ -202,13 +161,13 @@ full_script <- c(full_script,
     results2 <- results() %>%
       filter(row_number() == 2)
     
-    HTML(paste('The second closest match to the selected features is ',
+    HTML(paste('The second closest match is ',
                results2$taxa,
                '.<br/><br/>',
-               'This taxa matched on the following characteristics:<br/>',
+               'This taxa matched on the following questions:<br/>',
                results2$matched_features,
                '<br/><br/>',
-               'It did not match on the features below:<br/>',
+               'It did not match on the questions below:<br/>',
                results2$unmatched_features,
                sep = ''
                
@@ -219,31 +178,6 @@ full_script <- c(full_script,
   
   )
   
-  output$results3 <- renderUI({
-    
-    results3 <- results() %>%
-      filter(row_number() == 3)
-    
-    HTML(paste('The third closest match to the selected features is ',
-               results3$taxa,
-               '.<br/><br/>',
-               'This taxa matched on the following characteristics:<br/>',
-               results3$matched_features,
-               '<br/><br/>',
-               'It did not match on the features below:<br/>',
-               results3$unmatched_features,
-               sep = ''
-               
-               
-               
-    ))
-  }
-  
-  )
-  
-  output$suggestions <- renderUI( HTML(suggestions()) )
-  
-  output$description <- renderUI(HTML('The three questions to the right suggest the best characteristics to separate the remaining species, however does not mean that you cannot answer other questions first if you prefer.'))
 }
 ")
 
