@@ -13,7 +13,8 @@ Phalacrotophora berolinensis,Females,ovipositor_hook,"Is there a pair of dark, t
 Phalacrotophora delageae,Females,ovipositor_hook,"Is there a pair of dark, thorn-like points near the end of the ovipositor?","No (100)"
 Phalacrotophora fasciata,Females,ovipositor_hair,Are the long hairs ventrally (on the underside) of abdominal segment 8?,"No - short hairs only (100)"
 Phalacrotophora berolinensis,Females,ovipositor_hair,Are the long hairs ventrally (on the underside) of abdominal segment 8?,"Yes (99)"
-Phalacrotophora delageae,Females,ovipositor_hook,Are the long hairs ventrally (on the underside) of abdominal segment 8?,"Yes (99)"
+Phalacrotophora delageae,Females,ovipositor_hair,Are the long hairs ventrally (on the underside) of abdominal segment 8?,"Yes (99)"
+
 
 
 
