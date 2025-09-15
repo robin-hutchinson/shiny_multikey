@@ -28,9 +28,9 @@ card(
 ,
 nav_panel('Males',
                            layout_columns(card(
-radioButtons('right_hypandrium', 'Are the two lobes of the hypandrium even in length?', choices = c(
+radioButtons('right_hypandrium', 'Are the two lobes of the hypandrium roughly the same length?', choices = c(
 'Yes (97)', 
-'No - the right lobe extends to the tip or beyond the end of the epandrium (98).'), selected = character(0))),
+'No - the right lobe is clearly longer, extending to the tip or beyond the end of the epandrium (98).'), selected = character(0))),
 card(
 img(src='97.jpeg', width = 250),
 img(src='98.jpeg', width = 250),col_widths = c(4, 8))))
