@@ -16,13 +16,13 @@ server <- function(input, output) {
   question_results <- reactive({
     
     genera <- features %>%
-      distinct(genus)
+      distinct(taxa)
     
-    total <- data.frame('genus',
+    total <- data.frame('taxa',
                         'matched_features',
                         'unmatched_features')%>%
       filter(row_number() != 1)
-    colnames(total) <- c('genus',
+    colnames(total) <- c('taxa',
                          'matched_features',
                          'unmatched_features')
     g <- features
@@ -38,17 +38,17 @@ for(i in 1:length(qs)) {
       passed <- g %>%
         filter(body_part == '",q, "' & answer == input$",q, ")%>%
         rename(matched_features = question) %>%
-        distinct(genus, matched_features)
+        distinct(taxa, matched_features)
       failed <- g %>%
         filter(body_part == '",q, "' ,
                answer != input$",q, ",
-               !(genus %in% passed$genus)) %>%
+               !(taxa %in% passed$taxa)) %>%
         rename(unmatched_features = question) %>%
-        distinct(genus, unmatched_features)
+        distinct(taxa, unmatched_features)
       
       new_total <- bind_rows(passed, failed) %>%
         mutate(unanswered_question = case_when(1==2 ~ ''))
-      total <- full_join(total, new_total,  by = c('genus',
+      total <- full_join(total, new_total,  by = c('taxa',
                                                    'matched_features',
                                                    'unmatched_features'))
     } ",
@@ -62,51 +62,51 @@ for(i in 1:length(qs)) {
 full_script <- c(full_script, 
                  "total_matched_features <- total %>%
       filter(!is.na(matched_features))%>%
-      distinct(genus, matched_features) %>%
-      count(genus) %>%
+      distinct(taxa, matched_features) %>%
+      count(taxa) %>%
       rename(total_features_matched = n) 
-    genera <- full_join(genera, total_matched_features, by = 'genus') 
+    genera <- full_join(genera, total_matched_features, by = 'taxa') 
     
     if(length(unique(total$matched_features)) > 1) {
       matched_feature_list <- total %>%
         filter(!is.na(matched_features))%>%
-        distinct(genus, matched_features) %>%
-        group_by(genus)%>%
+        distinct(taxa, matched_features) %>%
+        group_by(taxa)%>%
         arrange(matched_features) %>%
         mutate(row = paste('n', as.character(row_number()), sep = '')) %>%
         pivot_wider(names_from = row, values_from = matched_features)  %>%
-        unite(matched_features, -genus, sep = '<br/>', na.rm = TRUE) %>%
-        distinct(genus, matched_features)
+        unite(matched_features, -taxa, sep = '<br/>', na.rm = TRUE) %>%
+        distinct(taxa, matched_features)
       
-      genera <- full_join(genera, matched_feature_list, by = 'genus') 
+      genera <- full_join(genera, matched_feature_list, by = 'taxa') 
       
     }
     
     if(length(unique(total$unmatched_features)) > 1) {
       unmatched_feature_list <- total %>%
         filter(!is.na(unmatched_features))%>%
-        distinct(genus, unmatched_features) %>%
-        group_by(genus)%>%
+        distinct(taxa, unmatched_features) %>%
+        group_by(taxa)%>%
         arrange(unmatched_features) %>%
         mutate(row = paste('n', as.character(row_number()), sep = '')) %>%
         pivot_wider(names_from = row, values_from = unmatched_features) %>%
-        unite(unmatched_features, -genus, sep = '<br/>', na.rm = TRUE) %>%
-        distinct(genus, unmatched_features)
+        unite(unmatched_features, -taxa, sep = '<br/>', na.rm = TRUE) %>%
+        distinct(taxa, unmatched_features)
       
-      genera <- full_join(genera, unmatched_feature_list, by = 'genus') 
+      genera <- full_join(genera, unmatched_feature_list, by = 'taxa') 
       
     }
     
     unanswered_question_list <- features %>%
       filter(!(question %in% c(unique(total$matched_features), unique(total$unmatched_features))))%>%
       rename(unanswered_question = question) %>%
-      distinct(genus, unanswered_question) %>%
-      group_by(genus)%>%
+      distinct(taxa, unanswered_question) %>%
+      group_by(taxa)%>%
       arrange(unanswered_question) %>%
       mutate(row = paste('n', as.character(row_number()), sep = '')) %>%
       pivot_wider(names_from = row, values_from = unanswered_question) %>%
-      unite(unanswered_question, -genus, sep = '<br/>', na.rm = TRUE) 
-    genera <- full_join(genera, unanswered_question_list, by = 'genus') 
+      unite(unanswered_question, -taxa, sep = '<br/>', na.rm = TRUE) 
+    genera <- full_join(genera, unanswered_question_list, by = 'taxa') 
     if(length(unique(total$matched_features)) <= 1) {
       
       genera <- genera %>%
@@ -121,16 +121,16 @@ full_script <- c(full_script,
     possibles <- question_results() %>%
       filter(unmatched_features == '' |
                is.na(unmatched_features)) %>%
-      distinct(genus)
+      distinct(taxa)
 
     question_options <- features %>%
-        filter(genus %in% possibles$genus) %>%
+        filter(taxa %in% possibles$taxa) %>%
         distinct(question, answer) %>%
         count(question) %>%
         filter(n == 1)
 
     question_coverage <- features %>%
-      filter(genus %in% possibles$genus)
+      filter(taxa %in% possibles$taxa)
     
     if(!is.null(question_options$question)) {
       
@@ -139,19 +139,19 @@ full_script <- c(full_script,
       
     }
     question_coverage <-  question_coverage  %>%
-      distinct(genus, question) %>%
+      distinct(taxa, question) %>%
       count(question) %>%
-      rename(genus_by_question = n)
+      rename(taxa_by_question = n)
 
     group_evenness <- features %>%
-      filter(genus %in% possibles$genus) %>%
-      distinct(genus, question, answer) %>%
+      filter(taxa %in% possibles$taxa) %>%
+      distinct(taxa, question, answer) %>%
       group_by(question) %>%
       count(answer) %>%
       mutate(split_evenness = sd(n)) %>%
       distinct(question, split_evenness) %>%
       left_join(question_coverage, by = 'question') %>%
-      arrange(desc(genus_by_question), split_evenness)
+      arrange(desc(taxa_by_question), split_evenness)
 
     best_3 <- group_evenness[c(1:3), 'question' ]
  
@@ -180,7 +180,7 @@ full_script <- c(full_script,
       filter(row_number() == 1)
     
     HTML(paste('The closest match to the selected features is ',
-               results1$genus,
+               results1$taxa,
                '.<br/><br/>',
                'This taxa matched on the following characteristics:<br/>',
                results1$matched_features,
@@ -202,7 +202,7 @@ full_script <- c(full_script,
       filter(row_number() == 2)
     
     HTML(paste('The second closest match to the selected features is ',
-               results2$genus,
+               results2$taxa,
                '.<br/><br/>',
                'This taxa matched on the following characteristics:<br/>',
                results2$matched_features,
@@ -224,7 +224,7 @@ full_script <- c(full_script,
       filter(row_number() == 3)
     
     HTML(paste('The third closest match to the selected features is ',
-               results3$genus,
+               results3$taxa,
                '.<br/><br/>',
                'This taxa matched on the following characteristics:<br/>',
                results3$matched_features,
