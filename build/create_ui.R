@@ -7,10 +7,10 @@ images <- read.csv("shiny/key/images.csv") %>%
 
 full_script <- c("ui <- page_fluid(tags$h1('UK Phalacrotophora'),
                  tags$br(), # line break
-                 tags$a("Use the characteristics below to separate out the 4 species of Phalacrotophora (Diptera: Phoridae) known to occur in the UK."),
+                 tags$a('Use the characteristics below to separate out the 4 species of Phalacrotophora (Diptera: Phoridae) known to occur in the UK.'),
                  tags$br(), # line break
                  tags$br(), # line break
-                 tags$a("Male specimens of P. delageae and P. berolinensis cannot be reliably separated - record these as an aggregate unless a female is also collected."),
+                 tags$a('Male specimens of P. delageae and P. berolinensis cannot be reliably separated - record these as an aggregate unless a female is also collected.'),
                  tags$br(), # line break
                  tags$br(), # line break
                  navset_card_underline(")
