@@ -80,15 +80,34 @@ if(!is.null(input$right_hypandrium)) {
                                                    'matched_features',
                                                    'unmatched_features'))
     } 
-if(!is.null(input$ovipositor_end)) {
+if(!is.null(input$ovipositor_hook)) {
       
       passed <- g %>%
-        filter(body_part == 'ovipositor_end' & answer == input$ovipositor_end)%>%
+        filter(body_part == 'ovipositor_hook' & answer == input$ovipositor_hook)%>%
         rename(matched_features = question) %>%
         distinct(taxa, matched_features)
       failed <- g %>%
-        filter(body_part == 'ovipositor_end' ,
-               answer != input$ovipositor_end,
+        filter(body_part == 'ovipositor_hook' ,
+               answer != input$ovipositor_hook,
+               !(taxa %in% passed$taxa)) %>%
+        rename(unmatched_features = question) %>%
+        distinct(taxa, unmatched_features)
+      
+      new_total <- bind_rows(passed, failed) %>%
+        mutate(unanswered_question = case_when(1==2 ~ ''))
+      total <- full_join(total, new_total,  by = c('taxa',
+                                                   'matched_features',
+                                                   'unmatched_features'))
+    } 
+if(!is.null(input$ovipositor_hair)) {
+      
+      passed <- g %>%
+        filter(body_part == 'ovipositor_hair' & answer == input$ovipositor_hair)%>%
+        rename(matched_features = question) %>%
+        distinct(taxa, matched_features)
+      failed <- g %>%
+        filter(body_part == 'ovipositor_hair' ,
+               answer != input$ovipositor_hair,
                !(taxa %in% passed$taxa)) %>%
         rename(unmatched_features = question) %>%
         distinct(taxa, unmatched_features)
