@@ -1,4 +1,5 @@
 library(shiny)
+library(bslib)
 library(DT)
 library(knitr)
 library(kableExtra)
