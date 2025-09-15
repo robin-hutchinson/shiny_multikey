@@ -33,7 +33,7 @@ radioButtons('right_hypandrium', 'Are the two lobes of the hypandrium roughly th
 'No - the right lobe is clearly longer, extending to the tip or beyond the end of the epandrium (98).'), selected = character(0))),
 card(
 img(src='97.jpeg', width = 250),
-img(src='98.jpeg', width = 250),col_widths = c(4, 8))))
+img(src='98.jpeg', width = 250)),col_widths = c(4, 8)))
 ,
 nav_panel('Females',
                            layout_columns(card(
@@ -45,7 +45,7 @@ radioButtons('ovipositor_hair', 'Are the long hairs ventrally (on the underside)
 'Yes (99)'), selected = character(0))),
 card(
 img(src='100.jpeg', width = 250),
-img(src='99.jpeg', width = 250),col_widths = c(4, 8)))))
+img(src='99.jpeg', width = 250)),col_widths = c(4, 8))))
 ,
 layout_columns(card(htmlOutput('results1')), 
                                  card(htmlOutput('results2'))))
