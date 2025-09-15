@@ -68,7 +68,7 @@ for(i in 1:length(sections)){
     
   }
   
-  full_script[length(full_script)] <- gsub(",$", "),col_widths = c(4, 8))))", full_script[length(full_script)])
+  full_script[length(full_script)] <- gsub(",$", ",col_widths = c(4, 8))))", full_script[length(full_script)])
   
   
   } else {  full_script <- c(full_script, ")))")}
