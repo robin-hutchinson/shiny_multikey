@@ -1,5 +1,5 @@
 # shiny_multikey
-Building a shiny app for developing a polythetic keys
+Building a shiny app for developing polythetic keys
 
 The example is set up to identify flies in the genera Phalacrotophora (Diptera: Phoridae). To create a shiny app for your own taxon group, follow these steps:
 
