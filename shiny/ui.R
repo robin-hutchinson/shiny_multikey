@@ -1,4 +1,4 @@
-ui <- fluidPage(titlePanel('Phalacrotophora of UK', windowTitle = 'Example Window Title'),
+ui <- fluidPage(titlePanel('UK Phalacrotophora', windowTitle = 'Example Window Title'),
                 mainPanel(htmlOutput('description')),
                 sidebarPanel(htmlOutput('suggestions')),
                 tabsetPanel(
