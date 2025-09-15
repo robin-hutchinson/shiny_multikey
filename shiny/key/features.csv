@@ -1,9 +1,9 @@
 taxa,body_section,body_part,question,answer
 Phalacrotophora fasciata,Legs,hind_metatarsus_shape,Does the hind metatarsus appear swollen?,"Yes - somewhat"
-Phalacrotophora fasciata,Legs,hind_metatarsus_colour,What colour is the hind metatarsus?,"Dark brown to black"
 Phalacrotophora berolinensis,Legs,hind_metatarsus_shape,Does the hind metatarsus appear swollen?,"No - at most slightly swollen"
-Phalacrotophora berolinensis,Legs,hind_metatarsus_colour,What colour is the hind metatarsus?,"Yellow to yellow-brown"
 Phalacrotophora delageae,Legs,hind_metatarsus_shape,Does the hind metatarsus appear swollen?,"No - at most slightly swollen"
+Phalacrotophora fasciata,Legs,hind_metatarsus_colour,What colour is the hind metatarsus?,"Dark brown to black"
+Phalacrotophora berolinensis,Legs,hind_metatarsus_colour,What colour is the hind metatarsus?,"Yellow to yellow-brown"
 Phalacrotophora delageae,Legs,hind_metatarsus_colour,What colour is the hind metatarsus,"Yellow to yellow-brown"
 Phalacrotophora berolinensis,Males,right_hypandrium,Are the two lobes of the hypandrium even in length?,"Yes (97)"
 Phalacrotophora delageae,Males,right_hypandrium,Are the two lobes of the hypandrium even in length?,"Yes (97)"
@@ -14,6 +14,7 @@ Phalacrotophora delageae,Females,ovipositor_hook,"Is there a pair of dark, thorn
 Phalacrotophora fasciata,Females,ovipositor_hair,Are the long hairs ventrally (on the underside) of abdominal segment 8?,"No - short hairs only (100)"
 Phalacrotophora berolinensis,Females,ovipositor_hair,Are the long hairs ventrally (on the underside) of abdominal segment 8?,"Yes (99)"
 Phalacrotophora delageae,Females,ovipositor_hair,Are the long hairs ventrally (on the underside) of abdominal segment 8?,"Yes (99)"
+
 
 
 
