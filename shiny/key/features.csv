@@ -8,12 +8,13 @@ Phalacrotophora delageae,Legs,hind_metatarsus_colour,What colour is the hind met
 Phalacrotophora berolinensis,Males,right_hypandrium,Are the two lobes of the hypandrium even in length?,"Yes (97)"
 Phalacrotophora delageae,Males,right_hypandrium,Are the two lobes of the hypandrium even in length?,"Yes (97)"
 Phalacrotophora fasciata,Males,right_hypandrium,Are the two lobes of the hypandrium even in length?,"No - the right lobe extends to the tip or beyond the end of the epandrium (98)."
-Phalacrotophora fasciata,Females,ovipositor_hook,"At the end of the ovipositor, is there a pair of sub-terminal, dorsally projecting, thorn-like processes? These look like hooks.","No (100)"
-Phalacrotophora berolinensis,Females,ovipositor_hook,"At the end of the ovipositor, is there a pair of sub-terminal, dorsally projecting, thorn-like processes? These look like hooks.","Yes (99)"
-Phalacrotophora delageae,Females,ovipositor_hook,"At the end of the ovipositor, is there a pair of sub-terminal, dorsally projecting, thorn-like processes? These look like hooks.","No (100)"
+Phalacrotophora fasciata,Females,ovipositor_hook,"Is there a pair of dark, thorn-like points near the end of the ovipositor?","No (100)"
+Phalacrotophora berolinensis,Females,ovipositor_hook,"Is there a pair of dark, thorn-like points near the end of the ovipositor?","Yes (99)"
+Phalacrotophora delageae,Females,ovipositor_hook,"Is there a pair of dark, thorn-like points near the end of the ovipositor?","No (100)"
 Phalacrotophora fasciata,Females,ovipositor_hair,Are the long hairs ventrally (on the underside) of abdominal segment 8?,"No - short hairs only (100)"
 Phalacrotophora berolinensis,Females,ovipositor_hair,Are the long hairs ventrally (on the underside) of abdominal segment 8?,"Yes (99)"
 Phalacrotophora delageae,Females,ovipositor_hook,Are the long hairs ventrally (on the underside) of abdominal segment 8?,"Yes (99)"
+
 
 
 
