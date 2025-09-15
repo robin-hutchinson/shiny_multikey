@@ -242,7 +242,7 @@ full_script <- c(full_script,
   
   output$suggestions <- renderUI( HTML(suggestions()) )
   
-  output$description <- renderUI(HTML('This key is based on Henry Disneys Key to UK Phoridae. The three questions to the right suggest the best characteristics to separate the remaining species, however does not mean that you cannot answer other questions first if you prefer.'))
+  output$description <- renderUI(HTML('The three questions to the right suggest the best characteristics to separate the remaining species, however does not mean that you cannot answer other questions first if you prefer.'))
 }
 ")
 
