@@ -1,42 +1,43 @@
-ui <- fluidPage(titlePanel('UK Phalacrotophora', windowTitle = 'Example Window Title'),
-                mainPanel(htmlOutput('description')),
-                sidebarPanel(htmlOutput('suggestions')),
-                tabsetPanel(
-tabPanel('Legs',
-                           sidebarPanel(
+ui <- page_fluid(tags$h1('UK Phalacrotophora'),
+                 tags$br(), # line break
+                 tags$a('Use the characteristics below to separate out the 4 species of Phalacrotophora (Diptera: Phoridae) known to occur in the UK.'),
+                 tags$br(), # line break
+                 tags$br(), # line break
+                 tags$a('Male specimens of P. delageae and P. berolinensis cannot be reliably separated - record these as an aggregate unless a female is also collected.'),
+                 tags$br(), # line break
+                 tags$br(), # line break
+                 navset_card_underline(
+nav_panel('Legs',
+                           layout_columns(card(
 radioButtons('hind_metatarsus_shape', 'Does the hind metatarsus appear swollen?', choices = c(
 'Yes - somewhat', 
 'No - at most slightly swollen'), selected = character(0)),
 radioButtons('hind_metatarsus_colour', 'What colour is the hind metatarsus?', choices = c(
 'Dark brown to black', 
 'Yellow to yellow-brown'), selected = character(0))),
-mainPanel(
+card(
 ))
 ,
-tabPanel('Males',
-                           sidebarPanel(
+nav_panel('Males',
+                           layout_columns(card(
 radioButtons('right_hypandrium', 'Are the two lobes of the hypandrium even in length?', choices = c(
 'Yes (97)', 
 'No - the right lobe extends to the tip or beyond the end of the epandrium (98).'), selected = character(0))),
-mainPanel(
-img(src='97.jpeg'),
-img(src='98.jpeg')))
+card(
+img(src='97.jpeg', width = 250),
+img(src='98.jpeg', width = 250)),col_widths = c(4, 8))
 ,
-tabPanel('Females',
-                           sidebarPanel(
+nav_panel('Females',
+                           layout_columns(card(
 radioButtons('ovipositor_hook', 'Is there a pair of dark, thorn-like points near the end of the ovipositor?', choices = c(
 'No (100)', 
 'Yes (99)'), selected = character(0)),
 radioButtons('ovipositor_hair', 'Are the long hairs ventrally (on the underside) of abdominal segment 8?', choices = c(
 'No - short hairs only (100)', 
 'Yes (99)'), selected = character(0))),
-mainPanel(
-img(src='100.jpeg'),
-img(src='99.jpeg')))
+card(
+img(src='100.jpeg', width = 250),
+img(src='99.jpeg', width = 250)),col_widths = c(4, 8))
 ,
-                  tabPanel('Results table', 
-                           sidebarPanel(htmlOutput('results1')), 
-                           sidebarPanel(htmlOutput('results2')), 
-                           sidebarPanel(htmlOutput('results3'))
-                  )
-                ))
+layout_columns(card(htmlOutput('results1')), 
+                                 card(htmlOutput('results2'))))
