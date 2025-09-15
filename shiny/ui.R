@@ -1,4 +1,11 @@
-ui <- page_fluid(tags$h1('UK Phalacrotophora'),
+library(shiny)
+library(bslib)
+library(DT)
+library(knitr)
+library(kableExtra)
+library(tidyverse)
+
+ui <- bslib::page_fluid(tags$h1('UK Phalacrotophora'),
                  tags$br(), # line break
                  tags$a('Use the characteristics below to separate out the 4 species of Phalacrotophora (Diptera: Phoridae) known to occur in the UK.'),
                  tags$br(), # line break
