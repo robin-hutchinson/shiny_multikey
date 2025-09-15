@@ -1,4 +1,4 @@
-ui <- fluidPage(titlePanel('Key to UK Phoridae Genera', windowTitle = 'UK Phoridae Key'),
+ui <- fluidPage(titlePanel('Example Title', windowTitle = 'Example Window Title'),
                 mainPanel(htmlOutput('description')),
                 sidebarPanel(htmlOutput('suggestions')),
                 tabsetPanel(
