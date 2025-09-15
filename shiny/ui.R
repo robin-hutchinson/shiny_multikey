@@ -24,7 +24,7 @@ img(src='98.jpeg')))
 ,
 tabPanel('Females',
                            sidebarPanel(
-radioButtons('ovipositor_hook', 'At the end of the ovipositor, is there a pair of sub-terminal, dorsally projecting, thorn-like processes? These look like hooks.', choices = c(
+radioButtons('ovipositor_hook', 'Is there a pair of dark, thorn-like points near the end of the ovipositor?', choices = c(
 'No (100)', 
 'Yes (99)'), selected = character(0)),
 radioButtons('ovipositor_hair', 'Are the long hairs ventrally (on the underside) of abdominal segment 8?', choices = c(
