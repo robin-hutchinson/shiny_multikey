@@ -1,4 +1,4 @@
-genus,body_section,body_part,question,answer
+taxa,body_section,body_part,question,answer
 Aenigmatias,Wingless females,ocelli,Are the ocelli present?,No
 Aenigmatias,Wingless females,head_shape,Is the head significantly shorter than it is broad?,Yes (15)
 Aenigmatias,Wingless females,frons,Are there bristle like hairs at the sides of the frons in front of the eyes?,No
@@ -181,3 +181,4 @@ Megaselia,Females,Female,Does the ovipositor curve downwards to a point?,No
 Pseudacteon,Females,sternites,Does segment 6 have a distinct sternite?,Yes
 Megaselia,Males,proctiger,Does the proctiger end in finely feathered bristles that are more robust than the hairs on the cerci?,No (weaker than 7)
 Phalacrotophora,Males,proctiger,Does the proctiger end in finely feathered bristles that are more robust than the hairs on the cerci?,"Yes (97, 98)"
+
