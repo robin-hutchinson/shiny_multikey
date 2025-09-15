@@ -37,7 +37,7 @@ radioButtons('ovipositor_hair', 'Are the long hairs ventrally (on the underside)
 'Yes (99)'), selected = character(0))),
 card(
 img(src='100.jpeg', width = 250),
-img(src='99.jpeg', width = 250),col_widths = c(4, 8))))
+img(src='99.jpeg', width = 250),col_widths = c(4, 8)))))
 ,
 layout_columns(card(htmlOutput('results1')), 
                                  card(htmlOutput('results2'))))
