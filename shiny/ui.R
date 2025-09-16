@@ -13,6 +13,8 @@ ui <- bslib::page_fluid(tags$h1('UK Phalacrotophora'),
                  tags$br(), # line break
                  tags$a('Male specimens of P. delageae and P. berolinensis cannot be reliably separated - record these as an aggregate unless a female is also collected.'),
                  tags$br(), # line break
+                 tags$a('P. harveyi has only been collected as a female, therefore they cannot yet be identified using male genitalia.'),
+                 tags$br(), # line break
                  tags$br(), # line break
                  navset_card_underline(
 nav_panel('Legs',
