@@ -65,6 +65,25 @@ if(!is.null(input$hind_metatarsus_colour)) {
                                                    'matched_features',
                                                    'unmatched_features'))
     } 
+if(!is.null(input$hind_femur_hair)) {
+      
+      passed <- g %>%
+        filter(body_part == 'hind_femur_hair' & answer == input$hind_femur_hair)%>%
+        rename(matched_features = question) %>%
+        distinct(taxa, matched_features)
+      failed <- g %>%
+        filter(body_part == 'hind_femur_hair' ,
+               answer != input$hind_femur_hair,
+               !(taxa %in% passed$taxa)) %>%
+        rename(unmatched_features = question) %>%
+        distinct(taxa, unmatched_features)
+      
+      new_total <- bind_rows(passed, failed) %>%
+        mutate(unanswered_question = case_when(1==2 ~ ''))
+      total <- full_join(total, new_total,  by = c('taxa',
+                                                   'matched_features',
+                                                   'unmatched_features'))
+    } 
 if(!is.null(input$right_hypandrium)) {
       
       passed <- g %>%

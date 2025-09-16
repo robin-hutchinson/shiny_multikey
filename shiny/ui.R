@@ -22,7 +22,10 @@ radioButtons('hind_metatarsus_shape', 'Does the hind metatarsus appear swollen?'
 'No - at most slightly swollen'), selected = character(0)),
 radioButtons('hind_metatarsus_colour', 'What colour is the hind metatarsus?', choices = c(
 'Dark brown to black', 
-'Yellow to yellow-brown'), selected = character(0))),
+'Yellow to yellow-brown'), selected = character(0)),
+radioButtons('hind_femur_hair', 'Are the hairs on the basal half (nearest the body) of the hind femur long or short?', choices = c(
+'Long (13, 14)', 
+'Short (10)'), selected = character(0))),
 card(
 )))
 ,
@@ -40,9 +43,10 @@ nav_panel('Females',
 radioButtons('ovipositor_hook', 'Is there a pair of dark, thorn-like points near the end of the ovipositor?', choices = c(
 'No (100)', 
 'Yes (99)'), selected = character(0)),
-radioButtons('ovipositor_hair', 'Are the long hairs ventrally (on the underside) of abdominal segment 8?', choices = c(
-'No - short hairs only (100)', 
-'Yes (99)'), selected = character(0))),
+radioButtons('ovipositor_hair', 'How long are the hairs on the underside of abdominal segment 8?', choices = c(
+'Short (100)', 
+'Long (99)', 
+'Intermediate'), selected = character(0))),
 card(
 img(src='100.jpeg', width = 250),
 img(src='99.jpeg', width = 250)),col_widths = c(4, 8))))
