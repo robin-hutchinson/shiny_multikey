@@ -12,15 +12,17 @@ library(DT)
 library(knitr)
 library(kableExtra)
 library(tidyverse)
+library(shinyalert)
 
 ui <- bslib::page_fluid(tags$h1('UK Phalacrotophora'),
-                 tags$br(), # line break
-                 tags$a('Use the characteristics below to separate out the 4 species of Phalacrotophora (Diptera: Phoridae) known to occur in the UK.'),
+                         tags$br(), # line break
+                        layout_columns(card(tags$a('This multikey is designed to separate out the 4 species of Phalacrotophora (Diptera: Phoridae) known to occur in the UK.'),
                  tags$br(), # line break
                  tags$br(), # line break
                  tags$a('Male specimens of P. delageae and P. berolinensis cannot be reliably separated - record these as an aggregate unless a female is also collected.'),
                  tags$br(), # line break
-                 tags$a('P. harveyi has only been collected as a female, therefore they cannot yet be identified using male genitalia.'),
+                 tags$a('P. harveyi has only been collected as a female, therefore they cannot yet be identified using male genitalia.')),
+                   card(src='100.jpeg', width = 250) ),
                  tags$br(), # line break
                  tags$br(), # line break
                  navset_card_underline(")
