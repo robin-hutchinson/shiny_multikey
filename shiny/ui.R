@@ -26,7 +26,7 @@ tags$li('Females only have tergites on abdominal segments 1 to 4 and a small pap
 )),
 card(
 layout_column_wrap(width = 1/3,img(src='Phalacrotophora full image.jpg'))
-),),
+)),
 tags$a('Toggle between the tabs below and answer the questions to identify your specimen. You can answer the questions in any order. The two boxes at the bottom of the page will show the closest matches to the features you selected. If there are questions for which your closest match is incorrect, go back and review the features for those questions.'),tags$br(),tags$br(),
 tags$a('Male specimens of P. delageae and P. berolinensis cannot be reliably separated - record these as an aggregate unless a female is also collected. P. harveyi has only been collected as a female, therefore they cannot yet be identified using male genitalia.'),tags$br(),tags$br(),
 navset_card_underline(
@@ -64,6 +64,6 @@ radioButtons('ovipositor_hair', 'How long are the hairs on the underside of abdo
 card(
 layout_column_wrap(width = 1/3,img(src='100.jpeg'),
 img(src='99.jpeg'))
-))),
+)))),
 layout_columns(card(htmlOutput('results1')), 
                                  card(htmlOutput('results2'))))
