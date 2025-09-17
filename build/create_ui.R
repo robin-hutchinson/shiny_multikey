@@ -54,12 +54,12 @@ ui <- bslib::page_fluid(tags$h1('",
                  tags$ul(",
                 
                  key_criteria
-                 ")),
-                 card(")
+                 "))")
 
 
 full_script[length(full_script)] <- paste(full_script[length(full_script)], "),", sep = "")
   
+full_script <- c(full_script, "card(")
 
   if(nrow(static_images) >= 1) {
   ims <- unique(static_images$image)
