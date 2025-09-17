@@ -9,8 +9,7 @@ static_images <- images %>%
   filter(body_section == "Static") %>%
   mutate(row_number = row_number(),
          max = max(row_number),
-        image = paste("img(src='", image, ,
-                           "')", sep = ""),
+        image = paste("img(src='", image,  "')", sep = ""),
         image = case_when(row_number %in% c(1,4,7,10,13,16) ~ paste("layout_column_wrap(width = 1/3,", image, ",", sep = ""),
                           row_number %in% c(3,6,9,12,15,18) ~ paste(image, "),", sep = ""),
                           TRUE ~ paste(image, ",", sep = "")
@@ -23,8 +22,7 @@ images <- images %>%
   group_by(body_section) %>%
   mutate(row_number = row_number(),
          max = max(row_number),
-        image = paste("img(src='", image, ,
-                           "')", sep = ""),
+        image = paste("img(src='", image, "')", sep = ""),
         image = case_when(row_number %in% c(1,4,7,10,13,16) ~ paste("layout_column_wrap(width = 1/3,", image, ",", sep = ""),
                           row_number %in% c(3,6,9,12,15,18) ~ paste(image, "),", sep = ""),
                           TRUE ~ paste(image, ",", sep = "")
