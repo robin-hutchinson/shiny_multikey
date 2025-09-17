@@ -123,13 +123,13 @@ for(i in 1:length(sections)){
   }
 
   full_script[length(full_script)] <- gsub(",$", "),", full_script[length(full_script)])
-  full_script <- c(full_script, "card(layout_column_wrap(")
+  full_script <- c(full_script, "card(")
   tab_image <- images %>%
     filter(body_section == tab)
   if(nrow(tab_image) >= 1) {
 
     full_script <- c(full_script,
-                    "width = 1/3,")
+                    "layout_column_wrap(width = 1/3,")
     
   ims <- unique(tab_image$image)
   
