@@ -136,4 +136,4 @@ full_script <- c(full_script,
                  "layout_columns(card(htmlOutput('results1')), 
                                  card(htmlOutput('results2'))))")
   
-write_lines(full_script, 'shiny/ui.R')  
+write_lines(full_script, 'shiny/ui.R')
