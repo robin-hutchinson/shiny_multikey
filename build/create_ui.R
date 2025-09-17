@@ -137,4 +137,3 @@ full_script <- c(full_script,
                                  card(htmlOutput('results2'))))")
   
 write_lines(full_script, 'shiny/ui.R')  
-  
