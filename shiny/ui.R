@@ -42,7 +42,7 @@ radioButtons('hind_femur_hair', 'Are the hairs on the basal half (nearest the bo
 'Long (13, 14)', 
 'Short (10)'), selected = character(0))),
 card(
-))),
+)), col_widths = (4,8)),
 nav_panel('Males',
                            layout_columns(card(
 radioButtons('right_hypandrium', 'Are the two lobes of the hypandrium roughly the same length?', choices = c(
@@ -51,7 +51,7 @@ radioButtons('right_hypandrium', 'Are the two lobes of the hypandrium roughly th
 card(
 layout_column_wrap(width = 1/3,img(src='97.jpeg'),
 img(src='98.jpeg'))
-))),
+)), col_widths = (4,8)),
 nav_panel('Females',
                            layout_columns(card(
 radioButtons('ovipositor_hook', 'Is there a pair of dark, thorn-like points near the end of the ovipositor?', choices = c(
@@ -64,6 +64,6 @@ radioButtons('ovipositor_hair', 'How long are the hairs on the underside of abdo
 card(
 layout_column_wrap(width = 1/3,img(src='100.jpeg'),
 img(src='99.jpeg'))
-)))),
+)), col_widths = (4,8))),
 layout_columns(card(htmlOutput('results1')), 
                                  card(htmlOutput('results2'))))
