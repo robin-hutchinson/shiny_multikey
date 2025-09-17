@@ -211,7 +211,9 @@ total_matched_features <- total %>%
       arrange(desc(matched_features_count), unmatched_features_count) %>%
       ungroup() %>%
       mutate(matched_features = replace_na(matched_features, ''),
-             unmatched_features = replace_na(unmatched_features, ''))}
+             unmatched_features = replace_na(unmatched_features, ''),
+             matched_features = paste('<li>', matched_features, '</li>', sep = ''),
+             unmatched_features = paste('<li>', unmatched_features, '</li>', sep = ''))}
   )
   
   output$results1 <- renderUI({
@@ -219,14 +221,18 @@ total_matched_features <- total %>%
     results1 <- results() %>%
       filter(row_number() == 1)
     
-    HTML(paste('<b>The  closest match is <b><i>',
+    HTML(paste('The  closest match is <b><i>',
                results1$taxa,
                '</i>.</b><br/>',
                'This taxa matched on the following questions:',
+               '<ul>'
                results1$matched_features,
+               '</ul>',
                '<br/>',
-               '<b>It did not match on the questions below:</b>',
+               'It did not match on the questions below:',
+               '<ul>',
                results1$unmatched_features,
+               '</ul>',
                sep = ''
                
                
@@ -241,14 +247,18 @@ total_matched_features <- total %>%
     results2 <- results() %>%
       filter(row_number() == 2)
     
-    HTML(paste('<b>The second closest match is <b><i>',
+    HTML(paste('The second closest match is <b><i>',
                results2$taxa,
                '</i>.</b><br/>',
                'This taxa matched on the following questions:',
+               '<ul>'
                results2$matched_features,
+               '</ul>',
                '<br/>',
-               '<b>It did not match on the questions below:</b>',
+               'It did not match on the questions below:',
+               '<ul>',
                results2$unmatched_features,
+               '</ul>',
                sep = ''
                
                
