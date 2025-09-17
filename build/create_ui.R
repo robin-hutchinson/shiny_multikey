@@ -49,9 +49,17 @@ ui <- bslib::page_fluid(tags$h1('",
                  layout_columns(card(",
                                        
                  introduction,
-                 
-                 "),
+
+                 ",
+                 tags$ul(",
+                
+                 key_criteria
+                 ")),
                    card(")
+
+
+full_script[length(full_script)] <- paste(full_script[length(full_script)], "),", sep = "")
+  
 
   if(nrow(static_images) >= 1) {
   ims <- unique(static_images$image)
@@ -70,11 +78,6 @@ ui <- bslib::page_fluid(tags$h1('",
   
   } else {  full_script <- c(full_script, "))")}
 
-full_script <- c(full_script, ",")
-
-full_script <- c(full_script, 
-                 "tags$ul(",
-                key_criteria)
 
 full_script[length(full_script)] <- paste(full_script[length(full_script)], "),", sep = "")
   
