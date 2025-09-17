@@ -136,8 +136,8 @@ full_script <- c(full_script,
       ungroup() %>%
       mutate(matched_features = replace_na(matched_features, ''),
              unmatched_features = replace_na(unmatched_features, ''),
-             matched_features = paste('<li>', matched_features, '</li>', sep = ''),
-             unmatched_features = paste('<li>', unmatched_features, '</li>', sep = ''))}
+             matched_features = paste(matched_features, '<br/>', sep = ''),
+             unmatched_features = paste(unmatched_features, '<br/>', sep = ''))}
   )
   
   output$results1 <- renderUI({
@@ -149,14 +149,10 @@ full_script <- c(full_script,
                results1$taxa,
                '</i>.</b><br/>',
                'This taxa matched on the following questions:',
-               '<ul>'
                results1$matched_features,
-               '</ul>',
                '<br/>',
                'It did not match on the questions below:',
-               '<ul>',
                results1$unmatched_features,
-               '</ul>',
                sep = ''
                
                
@@ -175,14 +171,10 @@ full_script <- c(full_script,
                results2$taxa,
                '</i>.</b><br/>',
                'This taxa matched on the following questions:',
-               '<ul>'
                results2$matched_features,
-               '</ul>',
                '<br/>',
                'It did not match on the questions below:',
-               '<ul>',
                results2$unmatched_features,
-               '</ul>',
                sep = ''
                
                
