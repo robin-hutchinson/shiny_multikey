@@ -26,6 +26,12 @@ instructions <- instructions %>%
   mutate(V1 = paste("tags$a('", V1, "'),tags$br(),tags$br(),", sep = ""))
 instructions <- instructions$V1
 
+key_criteria <- read.delim("text/key_criteria.txt", header = FALSE) 
+key_criteria <- key_criteria %>%
+  mutate(V1 = paste("tags$li('", V1, "'),", sep = ""))
+key_criteria <- key_criteria$V1
+key_criteria[length(key_criteria)] <- gsub(",", "", key_criteria[length(key_criteria)], fixed = TRUE)
+
 full_script <- c("library(shiny)
 install.packages('munsell')
 library(bslib)
@@ -63,11 +69,15 @@ ui <- bslib::page_fluid(tags$h1('",
   
   
   } else {  full_script <- c(full_script, "))")}
+
+full_script <- c(full_script, ",")
+
+full_script <- c(full_script, 
+                 "tags$ul(",
+                key_criteria)
+
+full_script[length(full_script)] <- paste(full_script[length(full_script)], "),", sep = "")
   
-  full_script <- c(full_script, ",")
-
-full_script[length(full_script)-1] <- paste(full_script[length(full_script)-1], ")", sep = "")
-
 full_script <- c(full_script,                  
               instructions,
               "navset_card_underline(")
