@@ -219,13 +219,13 @@ total_matched_features <- total %>%
     results1 <- results() %>%
       filter(row_number() == 1)
     
-    HTML(paste('<b>The closest match is <i>',
+    HTML(paste('<b>The  closest match is <b><i>',
                results1$taxa,
-               '</i>.</b><br/>',
-               '<b>This taxa matched on the following questions:</b><br/>',
+               '</i>.</b>',
+               'This taxa matched on the following questions:',
                results1$matched_features,
-               '<br/><br/>',
-               '<b>It did not match on the questions below:</b><br/>',
+               '<br/>',
+               '<b>It did not match on the questions below:</b>',
                results1$unmatched_features,
                sep = ''
                
@@ -241,13 +241,13 @@ total_matched_features <- total %>%
     results2 <- results() %>%
       filter(row_number() == 2)
     
-    HTML(paste('<b>The second closest match is <i>',
+    HTML(paste('<b>The second closest match is <b><i>',
                results2$taxa,
-               '</i>.</b><br/>',
-               '<b>This taxa matched on the following questions:</b><br/>',
+               '</i>.</b>',
+               'This taxa matched on the following questions:',
                results2$matched_features,
-               '<br/><br/>',
-               '<b>It did not match on the questions below:</b><br/>',
+               '<br/>',
+               '<b>It did not match on the questions below:</b>',
                results2$unmatched_features,
                sep = ''
                
