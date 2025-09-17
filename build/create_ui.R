@@ -34,10 +34,10 @@ ui <- bslib::page_fluid(tags$h1('",
                  title,
                  
                  "'),
-                         tags$br(), # line break
-                        layout_columns(card("
+                 tags$br(), # line break
+                 layout_columns(card(",
                                        
-                 introduction
+                 introduction,
                  
                  "),
                    card(img(src='100.jpeg', width = 250)) ),",
