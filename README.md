@@ -16,6 +16,6 @@ The example is set up to identify flies in the genera Phalacrotophora (Diptera: 
    image = the name of the image file\
    jpeg = the file type
 5) Navigate to the shiny/www directory and upload all of the images you referenced in images.csv
-6) In build/create_ui.R, update the title and opening description of your shiny app (in lines 15 to 22)
+6) In the text folder, update the title, introduction and instructions for your shiny app.
 7) Once you are happy with your changes, wait for the changes to be pushed through to server.R and ui.R by the workflow. You can check on the progress in the Actions tab.
 8) Visit your new shiny app through the "About" section in the code page.
