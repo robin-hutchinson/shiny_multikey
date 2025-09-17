@@ -65,8 +65,6 @@ ui <- bslib::page_fluid(tags$h1('",
   } else {  full_script <- c(full_script, "))")}
   
   full_script <- c(full_script, ",")
-  
-}
 
 full_script[length(full_script)-1] <- paste(full_script[length(full_script)-1], ")", sep = "")
 
