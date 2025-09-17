@@ -5,6 +5,22 @@ features <- read.csv("shiny/key/features.csv")
 images <- read.csv("shiny/key/images.csv") %>%
   mutate(image = paste(as.character(image), image_type, sep = "."))
 
+
+title <- read.delim("text/title.txt", header = FALSE) 
+title <- title$V1
+title <- title[1]
+
+introduction <- read.delim("text/introduction.txt", header = FALSE) 
+introduction <- introduction %>%
+  mutate(V1 = paste("tags$a('", V1, "'),tags$br(),tags$br(),", sep = ""))
+introduction <- introduction$V1
+introduction[length(introduction)] <- gsub(",tags$br(),tags$br(),", "", introduction[length(introduction)], fixed = TRUE)
+
+instructions <- read.delim("text/instructions.txt", header = FALSE) 
+instructions <- instructions %>%
+  mutate(V1 = paste("tags$a('", V1, "'),tags$br(),tags$br(),", sep = ""))
+instructions <- instructions$V1
+
 full_script <- c("library(shiny)
 install.packages('munsell')
 library(bslib)
@@ -13,19 +29,21 @@ library(knitr)
 library(kableExtra)
 library(tidyverse)
 
-ui <- bslib::page_fluid(tags$h1('UK Phalacrotophora'),
+ui <- bslib::page_fluid(tags$h1('",
+
+                 title,
+                 
+                 "'),
                          tags$br(), # line break
-                        layout_columns(card(tags$a('This multikey is designed to separate out the 4 species of Phalacrotophora (Diptera: Phoridae) known to occur in the UK, and includes species known to occur in Europe for comparison (TBA).'),
-                                            tags$br(), # line break
-                                            tags$a('Phalacrotophora are a cosmopolitan genus of flies, known for parasitising the pupal stage of ladybirds (Coleoptera: Coccinellidae).')
-                                       ),
-                   card(img(src='100.jpeg', width = 250)) ),
-                  tags$a('Toggle between the tabs below and answer the questions to identify your specimen. You can answer the questions in any order. The two boxes at the bottom of the page will show the closest matches to the features you selected. If there are questions for which your closest match is incorrect, go back and review the features for those questions.'),
-                 tags$br(), # line break
-                 tags$a('Male specimens of P. delageae and P. berolinensis cannot be reliably separated - record these as an aggregate unless a female is also collected. P. harveyi has only been collected as a female, therefore they cannot yet be identified using male genitalia.'),
-                 tags$br(), # line break
-                 tags$br(), # line break
-                 navset_card_underline(")
+                        layout_columns(card("
+                                       
+                 introduction
+                 
+                 "),
+                   card(img(src='100.jpeg', width = 250)) ),",
+                  instructions,
+                 
+                 "navset_card_underline(")
 
 sections <- unique(features$body_section)
 
