@@ -14,7 +14,7 @@ static_images <- images %>%
         image = case_when(row_number %in% c(1,4,7,10,13,16) ~ paste("layout_column_wrap(width = 1/3,", image, ",", sep = ""),
                           row_number %in% c(3,6,9,12,15,18) ~ paste(image, "),", sep = ""),
                           TRUE ~ paste(image, ",", sep = "")
-                         )),
+                         ),
         image = case_when(max == row_number ~ gsub(",$", ")", image),
                           TRUE ~ image))
 
