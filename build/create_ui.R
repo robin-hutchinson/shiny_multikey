@@ -17,9 +17,9 @@ title <- title[1]
 
 introduction <- read.delim("text/introduction.txt", header = FALSE) 
 introduction <- introduction %>%
-  mutate(V1 = paste("tags$a('", V1, "'),tags$br(),", sep = ""))
+  mutate(V1 = paste("tags$a('", V1, "'),", sep = ""))
 introduction <- introduction$V1
-introduction[length(introduction)] <- gsub(",tags$br(),", "", introduction[length(introduction)], fixed = TRUE)
+introduction[length(introduction)] <- gsub(",", "", introduction[length(introduction)], fixed = TRUE)
 
 instructions <- read.delim("text/instructions.txt", header = FALSE) 
 instructions <- instructions %>%
