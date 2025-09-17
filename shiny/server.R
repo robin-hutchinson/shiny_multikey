@@ -221,7 +221,7 @@ total_matched_features <- total %>%
     
     HTML(paste('<b>The  closest match is <b><i>',
                results1$taxa,
-               '</i>.</b>',
+               '</i>.</b><br/>',
                'This taxa matched on the following questions:',
                results1$matched_features,
                '<br/>',
@@ -243,7 +243,7 @@ total_matched_features <- total %>%
     
     HTML(paste('<b>The second closest match is <b><i>',
                results2$taxa,
-               '</i>.</b>',
+               '</i>.</b><br/>',
                'This taxa matched on the following questions:',
                results2$matched_features,
                '<br/>',
