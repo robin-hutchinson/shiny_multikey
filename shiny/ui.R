@@ -24,8 +24,9 @@ tags$li('The mesopleural furrow is present.'),
 tags$li('In males, the hairs on the proctiger are more robust than the hairs on the cerci.'),
 tags$li('Females only have tergites on abdominal segments 1 to 4 and a small papilla on each side of abdominal tergite 3 near the margin.')
 )),
-card(layout_column_wrap(width = 1/3,
-img(src='Phalacrotophora full image.jpg')))),
+card(
+layout_column_wrap(width = 1/3,img(src='Phalacrotophora full image.jpg'))
+),),
 tags$a('Toggle between the tabs below and answer the questions to identify your specimen. You can answer the questions in any order. The two boxes at the bottom of the page will show the closest matches to the features you selected. If there are questions for which your closest match is incorrect, go back and review the features for those questions.'),tags$br(),tags$br(),
 tags$a('Male specimens of P. delageae and P. berolinensis cannot be reliably separated - record these as an aggregate unless a female is also collected. P. harveyi has only been collected as a female, therefore they cannot yet be identified using male genitalia.'),tags$br(),tags$br(),
 navset_card_underline(
@@ -41,18 +42,16 @@ radioButtons('hind_femur_hair', 'Are the hairs on the basal half (nearest the bo
 'Long (13, 14)', 
 'Short (10)'), selected = character(0))),
 card(
-)))
-,
+),
 nav_panel('Males',
                            layout_columns(card(
 radioButtons('right_hypandrium', 'Are the two lobes of the hypandrium roughly the same length?', choices = c(
 'Yes (97)', 
 'No - the right lobe is clearly longer, extending to the tip or beyond the end of the epandrium (98).'), selected = character(0))),
 card(
-layout_column_wrap(width = 1/3,
-img(src='97.jpeg', width = 250),
-img(src='98.jpeg', width = 250))),col_widths = c(4, 8)))
-,
+layout_column_wrap(width = 1/3,img(src='97.jpeg'),
+img(src='98.jpeg'))
+),
 nav_panel('Females',
                            layout_columns(card(
 radioButtons('ovipositor_hook', 'Is there a pair of dark, thorn-like points near the end of the ovipositor?', choices = c(
@@ -63,9 +62,8 @@ radioButtons('ovipositor_hair', 'How long are the hairs on the underside of abdo
 'Long (99)', 
 'Intermediate'), selected = character(0))),
 card(
-layout_column_wrap(width = 1/3,
-img(src='100.jpeg', width = 250),
-img(src='99.jpeg', width = 250))),col_widths = c(4, 8))))
-,
+layout_column_wrap(width = 1/3,img(src='100.jpeg'),
+img(src='99.jpeg'))
+),
 layout_columns(card(htmlOutput('results1')), 
                                  card(htmlOutput('results2'))))
