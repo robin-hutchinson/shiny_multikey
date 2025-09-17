@@ -59,7 +59,7 @@ ui <- bslib::page_fluid(tags$h1('",
     
   }
   
-  full_script[length(full_script)] <- gsub(",$", "))", full_script[length(full_script)])
+  full_script[length(full_script)] <- gsub(",$", ")", full_script[length(full_script)])
   
   
   } else {  full_script <- c(full_script, "))")}
