@@ -40,7 +40,7 @@ radioButtons('hind_metatarsus_colour', 'What colour is the hind metatarsus?', ch
 radioButtons('hind_femur_hair', 'Are the hairs on the basal half (nearest the body) of the hind femur long or short?', choices = c(
 'Long (13, 14)', 
 'Short (10)'), selected = character(0))),
-card(layout_column_wrap(width = 1/3,
+card(layout_column_wrap(
 )))
 ,
 nav_panel('Males',
@@ -48,7 +48,8 @@ nav_panel('Males',
 radioButtons('right_hypandrium', 'Are the two lobes of the hypandrium roughly the same length?', choices = c(
 'Yes (97)', 
 'No - the right lobe is clearly longer, extending to the tip or beyond the end of the epandrium (98).'), selected = character(0))),
-card(layout_column_wrap(width = 1/3,
+card(layout_column_wrap(
+width = 1/3,
 img(src='97.jpeg', width = 250),
 img(src='98.jpeg', width = 250))),col_widths = c(4, 8)))
 ,
@@ -61,7 +62,8 @@ radioButtons('ovipositor_hair', 'How long are the hairs on the underside of abdo
 'Short (100)', 
 'Long (99)', 
 'Intermediate'), selected = character(0))),
-card(layout_column_wrap(width = 1/3,
+card(layout_column_wrap(
+width = 1/3,
 img(src='100.jpeg', width = 250),
 img(src='99.jpeg', width = 250))),col_widths = c(4, 8))))
 ,
