@@ -132,6 +132,8 @@ for(i in 1:length(sections)){
 
 }
 
+full_script[length(full_script)] <- gsub(",$", "),", full_script[length(full_script)])
+
 full_script <- c(full_script,
                  "layout_columns(card(htmlOutput('results1')), 
                                  card(htmlOutput('results2'))))")
