@@ -59,7 +59,7 @@ ui <- bslib::page_fluid(tags$h1('",
 
 full_script[length(full_script)] <- paste(full_script[length(full_script)], "),", sep = "")
   
-full_script <- c(full_script, "card(")
+full_script <- c(full_script, "card(layout_column_wrap(width = 1/3,")
 
   if(nrow(static_images) >= 1) {
   ims <- unique(static_images$image)
@@ -69,11 +69,11 @@ full_script <- c(full_script, "card(")
     full_script <- c(full_script, 
                      paste("img(src='",
                            ims[m],
-                           "', width = 250),", sep = ""))
+                           "'),", sep = ""))
     
   }
   
-  full_script[length(full_script)] <- gsub(",$", ")", full_script[length(full_script)])
+  full_script[length(full_script)] <- gsub(",$", "))", full_script[length(full_script)])
   
   
   } else {  full_script <- c(full_script, "))")}
