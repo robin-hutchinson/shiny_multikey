@@ -6,10 +6,32 @@ images <- read.csv("shiny/key/images.csv") %>%
   mutate(image = paste(as.character(image), image_type, sep = "."))
 
 static_images <- images %>%
-  filter(body_section == "Static")
+  filter(body_section == "Static") %>%
+  mutate(row_number = row_number(),
+         max = max(row_number),
+        image = paste("img(src='", image, ,
+                           "')", sep = ""),
+        image = case_when(row_number %in% c(1,4,7,10,13,16) ~ paste("layout_column_wrap(width = 1/3,", image, ",", sep = ""),
+                          row_number %in% c(3,6,9,12,15,18) ~ paste(image, "),", sep = ""),
+                          TRUE ~ paste(image, ",", sep = "")
+                         )),
+        image = case_when(max == row_number ~ gsub(",$", ")", image),
+                          TRUE ~ image))
 
 images <- images %>%
-  filter(body_section != "Static")
+  filter(body_section != "Static") %>%
+  group_by(body_section) %>%
+  mutate(row_number = row_number(),
+         max = max(row_number),
+        image = paste("img(src='", image, ,
+                           "')", sep = ""),
+        image = case_when(row_number %in% c(1,4,7,10,13,16) ~ paste("layout_column_wrap(width = 1/3,", image, ",", sep = ""),
+                          row_number %in% c(3,6,9,12,15,18) ~ paste(image, "),", sep = ""),
+                          TRUE ~ paste(image, ",", sep = "")
+                         ),
+        image = case_when(max == row_number ~ gsub(",$", ")", image),
+                          TRUE ~ image))
+
 
 title <- read.delim("text/title.txt", header = FALSE) 
 title <- title$V1
@@ -59,25 +81,7 @@ ui <- bslib::page_fluid(tags$h1('",
 
 full_script[length(full_script)] <- paste(full_script[length(full_script)], "),", sep = "")
   
-full_script <- c(full_script, "card(layout_column_wrap(width = 1/3,")
-
-  if(nrow(static_images) >= 1) {
-  ims <- unique(static_images$image)
-  
-  for(m in 1:length(ims)) {
-    
-    full_script <- c(full_script, 
-                     paste("img(src='",
-                           ims[m],
-                           "'),", sep = ""))
-    
-  }
-  
-  full_script[length(full_script)] <- gsub(",$", "))", full_script[length(full_script)])
-  
-  
-  } else {  full_script <- c(full_script, "))")}
-
+full_script <- c(full_script, "card(", static_images$image, "),")
 
 full_script[length(full_script)] <- paste(full_script[length(full_script)], "),", sep = "")
   
@@ -123,35 +127,10 @@ for(i in 1:length(sections)){
   }
 
   full_script[length(full_script)] <- gsub(",$", "),", full_script[length(full_script)])
-  full_script <- c(full_script, "card(")
+
   tab_image <- images %>%
     filter(body_section == tab)
-  if(nrow(tab_image) >= 1) {
-
-    full_script <- c(full_script,
-                    "layout_column_wrap(width = 1/3,")
-    
-  ims <- unique(tab_image$image)
-  
-  for(m in 1:length(ims)) {
-    
-    full_script <- c(full_script, 
-                     paste("img(src='",
-                           ims[m],
-                           "', width = 250),", sep = ""))
-    
-  }
-  
-  full_script[length(full_script)] <- gsub(",$", ")),col_widths = c(4, 8)))", full_script[length(full_script)])
-  
-  
-  } else {  full_script <- c(full_script, ")))")}
-  
-  full_script <- c(full_script, ",")
-  
-}
-
-full_script[length(full_script)-1] <- paste(full_script[length(full_script)-1], ")", sep = "")
+  full_script <- c(full_script, "card(", tab_image$image, "),")
 
 full_script <- c(full_script,
                  "layout_columns(card(htmlOutput('results1')), 
