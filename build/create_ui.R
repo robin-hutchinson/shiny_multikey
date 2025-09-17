@@ -53,7 +53,7 @@ key_criteria <- key_criteria$V1
 key_criteria[length(key_criteria)] <- gsub(",", "", key_criteria[length(key_criteria)], fixed = TRUE)
 
 full_script <- c("library(shiny)
-install.packages("munsell")
+install.packages('munsell')
 library(bslib)
 library(DT)
 library(knitr)
