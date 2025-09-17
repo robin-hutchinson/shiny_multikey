@@ -1,4 +1,5 @@
 library(shiny)
+install.packages('munsell')
 library(bslib)
 library(DT)
 library(knitr)
