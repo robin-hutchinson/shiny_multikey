@@ -55,7 +55,7 @@ ui <- bslib::page_fluid(tags$h1('",
                 
                  key_criteria
                  ")),
-                   card(")
+                 card(")
 
 
 full_script[length(full_script)] <- paste(full_script[length(full_script)], "),", sep = "")
