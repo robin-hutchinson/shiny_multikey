@@ -5,6 +5,11 @@ features <- read.csv("shiny/key/features.csv")
 images <- read.csv("shiny/key/images.csv") %>%
   mutate(image = paste(as.character(image), image_type, sep = "."))
 
+static_images <- images %>%
+  filter(body_section == "Static")
+
+images <- images %>%
+  filter(body_section != "Static")
 
 title <- read.delim("text/title.txt", header = FALSE) 
 title <- title$V1
@@ -40,10 +45,34 @@ ui <- bslib::page_fluid(tags$h1('",
                  introduction,
                  
                  "),
-                   card(img(src='100.jpeg', width = 250)) ),",
-                  instructions,
-                 
-                 "navset_card_underline(")
+                   card(")
+
+  if(nrow(static_images) >= 1) {
+  ims <- unique(static_images$image)
+  
+  for(m in 1:length(ims)) {
+    
+    full_script <- c(full_script, 
+                     paste("img(src='",
+                           ims[m],
+                           "', width = 250),", sep = ""))
+    
+  }
+  
+  full_script[length(full_script)] <- gsub(",$", "))", full_script[length(full_script)])
+  
+  
+  } else {  full_script <- c(full_script, "))")}
+  
+  full_script <- c(full_script, ",")
+  
+}
+
+full_script[length(full_script)-1] <- paste(full_script[length(full_script)-1], ")", sep = "")
+
+full_script <- c(full_script,                  
+              instructions,
+              "navset_card_underline(")
 
 sections <- unique(features$body_section)
 
