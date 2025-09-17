@@ -18,6 +18,7 @@ tags$a('Flies in this genus share the following morphological characters:')
                  tags$ul(
 tags$li('On the head, the palp bristles are about the size of the upper occipitals (they are not clearly more robust).'),
 tags$li('On the wings, vein 3 is forked at the tip, and veins 5 and 6 do not bend towards each other.'),
+tags$li('There are fewer than 10 hairs on the dorsal face of vein 3.'),
 tags$li('The tibiae do not have any isolated bristles, except apically.'),
 tags$li('The hind tibia has a single dorsal palisade, with a row of bristle-like hairs on each side.'),
 tags$li('The mesopleural furrow is present.'),
