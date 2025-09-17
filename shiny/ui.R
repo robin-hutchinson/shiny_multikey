@@ -22,7 +22,7 @@ tags$li('The hind tibia has a single dorsal palisade, with a row of bristle-like
 tags$li('The mesopleural furrow is present.'),
 tags$li('In males, the hairs on the proctiger are more robust than the hairs on the cerci.'),
 tags$li('Females only have tergites on abdominal segments 1 to 4 and a small papilla on each side of abdominal tergite 3 near the margin.')
-))),
+)),
 card(
 img(src='Phalacrotophora full image.jpg', width = 250))),
 tags$a('Toggle between the tabs below and answer the questions to identify your specimen. You can answer the questions in any order. The two boxes at the bottom of the page will show the closest matches to the features you selected. If there are questions for which your closest match is incorrect, go back and review the features for those questions.'),tags$br(),tags$br(),
