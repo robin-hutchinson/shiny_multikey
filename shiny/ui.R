@@ -11,8 +11,8 @@ UK Phalacrotophora
 '),
                  tags$br(), # line break
                  layout_columns(card(
-tags$a('This multikey is designed to separate out the 4 species of Phalacrotophora (Diptera: Phoridae) known to occur in the UK, and includes species known to occur in Europe for comparison (TBA).'),tags$br(),tags$br(),
-tags$a('Phalacrotophora are a cosmopolitan genus of flies, known for parasitising the pupal stage of ladybirds (Coleoptera: Coccinellidae).')
+tags$a('This multikey is designed to separate out the 4 species of Phalacrotophora (Diptera: Phoridae) known to occur in the UK, and includes species known to occur in Europe for comparison (TBA).'),tags$br(),
+tags$a('Phalacrotophora is a cosmopolitan genus of flies, known for parasitising the pupal stage of ladybirds (Coleoptera: Coccinellidae).')
 ),
                    card(img(src='100.jpeg', width = 250)) ),
 tags$a('Toggle between the tabs below and answer the questions to identify your specimen. You can answer the questions in any order. The two boxes at the bottom of the page will show the closest matches to the features you selected. If there are questions for which your closest match is incorrect, go back and review the features for those questions.'),tags$br(),tags$br(),
