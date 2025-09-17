@@ -128,7 +128,7 @@ for(i in 1:length(sections)){
 
   tab_image <- images %>%
     filter(body_section == tab)
-  full_script <- c(full_script, "card(", tab_image$image, "))),")
+  full_script <- c(full_script, "card(", tab_image$image, ")), col_widths = (4,8)),")
 
 }
 
