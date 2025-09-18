@@ -1,5 +1,10 @@
 taxa,body_section,body_part,question,answer
-Phalacrotophora fasciata,Legs,hind_metatarsus_shape,Does the hind metatarsus appear swollen?,"Yes - somewhat"
+Phalacrotophora fasciata,Ladybird,pupa,Which species of ladybird did the Phalacrotophora emerge from?,"7-spot, Coccinella septempunctata"
+Phalacrotophora berolinensis,Ladybird,pupa,Which species of ladybird did the Phalacrotophora emerge from?,"2-spot or 10-spot, Adalia spp."
+Phalacrotophora delageae,Ladybird,pupa,Which species of ladybird did the Phalacrotophora emerge from?,"7-spot, Coccinella septempunctata"
+Phalacrotophora delageae,Ladybird,pupa,Which species of ladybird did the Phalacrotophora emerge from?,"2-spot or 10-spot, Adalia spp."
+Phalacrotophora beuki (Not in UK),Ladybird,pupa,Which species of ladybird did the Phalacrotophora emerge from?,"Eyed, Anatis ocellata"
+Phalacrotophora fasciata,Ladybird,pupa,Which species of ladybird did the Phalacrotophora emerge from?,"Yes - somewhat"
 Phalacrotophora berolinensis,Legs,hind_metatarsus_shape,Does the hind metatarsus appear swollen?,"No - at most slightly swollen"
 Phalacrotophora delageae,Legs,hind_metatarsus_shape,Does the hind metatarsus appear swollen?,"No - at most slightly swollen"
 Phalacrotophora harveyi,Legs,hind_metatarsus_shape,Does the hind metatarsus appear swollen?,"No - at most slightly swollen"
@@ -22,6 +27,7 @@ Phalacrotophora fasciata,Females,ovipositor_hair,How long are the hairs on the u
 Phalacrotophora berolinensis,Females,ovipositor_hair,How long are the hairs on the underside of abdominal segment 8?,"Long (99)"
 Phalacrotophora delageae,Females,ovipositor_hair,How long are the hairs on the underside of abdominal segment 8?,"Long (99)"
 Phalacrotophora harveyi,Females,ovipositor_hair,How long are the hairs on the underside of abdominal segment 8?,"Intermediate"
+
 
 
 
