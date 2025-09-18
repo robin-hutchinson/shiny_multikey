@@ -147,11 +147,10 @@ full_script <- c(full_script,
     
     HTML(paste('The  closest match is <i>',
                results1$taxa,
-               '</i>.<br/>',
-               'This taxa matched on the following questions:<br/>',
+               '</i>.',
+               '<br/>This taxa matched on the following questions:<br/>',
                results1$matched_features,
-               '<br/>',
-               'It did not match on the questions below:<br/>',
+               '<br/>It did not match on the questions below:<br/>',
                results1$unmatched_features,
                sep = ''
                
@@ -169,11 +168,10 @@ full_script <- c(full_script,
     
     HTML(paste('The second closest match is <i>',
                results2$taxa,
-               '</i>.<br/>',
-               'This taxa matched on the following questions:<br/>',
+               '</i>.',
+               '<br/>This taxa matched on the following questions:<br/>',
                results2$matched_features,
-               '<br/>',
-               'It did not match on the questions below:<br/>',
+               '<br/>It did not match on the questions below:<br/>',
                results2$unmatched_features,
                sep = ''
                
