@@ -34,7 +34,7 @@ tags$a('Male specimens of P. delageae and P. berolinensis cannot be reliably sep
 navset_card_underline(
 nav_panel('Ladybird',
                            layout_columns(card(
-radioButtons('pupa', 'Which species of ladybird did the Phalacrotophora emerge from?', choices = c(
+radioButtons('pupa', 'Which species of ladybird did the larvae emerge from?', choices = c(
 '7-spot, Coccinella septempunctata', 
 '2-spot or 10-spot, Adalia spp.', 
 'Eyed, Anatis ocellata'), selected = character(0))),
