@@ -32,6 +32,14 @@ tags$a('Toggle between the tabs below and answer the questions to identify your 
 tags$a('Ladybird pupa species is included as Phalacrotophora do have a host preference, however they can parasitise other ladybird species and so this question should not be used in isolation.'),tags$br(),tags$br(),
 tags$a('Male specimens of P. delageae and P. berolinensis cannot be reliably separated - record these as an aggregate unless a female is also collected. P. harveyi has only been collected as a female, therefore they cannot yet be identified using male genitalia.'),tags$br(),tags$br(),
 navset_card_underline(
+nav_panel('Ladybird',
+                           layout_columns(card(
+radioButtons('pupa', 'Which species of ladybird did the Phalacrotophora emerge from?', choices = c(
+'7-spot, Coccinella septempunctata', 
+'2-spot or 10-spot, Adalia spp.', 
+'Eyed, Anatis ocellata'), selected = character(0))),
+card(
+), col_widths = c(4,8))),
 nav_panel('Legs',
                            layout_columns(card(
 radioButtons('hind_metatarsus_shape', 'Does the hind metatarsus appear swollen?', choices = c(

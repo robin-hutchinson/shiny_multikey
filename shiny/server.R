@@ -27,6 +27,25 @@ server <- function(input, output) {
     g <- features
     
                  
+if(!is.null(input$pupa)) {
+      
+      passed <- g %>%
+        filter(body_part == 'pupa' & answer == input$pupa)%>%
+        rename(matched_features = question) %>%
+        distinct(taxa, matched_features)
+      failed <- g %>%
+        filter(body_part == 'pupa' ,
+               answer != input$pupa,
+               !(taxa %in% passed$taxa)) %>%
+        rename(unmatched_features = question) %>%
+        distinct(taxa, unmatched_features)
+      
+      new_total <- bind_rows(passed, failed) %>%
+        mutate(unanswered_question = case_when(1==2 ~ ''))
+      total <- full_join(total, new_total,  by = c('taxa',
+                                                   'matched_features',
+                                                   'unmatched_features'))
+    } 
 if(!is.null(input$hind_metatarsus_shape)) {
       
       passed <- g %>%
