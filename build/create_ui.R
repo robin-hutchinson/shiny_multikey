@@ -156,6 +156,6 @@ full_script <- c(full_script,
                                       tag$a('results1unmatched')), 
                                  card(tag$a('results2taxa'),
                                       tag$a('results2matched'),
-                                      tag$a('results2unmatched'))))")
+                                      tag$a('results2unmatched')))))")
   
 write_lines(full_script, 'shiny/ui.R')
