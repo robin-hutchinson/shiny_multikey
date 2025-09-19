@@ -52,6 +52,12 @@ key_criteria <- key_criteria %>%
 key_criteria <- key_criteria$V1
 key_criteria[length(key_criteria)] <- gsub(",", "", key_criteria[length(key_criteria)], fixed = TRUE)
 
+references <- read.delim("text/references.txt", header = FALSE) 
+references <- references %>%
+  mutate(V1 = paste("tags$a('", V1, "'),", sep = ""))
+references <- references$V1
+references[length(references)] <- gsub(",", "", references[length(references)], fixed = TRUE)
+
 full_script <- c("library(shiny)
 install.packages('munsell')
 library(bslib)
@@ -135,6 +141,9 @@ for(i in 1:length(sections)){
 full_script[length(full_script)] <- gsub(",$", "),", full_script[length(full_script)])
 
 full_script <- c(full_script,
+                 "nav_panel(",
+                 references,
+                 ")),
                  "layout_columns(card(htmlOutput('results1')), 
                                  card(htmlOutput('results2'))))")
   
