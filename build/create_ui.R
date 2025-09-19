@@ -58,6 +58,13 @@ references <- references %>%
 references <- references$V1
 references[length(references)] <- gsub(",", "", references[length(references)], fixed = TRUE)
 
+species <- read.csv("shiny/key/features.csv") %>%
+  distinct(taxa)%>%
+  mutate(taxa = paste("tags$a('", taxa, "'),", sep = "")) %>%
+  arrange(taxa)
+species <- species$taxa
+species[length(species)] <- gsub(",", "", species[length(species)], fixed = TRUE)
+
 full_script <- c("library(shiny)
 install.packages('munsell')
 library(bslib)
@@ -139,9 +146,11 @@ for(i in 1:length(sections)){
 }
 
 full_script <- c(full_script,
-                 "nav_panel('References',card(",
+                 "nav_panel('About',card(tags$h2('This key includes the following species:'),",
+                 species,
+                 "),card(tags$h2('References'),",
                  references,
-                 "))),",
+                 "), col_widths = c(4,8)),",
                  "layout_columns(card(htmlOutput('results1')), 
                                  card(htmlOutput('results2'))))")
   
