@@ -151,11 +151,11 @@ full_script <- c(full_script,
                  "),card(tags$h2('References'),",
                  references,
                  "), col_widths = c(4,8)),",
-                 "layout_columns(card(tag$a('results1taxa'),
-                                      tag$a('results1matched'),
-                                      tag$a('results1unmatched')), 
-                                 card(tag$a('results2taxa'),
-                                      tag$a('results2matched'),
-                                      tag$a('results2unmatched')))))")
+                 "layout_columns(card(tags$span('The second closest match is ',tags$em(textOutput('results2taxa')), "."),
+                                              textOutput('results1matched'),
+                                              textOutput('results1unmatched')), 
+                                  card(tags$span('The second closest match is ',tags$em(textOutput('results2taxa')), "."),
+                                              textOutput('results2matched'),
+                                              textOutput('results2unmatched')))))")
   
 write_lines(full_script, 'shiny/ui.R')
