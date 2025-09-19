@@ -141,15 +141,15 @@ if(!is.null(input$pupa)) {
                                                    'matched_features',
                                                    'unmatched_features'))
     } 
-if(!is.null(input$fore_metatarsus length)) {
+if(!is.null(input$fore_metatarsus_length)) {
       
       passed <- g %>%
-        filter(body_part == 'fore_metatarsus length' & answer == input$fore_metatarsus length)%>%
+        filter(body_part == 'fore_metatarsus_length' & answer == input$fore_metatarsus_length)%>%
         rename(matched_features = question) %>%
         distinct(taxa, matched_features)
       failed <- g %>%
-        filter(body_part == 'fore_metatarsus length' ,
-               answer != input$fore_metatarsus length,
+        filter(body_part == 'fore_metatarsus_length' ,
+               answer != input$fore_metatarsus_length,
                !(taxa %in% passed$taxa)) %>%
         rename(unmatched_features = question) %>%
         distinct(taxa, unmatched_features)

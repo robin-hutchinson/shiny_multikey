@@ -72,7 +72,7 @@ card(
 ), col_widths = c(4,8))),
 nav_panel('Legs',
                            layout_columns(card(
-radioButtons('fore_metatarsus length', 'How long is the fore metatarsus?', choices = c(
+radioButtons('fore_metatarsus_length', 'How long is the fore metatarsus?', choices = c(
 '1.5 times as long as the second tarsal segment.', 
 'About as long as the next 3 tarsal segments combined.'), selected = character(0)),
 radioButtons('hind_femur_hair', 'Are the hairs on the basal half (nearest the body) of the hind femur long or short?', choices = c(
