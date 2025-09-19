@@ -113,14 +113,23 @@ card(
 layout_column_wrap(width = 1/3,img(src='97.jpeg'),
 img(src='98.jpeg'))
 ), col_widths = c(4,8))),
-nav_panel('References',card(
+nav_panel('About',card(tags$h2('This key includes the following species:'),
+tags$a('Phalacrotophora berolinensis'),
+tags$a('Phalacrotophora beuki (Not in UK)'),
+tags$a('Phalacrotophora delageae'),
+tags$a('Phalacrotophora fasciata'),
+tags$a('Phalacrotophora harveyi'),
+tags$a('Phalacrotophora paradoxa (Not in UK)'),
+tags$a('Phalacrotophora pictofasciata (Not in UK)'),
+tags$a('Phalacrotophora spectabilis (Not in UK)')
+),card(tags$h2('References'),
 tags$a('Disney, R.H.L. (1983) Handbook for the Identification of British Insects: Scuttle flies: Diptera, Phoridae (except Megaselia). Royal Entomological Society, 10(6)'),
 tags$a('Disney, R.H.L. & Beuk, P. (1997). European Phalacrotophora (Diptera: Phoridae). Entomologists Gazette. 48: 185-192. '),
 tags$a('Disney, R.H.L. & Smith, D.A. (2016) A new species of Phalacrotophora Enderlein (Diptera: Phoridae) from England. Ent. Mon. Mag. 152(3): 189-192.'),
 tags$a('Durska, E., Ceryngier, P. & Disney, R.H.L. (2003) Phalacrotophora beuki (Diptera: Phoridae), a parasitoid of ladybird pupae (Coleoptera: Coccinellidae). European Journal of Entomology. 100: 627-630.'),
-tags$a('Irwin, A.G. and Harvey, M.C. (2014) Phalacrotophora delageae Disney (Diptera, Phoridae) new to Britain. Dipterists Digest, 21: 77-80.'),
+tags$a('Irwin, A.G. & Harvey, M.C. (2014) Phalacrotophora delageae Disney (Diptera, Phoridae) new to Britain. Dipterists Digest, 21: 77-80.'),
 tags$a('Lengyel, G.D. (2009) Phalacrotophora species (Diptera: Phoridae) with four subequal scutellar setae and notes on the other European species. Zootaxa, 2172 (1), 59–68.'),
 tags$a('  ')
-))),
+), col_widths = c(4,8)),
 layout_columns(card(htmlOutput('results1')), 
                                  card(htmlOutput('results2'))))
