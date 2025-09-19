@@ -110,7 +110,7 @@ nav_panel('Thorax (top view)',
                            layout_columns(card(
 radioButtons('scutellum', 'Are the 4 setae on the scutellum almost equal?', choices = c(
 'Yes', 
-'No - the anterior pair (closest o the head) are almost hair like, while the posterior pair are much stronger.'), selected = character(0))),
+'No - the anterior pair (closest to the head) are almost hair like, while the posterior pair are much stronger.'), selected = character(0))),
 card(
 ), col_widths = c(4,8)))),
 layout_columns(card(htmlOutput('results1')), 
