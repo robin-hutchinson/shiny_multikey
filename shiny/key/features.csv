@@ -26,13 +26,13 @@ Phalacrotophora berolinensis,Ladybird,pupa,Which species of ladybird did the lar
 Phalacrotophora delageae,Ladybird,pupa,Which species of ladybird did the larvae emerge from?,"7-spot, Coccinella septempunctata"
 Phalacrotophora delageae,Ladybird,pupa,Which species of ladybird did the larvae emerge from?,"2-spot or 10-spot, Adalia spp."
 Phalacrotophora beuki (Not in UK),Ladybird,pupa,Which species of ladybird did the larvae emerge from?,"Eyed, Anatis ocellata"
-Phalacrotophora pictofasciata (Not in UK),Legs,fore_metatarsus length,How long is the fore metatarsus?,1.5 times as long as the second tarsal segment.
-Phalacrotophora spectabilis (Not in UK),Legs,fore_metatarsus length,How long is the fore metatarsus?,1.5 times as long as the second tarsal segment.
-Phalacrotophora fasciata,Legs,fore_metatarsus length,How long is the fore metatarsus?,About as long as the next 3 tarsal segments combined.
-Phalacrotophora berolinensis,Legs,fore_metatarsus length,How long is the fore metatarsus?,About as long as the next 3 tarsal segments combined.
-Phalacrotophora delageae,Legs,fore_metatarsus length,How long is the fore metatarsus?,About as long as the next 3 tarsal segments combined.
-Phalacrotophora harveyi,Legs,fore_metatarsus length,How long is the fore metatarsus?,About as long as the next 3 tarsal segments combined.
-Phalacrotophora beuki (Not in UK),Legs,fore_metatarsus length,How long is the fore metatarsus?,About as long as the next 3 tarsal segments combined.
+Phalacrotophora pictofasciata (Not in UK),Legs,fore_metatarsus_length,How long is the fore metatarsus?,1.5 times as long as the second tarsal segment.
+Phalacrotophora spectabilis (Not in UK),Legs,fore_metatarsus_length,How long is the fore metatarsus?,1.5 times as long as the second tarsal segment.
+Phalacrotophora fasciata,Legs,fore_metatarsus_length,How long is the fore metatarsus?,About as long as the next 3 tarsal segments combined.
+Phalacrotophora berolinensis,Legs,fore_metatarsus_length,How long is the fore metatarsus?,About as long as the next 3 tarsal segments combined.
+Phalacrotophora delageae,Legs,fore_metatarsus_length,How long is the fore metatarsus?,About as long as the next 3 tarsal segments combined.
+Phalacrotophora harveyi,Legs,fore_metatarsus_length,How long is the fore metatarsus?,About as long as the next 3 tarsal segments combined.
+Phalacrotophora beuki (Not in UK),Legs,fore_metatarsus_length,How long is the fore metatarsus?,About as long as the next 3 tarsal segments combined.
 Phalacrotophora fasciata,Legs,hind_femur_hair,Are the hairs on the basal half (nearest the body) of the hind femur long or short?,"Long (13, 14)"
 Phalacrotophora berolinensis,Legs,hind_femur_hair,Are the hairs on the basal half (nearest the body) of the hind femur long or short?,"Long (13, 14)"
 Phalacrotophora delageae,Legs,hind_femur_hair,Are the hairs on the basal half (nearest the body) of the hind femur long or short?,"Long (13, 14)"
@@ -69,4 +69,5 @@ Phalacrotophora berolinensis,Thorax (top view),scutellum,Are the 4 setae on the 
 Phalacrotophora delageae,Thorax (top view),scutellum,Are the 4 setae on the scutellum almost equal?,"No - the anterior pair (closest to the head) are almost hair like, while the posterior pair are much stronger."
 Phalacrotophora harveyi,Thorax (top view),scutellum,Are the 4 setae on the scutellum almost equal?,"No - the anterior pair (closest to the head) are almost hair like, while the posterior pair are much stronger."
 Phalacrotophora beuki (Not in UK),Thorax (top view),scutellum,Are the 4 setae on the scutellum almost equal?,"No - the anterior pair (closest to the head) are almost hair like, while the posterior pair are much stronger."
+
 
