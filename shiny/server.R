@@ -27,91 +27,15 @@ server <- function(input, output) {
     g <- features
     
                  
-if(!is.null(input$pupa)) {
+if(!is.null(input$ovipositor_hair)) {
       
       passed <- g %>%
-        filter(body_part == 'pupa' & answer == input$pupa)%>%
+        filter(body_part == 'ovipositor_hair' & answer == input$ovipositor_hair)%>%
         rename(matched_features = question) %>%
         distinct(taxa, matched_features)
       failed <- g %>%
-        filter(body_part == 'pupa' ,
-               answer != input$pupa,
-               !(taxa %in% passed$taxa)) %>%
-        rename(unmatched_features = question) %>%
-        distinct(taxa, unmatched_features)
-      
-      new_total <- bind_rows(passed, failed) %>%
-        mutate(unanswered_question = case_when(1==2 ~ ''))
-      total <- full_join(total, new_total,  by = c('taxa',
-                                                   'matched_features',
-                                                   'unmatched_features'))
-    } 
-if(!is.null(input$hind_metatarsus_shape)) {
-      
-      passed <- g %>%
-        filter(body_part == 'hind_metatarsus_shape' & answer == input$hind_metatarsus_shape)%>%
-        rename(matched_features = question) %>%
-        distinct(taxa, matched_features)
-      failed <- g %>%
-        filter(body_part == 'hind_metatarsus_shape' ,
-               answer != input$hind_metatarsus_shape,
-               !(taxa %in% passed$taxa)) %>%
-        rename(unmatched_features = question) %>%
-        distinct(taxa, unmatched_features)
-      
-      new_total <- bind_rows(passed, failed) %>%
-        mutate(unanswered_question = case_when(1==2 ~ ''))
-      total <- full_join(total, new_total,  by = c('taxa',
-                                                   'matched_features',
-                                                   'unmatched_features'))
-    } 
-if(!is.null(input$hind_metatarsus_colour)) {
-      
-      passed <- g %>%
-        filter(body_part == 'hind_metatarsus_colour' & answer == input$hind_metatarsus_colour)%>%
-        rename(matched_features = question) %>%
-        distinct(taxa, matched_features)
-      failed <- g %>%
-        filter(body_part == 'hind_metatarsus_colour' ,
-               answer != input$hind_metatarsus_colour,
-               !(taxa %in% passed$taxa)) %>%
-        rename(unmatched_features = question) %>%
-        distinct(taxa, unmatched_features)
-      
-      new_total <- bind_rows(passed, failed) %>%
-        mutate(unanswered_question = case_when(1==2 ~ ''))
-      total <- full_join(total, new_total,  by = c('taxa',
-                                                   'matched_features',
-                                                   'unmatched_features'))
-    } 
-if(!is.null(input$hind_femur_hair)) {
-      
-      passed <- g %>%
-        filter(body_part == 'hind_femur_hair' & answer == input$hind_femur_hair)%>%
-        rename(matched_features = question) %>%
-        distinct(taxa, matched_features)
-      failed <- g %>%
-        filter(body_part == 'hind_femur_hair' ,
-               answer != input$hind_femur_hair,
-               !(taxa %in% passed$taxa)) %>%
-        rename(unmatched_features = question) %>%
-        distinct(taxa, unmatched_features)
-      
-      new_total <- bind_rows(passed, failed) %>%
-        mutate(unanswered_question = case_when(1==2 ~ ''))
-      total <- full_join(total, new_total,  by = c('taxa',
-                                                   'matched_features',
-                                                   'unmatched_features'))
-    } 
-if(!is.null(input$right_hypandrium)) {
-      
-      passed <- g %>%
-        filter(body_part == 'right_hypandrium' & answer == input$right_hypandrium)%>%
-        rename(matched_features = question) %>%
-        distinct(taxa, matched_features)
-      failed <- g %>%
-        filter(body_part == 'right_hypandrium' ,
-               answer != input$right_hypandrium,
+        filter(body_part == 'ovipositor_hair' ,
+               answer != input$ovipositor_hair,
                !(taxa %in% passed$taxa)) %>%
         rename(unmatched_features = question) %>%
         distinct(taxa, unmatched_features)
@@ -141,15 +65,224 @@ if(!is.null(input$ovipositor_hook)) {
                                                    'matched_features',
                                                    'unmatched_features'))
     } 
-if(!is.null(input$ovipositor_hair)) {
+if(!is.null(input$tergite_colour)) {
       
       passed <- g %>%
-        filter(body_part == 'ovipositor_hair' & answer == input$ovipositor_hair)%>%
+        filter(body_part == 'tergite_colour' & answer == input$tergite_colour)%>%
         rename(matched_features = question) %>%
         distinct(taxa, matched_features)
       failed <- g %>%
-        filter(body_part == 'ovipositor_hair' ,
-               answer != input$ovipositor_hair,
+        filter(body_part == 'tergite_colour' ,
+               answer != input$tergite_colour,
+               !(taxa %in% passed$taxa)) %>%
+        rename(unmatched_features = question) %>%
+        distinct(taxa, unmatched_features)
+      
+      new_total <- bind_rows(passed, failed) %>%
+        mutate(unanswered_question = case_when(1==2 ~ ''))
+      total <- full_join(total, new_total,  by = c('taxa',
+                                                   'matched_features',
+                                                   'unmatched_features'))
+    } 
+if(!is.null(input$frons_colour)) {
+      
+      passed <- g %>%
+        filter(body_part == 'frons_colour' & answer == input$frons_colour)%>%
+        rename(matched_features = question) %>%
+        distinct(taxa, matched_features)
+      failed <- g %>%
+        filter(body_part == 'frons_colour' ,
+               answer != input$frons_colour,
+               !(taxa %in% passed$taxa)) %>%
+        rename(unmatched_features = question) %>%
+        distinct(taxa, unmatched_features)
+      
+      new_total <- bind_rows(passed, failed) %>%
+        mutate(unanswered_question = case_when(1==2 ~ ''))
+      total <- full_join(total, new_total,  by = c('taxa',
+                                                   'matched_features',
+                                                   'unmatched_features'))
+    } 
+if(!is.null(input$supraantennal_setae)) {
+      
+      passed <- g %>%
+        filter(body_part == 'supraantennal_setae' & answer == input$supraantennal_setae)%>%
+        rename(matched_features = question) %>%
+        distinct(taxa, matched_features)
+      failed <- g %>%
+        filter(body_part == 'supraantennal_setae' ,
+               answer != input$supraantennal_setae,
+               !(taxa %in% passed$taxa)) %>%
+        rename(unmatched_features = question) %>%
+        distinct(taxa, unmatched_features)
+      
+      new_total <- bind_rows(passed, failed) %>%
+        mutate(unanswered_question = case_when(1==2 ~ ''))
+      total <- full_join(total, new_total,  by = c('taxa',
+                                                   'matched_features',
+                                                   'unmatched_features'))
+    } 
+if(!is.null(input$pupa)) {
+      
+      passed <- g %>%
+        filter(body_part == 'pupa' & answer == input$pupa)%>%
+        rename(matched_features = question) %>%
+        distinct(taxa, matched_features)
+      failed <- g %>%
+        filter(body_part == 'pupa' ,
+               answer != input$pupa,
+               !(taxa %in% passed$taxa)) %>%
+        rename(unmatched_features = question) %>%
+        distinct(taxa, unmatched_features)
+      
+      new_total <- bind_rows(passed, failed) %>%
+        mutate(unanswered_question = case_when(1==2 ~ ''))
+      total <- full_join(total, new_total,  by = c('taxa',
+                                                   'matched_features',
+                                                   'unmatched_features'))
+    } 
+if(!is.null(input$fore_metatarsus length)) {
+      
+      passed <- g %>%
+        filter(body_part == 'fore_metatarsus length' & answer == input$fore_metatarsus length)%>%
+        rename(matched_features = question) %>%
+        distinct(taxa, matched_features)
+      failed <- g %>%
+        filter(body_part == 'fore_metatarsus length' ,
+               answer != input$fore_metatarsus length,
+               !(taxa %in% passed$taxa)) %>%
+        rename(unmatched_features = question) %>%
+        distinct(taxa, unmatched_features)
+      
+      new_total <- bind_rows(passed, failed) %>%
+        mutate(unanswered_question = case_when(1==2 ~ ''))
+      total <- full_join(total, new_total,  by = c('taxa',
+                                                   'matched_features',
+                                                   'unmatched_features'))
+    } 
+if(!is.null(input$hind_femur_hair)) {
+      
+      passed <- g %>%
+        filter(body_part == 'hind_femur_hair' & answer == input$hind_femur_hair)%>%
+        rename(matched_features = question) %>%
+        distinct(taxa, matched_features)
+      failed <- g %>%
+        filter(body_part == 'hind_femur_hair' ,
+               answer != input$hind_femur_hair,
+               !(taxa %in% passed$taxa)) %>%
+        rename(unmatched_features = question) %>%
+        distinct(taxa, unmatched_features)
+      
+      new_total <- bind_rows(passed, failed) %>%
+        mutate(unanswered_question = case_when(1==2 ~ ''))
+      total <- full_join(total, new_total,  by = c('taxa',
+                                                   'matched_features',
+                                                   'unmatched_features'))
+    } 
+if(!is.null(input$hind_metatarsus_colour)) {
+      
+      passed <- g %>%
+        filter(body_part == 'hind_metatarsus_colour' & answer == input$hind_metatarsus_colour)%>%
+        rename(matched_features = question) %>%
+        distinct(taxa, matched_features)
+      failed <- g %>%
+        filter(body_part == 'hind_metatarsus_colour' ,
+               answer != input$hind_metatarsus_colour,
+               !(taxa %in% passed$taxa)) %>%
+        rename(unmatched_features = question) %>%
+        distinct(taxa, unmatched_features)
+      
+      new_total <- bind_rows(passed, failed) %>%
+        mutate(unanswered_question = case_when(1==2 ~ ''))
+      total <- full_join(total, new_total,  by = c('taxa',
+                                                   'matched_features',
+                                                   'unmatched_features'))
+    } 
+if(!is.null(input$hind_metatarsus_shape)) {
+      
+      passed <- g %>%
+        filter(body_part == 'hind_metatarsus_shape' & answer == input$hind_metatarsus_shape)%>%
+        rename(matched_features = question) %>%
+        distinct(taxa, matched_features)
+      failed <- g %>%
+        filter(body_part == 'hind_metatarsus_shape' ,
+               answer != input$hind_metatarsus_shape,
+               !(taxa %in% passed$taxa)) %>%
+        rename(unmatched_features = question) %>%
+        distinct(taxa, unmatched_features)
+      
+      new_total <- bind_rows(passed, failed) %>%
+        mutate(unanswered_question = case_when(1==2 ~ ''))
+      total <- full_join(total, new_total,  by = c('taxa',
+                                                   'matched_features',
+                                                   'unmatched_features'))
+    } 
+if(!is.null(input$hypandrium_microtrichia)) {
+      
+      passed <- g %>%
+        filter(body_part == 'hypandrium_microtrichia' & answer == input$hypandrium_microtrichia)%>%
+        rename(matched_features = question) %>%
+        distinct(taxa, matched_features)
+      failed <- g %>%
+        filter(body_part == 'hypandrium_microtrichia' ,
+               answer != input$hypandrium_microtrichia,
+               !(taxa %in% passed$taxa)) %>%
+        rename(unmatched_features = question) %>%
+        distinct(taxa, unmatched_features)
+      
+      new_total <- bind_rows(passed, failed) %>%
+        mutate(unanswered_question = case_when(1==2 ~ ''))
+      total <- full_join(total, new_total,  by = c('taxa',
+                                                   'matched_features',
+                                                   'unmatched_features'))
+    } 
+if(!is.null(input$right_hypandrium)) {
+      
+      passed <- g %>%
+        filter(body_part == 'right_hypandrium' & answer == input$right_hypandrium)%>%
+        rename(matched_features = question) %>%
+        distinct(taxa, matched_features)
+      failed <- g %>%
+        filter(body_part == 'right_hypandrium' ,
+               answer != input$right_hypandrium,
+               !(taxa %in% passed$taxa)) %>%
+        rename(unmatched_features = question) %>%
+        distinct(taxa, unmatched_features)
+      
+      new_total <- bind_rows(passed, failed) %>%
+        mutate(unanswered_question = case_when(1==2 ~ ''))
+      total <- full_join(total, new_total,  by = c('taxa',
+                                                   'matched_features',
+                                                   'unmatched_features'))
+    } 
+if(!is.null(input$mesopleuron)) {
+      
+      passed <- g %>%
+        filter(body_part == 'mesopleuron' & answer == input$mesopleuron)%>%
+        rename(matched_features = question) %>%
+        distinct(taxa, matched_features)
+      failed <- g %>%
+        filter(body_part == 'mesopleuron' ,
+               answer != input$mesopleuron,
+               !(taxa %in% passed$taxa)) %>%
+        rename(unmatched_features = question) %>%
+        distinct(taxa, unmatched_features)
+      
+      new_total <- bind_rows(passed, failed) %>%
+        mutate(unanswered_question = case_when(1==2 ~ ''))
+      total <- full_join(total, new_total,  by = c('taxa',
+                                                   'matched_features',
+                                                   'unmatched_features'))
+    } 
+if(!is.null(input$scutellum)) {
+      
+      passed <- g %>%
+        filter(body_part == 'scutellum' & answer == input$scutellum)%>%
+        rename(matched_features = question) %>%
+        distinct(taxa, matched_features)
+      failed <- g %>%
+        filter(body_part == 'scutellum' ,
+               answer != input$scutellum,
                !(taxa %in% passed$taxa)) %>%
         rename(unmatched_features = question) %>%
         distinct(taxa, unmatched_features)
