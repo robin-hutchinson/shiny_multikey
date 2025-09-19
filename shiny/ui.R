@@ -121,6 +121,6 @@ tags$a('Durska, E., Ceryngier, P. & Disney, R.H.L. (2003) Phalacrotophora beuki 
 tags$a('Irwin, A.G. and Harvey, M.C. (2014) Phalacrotophora delageae Disney (Diptera, Phoridae) new to Britain. Dipterists Digest, 21: 77-80.'),
 tags$a('Lengyel, G.D. (2009) Phalacrotophora species (Diptera: Phoridae) with four subequal scutellar setae and notes on the other European species. Zootaxa, 2172 (1), 59–68.'),
 tags$a('  ')
-))
+)),
 layout_columns(card(htmlOutput('results1')), 
                                  card(htmlOutput('results2'))))
