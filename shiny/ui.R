@@ -131,7 +131,7 @@ tags$a('Irwin, A.G. & Harvey, M.C. (2014) Phalacrotophora delageae Disney (Dipte
 tags$a('Lengyel, G.D. (2009) Phalacrotophora species (Diptera: Phoridae) with four subequal scutellar setae and notes on the other European species. Zootaxa, 2172 (1), 59–68.'),
 tags$a('  ')
 ), col_widths = c(4,8)),
-layout_columns(card(tags$span('The second closest match is ',tags$em(textOutput('results2taxa')), '.'),
+layout_columns(card(tags$span('The second closest match is ',tags$em(textOutput('results1taxa')), '.'),
                                               textOutput('results1matched'),
                                               textOutput('results1unmatched')), 
                                   card(tags$span('The second closest match is ',tags$em(textOutput('results2taxa')), '.'),
