@@ -23,7 +23,7 @@ tags$li('The tibiae do not have any isolated bristles, except apically.'),
 tags$li('The hind tibia has a single dorsal palisade, with a row of bristle-like hairs on each side.'),
 tags$li('The mesopleural furrow is present.'),
 tags$li('In males, the hairs on the proctiger are more robust than the hairs on the cerci.'),
-tags$li('Females only have tergites on abdominal segments 1 to 4 and a small papilla on each side of abdominal tergite 3 near the margin.')
+tags$li('Females only have tergites on abdominal segments 1 to 4 and have a small papilla on each side of abdominal tergite 3 near the margin.')
 )),
 card(
 layout_column_wrap(width = 1/3,img(src='Phalacrotophora full image.jpg'))
@@ -114,14 +114,14 @@ layout_column_wrap(width = 1/3,img(src='97.jpeg'),
 img(src='98.jpeg'))
 ), col_widths = c(4,8))),
 nav_panel('About',card(tags$h2('This key includes the following species:'),
-tags$a('Phalacrotophora berolinensis'),
-tags$a('Phalacrotophora beuki (Not in UK)'),
-tags$a('Phalacrotophora delageae'),
-tags$a('Phalacrotophora fasciata'),
-tags$a('Phalacrotophora harveyi'),
-tags$a('Phalacrotophora paradoxa (Not in UK)'),
-tags$a('Phalacrotophora pictofasciata (Not in UK)'),
-tags$a('Phalacrotophora spectabilis (Not in UK)')
+tags$em('Phalacrotophora berolinensis'),
+tags$em('Phalacrotophora beuki (Not in UK)'),
+tags$em('Phalacrotophora delageae'),
+tags$em('Phalacrotophora fasciata'),
+tags$em('Phalacrotophora harveyi'),
+tags$em('Phalacrotophora paradoxa (Not in UK)'),
+tags$em('Phalacrotophora pictofasciata (Not in UK)'),
+tags$em('Phalacrotophora spectabilis (Not in UK)')
 ),card(tags$h2('References'),
 tags$a('Disney, R.H.L. (1983) Handbook for the Identification of British Insects: Scuttle flies: Diptera, Phoridae (except Megaselia). Royal Entomological Society, 10(6)'),
 tags$a('Disney, R.H.L. & Beuk, P. (1997). European Phalacrotophora (Diptera: Phoridae). Entomologists Gazette. 48: 185-192. '),
@@ -131,9 +131,9 @@ tags$a('Irwin, A.G. & Harvey, M.C. (2014) Phalacrotophora delageae Disney (Dipte
 tags$a('Lengyel, G.D. (2009) Phalacrotophora species (Diptera: Phoridae) with four subequal scutellar setae and notes on the other European species. Zootaxa, 2172 (1), 59–68.'),
 tags$a('  ')
 ), col_widths = c(4,8)),
-layout_columns(card(tags$span('The second closest match is ',tags$em(textOutput('results1taxa')), '.'),
-                                              textOutput('results1matched'),
-                                              textOutput('results1unmatched')), 
+layout_columns(card(tags$span('The closest match is ',tags$em(textOutput('results1taxa')), '.'),
+                                              tags$span('It matched on the following questions: ', textOutput('results1matched'), '.'),
+                                              tags$span('It did not match on these questions:', textOutput('results1unmatched'), '.')),
                                   card(tags$span('The second closest match is ',tags$em(textOutput('results2taxa')), '.'),
-                                              textOutput('results2matched'),
-                                              textOutput('results2unmatched')))))
+                                              tags$span('It matched on the following questions: ', textOutput('results2matched'), '.'),
+                                              tags$span('It did not match on these questions:', textOutput('results2unmatched'), '.'))))))
