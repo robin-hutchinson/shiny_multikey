@@ -138,8 +138,6 @@ for(i in 1:length(sections)){
 
 }
 
-full_script[length(full_script)] <- gsub(",$", "),", full_script[length(full_script)])
-
 full_script <- c(full_script,
                  "nav_panel(",
                  references,
