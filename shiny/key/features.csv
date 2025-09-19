@@ -1,4 +1,76 @@
 taxa,body_section,body_part,question,answer
+<<<<<<< HEAD
+Phalacrotophora fasciata,Females,ovipositor_hair,How long are the hairs on the underside of abdominal segment 8?,Short (100)
+Phalacrotophora berolinensis,Females,ovipositor_hair,How long are the hairs on the underside of abdominal segment 8?,Long (99)
+Phalacrotophora delageae,Females,ovipositor_hair,How long are the hairs on the underside of abdominal segment 8?,Long (99)
+Phalacrotophora harveyi,Females,ovipositor_hair,How long are the hairs on the underside of abdominal segment 8?,Intermediate
+Phalacrotophora beuki (Not in UK),Females,ovipositor_hair,How long are the hairs on the underside of abdominal segment 8?,Short (100)
+Phalacrotophora fasciata,Females,ovipositor_hook,"Is there a pair of dark, thorn-like points near the end of the ovipositor?",No (100)
+Phalacrotophora beuki (Not in UK),Females,ovipositor_hook,"Is there a pair of dark, thorn-like points near the end of the ovipositor?",Yes (99)
+Phalacrotophora berolinensis,Females,ovipositor_hook,"Is there a pair of dark, thorn-like points near the end of the ovipositor?",Yes (99)
+Phalacrotophora delageae,Females,ovipositor_hook,"Is there a pair of dark, thorn-like points near the end of the ovipositor?",No (100)
+Phalacrotophora harveyi,Females,ovipositor_hook,"Is there a pair of dark, thorn-like points near the end of the ovipositor?",No (100)
+Phalacrotophora berolinensis,Females,tergite_colour,What colour are tergites 1 to 3?,Brown
+Phalacrotophora delageae,Females,tergite_colour,What colour are tergites 1 to 3?,Dark
+Phalacrotophora beuki (Not in UK),Females,tergite_colour,What colour are tergites 1 to 3?,Largely orange
+Phalacrotophora pictofasciata (Not in UK),Head,frons_colour,What colour is the frons?,"Shiny brownish, getting darker to the dorsal margin."
+Phalacrotophora spectabilis (Not in UK),Head,frons_colour,What colour is the frons?,"Shiny yellow, with dark patches around the ocelli."
+Phalacrotophora harveyi,Head,frons_colour,What colour is the frons?,Brown but with a pale median band bordering the median furrow.
+Phalacrotophora delageae,Head,frons_colour,What colour is the frons?,"Brown, but paler (almost orange) ventrally."
+Phalacrotophora beuki (Not in UK),Head,frons_colour,What colour is the frons?,"The upper half is brown, orange from the level of the antero-bristles forwards."
+Phalacrotophora pictofasciata (Not in UK),Head,supraantennal_setae,How many supra-antennal setae are there?,4 - there are two weaker setae under the two strong setae.
+Phalacrotophora harveyi,Head,supraantennal_setae,How many supra-antennal setae are there?,4 - there are two weaker setae under the two strong setae.
+Phalacrotophora spectabilis (Not in UK),Head,supraantennal_setae,How many supra-antennal setae are there?,2 (1 pair)
+Phalacrotophora beuki (Not in UK),Head,supraantennal_setae,How many supra-antennal setae are there?,2 (1 pair)
+Phalacrotophora fasciata,Ladybird,pupa,Which species of ladybird did the larvae emerge from?,"7-spot, Coccinella septempunctata"
+Phalacrotophora berolinensis,Ladybird,pupa,Which species of ladybird did the larvae emerge from?,"2-spot or 10-spot, Adalia spp."
+Phalacrotophora delageae,Ladybird,pupa,Which species of ladybird did the larvae emerge from?,"7-spot, Coccinella septempunctata"
+Phalacrotophora delageae,Ladybird,pupa,Which species of ladybird did the larvae emerge from?,"2-spot or 10-spot, Adalia spp."
+Phalacrotophora beuki (Not in UK),Ladybird,pupa,Which species of ladybird did the larvae emerge from?,"Eyed, Anatis ocellata"
+Phalacrotophora pictofasciata (Not in UK),Legs,fore_metatarsus length,How long is the fore metatarsus?,1.5 times as long as the second tarsal segment.
+Phalacrotophora spectabilis (Not in UK),Legs,fore_metatarsus length,How long is the fore metatarsus?,1.5 times as long as the second tarsal segment.
+Phalacrotophora fasciata,Legs,fore_metatarsus length,How long is the fore metatarsus?,About as long as the next 3 tarsal segments combined.
+Phalacrotophora berolinensis,Legs,fore_metatarsus length,How long is the fore metatarsus?,About as long as the next 3 tarsal segments combined.
+Phalacrotophora delageae,Legs,fore_metatarsus length,How long is the fore metatarsus?,About as long as the next 3 tarsal segments combined.
+Phalacrotophora harveyi,Legs,fore_metatarsus length,How long is the fore metatarsus?,About as long as the next 3 tarsal segments combined.
+Phalacrotophora beuki (Not in UK),Legs,fore_metatarsus length,How long is the fore metatarsus?,About as long as the next 3 tarsal segments combined.
+Phalacrotophora fasciata,Legs,hind_femur_hair,Are the hairs on the basal half (nearest the body) of the hind femur long or short?,"Long (13, 14)"
+Phalacrotophora berolinensis,Legs,hind_femur_hair,Are the hairs on the basal half (nearest the body) of the hind femur long or short?,"Long (13, 14)"
+Phalacrotophora delageae,Legs,hind_femur_hair,Are the hairs on the basal half (nearest the body) of the hind femur long or short?,"Long (13, 14)"
+Phalacrotophora harveyi,Legs,hind_femur_hair,Are the hairs on the basal half (nearest the body) of the hind femur long or short?,Short (10)
+Phalacrotophora fasciata,Legs,hind_metatarsus_colour,What colour is the hind metatarsus?,Dark brown to black
+Phalacrotophora berolinensis,Legs,hind_metatarsus_colour,What colour is the hind metatarsus?,Yellow to yellow-brown
+Phalacrotophora delageae,Legs,hind_metatarsus_colour,What colour is the hind metatarsus?,Yellow to yellow-brown
+Phalacrotophora harveyi,Legs,hind_metatarsus_colour,What colour is the hind metatarsus?,Yellow to yellow-brown
+Phalacrotophora beuki (Not in UK),Legs,hind_metatarsus_colour,What colour is the hind metatarsus?,Yellow to yellow-brown
+Phalacrotophora fasciata,Legs,hind_metatarsus_shape,Does the hind metatarsus appear swollen?,Yes - somewhat
+Phalacrotophora berolinensis,Legs,hind_metatarsus_shape,Does the hind metatarsus appear swollen?,No - at most slightly swollen
+Phalacrotophora delageae,Legs,hind_metatarsus_shape,Does the hind metatarsus appear swollen?,No - at most slightly swollen
+Phalacrotophora beuki (Not in UK),Legs,hind_metatarsus_shape,Does the hind metatarsus appear swollen?,No - at most slightly swollen
+Phalacrotophora harveyi,Legs,hind_metatarsus_shape,Does the hind metatarsus appear swollen?,No - at most slightly swollen
+Phalacrotophora beuki (Not in UK),Males,hypandrium_microtrichia,How much of the left lobe of the hypandrium is covered in microsetae?,"Just apically (at the tip), in a distinct patch."
+Phalacrotophora delageae,Males,hypandrium_microtrichia,How much of the left lobe of the hypandrium is covered in microsetae?,"In the side view, the top half is covered along the entire length, but the bottom half is only covered apically."
+Phalacrotophora berolinensis,Males,hypandrium_microtrichia,How much of the left lobe of the hypandrium is covered in microsetae?,The side view is entirely covered in microsetae.
+Phalacrotophora berolinensis,Males,right_hypandrium,Are the two lobes of the hypandrium roughly the same length?,Yes (97)
+Phalacrotophora delageae,Males,right_hypandrium,Are the two lobes of the hypandrium roughly the same length?,Yes (97)
+Phalacrotophora beuki (Not in UK),Males,right_hypandrium,Are the two lobes of the hypandrium roughly the same length?,Yes (97)
+Phalacrotophora fasciata,Males,right_hypandrium,Are the two lobes of the hypandrium roughly the same length?,"No - the right lobe is clearly longer, extending to the tip or beyond the end of the epandrium (98)."
+Phalacrotophora fasciata,Thorax (side view),mesopleuron,Is there hair on the mesopleuron?,No
+Phalacrotophora berolinensis,Thorax (side view),mesopleuron,Is there hair on the mesopleuron?,No
+Phalacrotophora delageae,Thorax (side view),mesopleuron,Is there hair on the mesopleuron?,No
+Phalacrotophora harveyi,Thorax (side view),mesopleuron,Is there hair on the mesopleuron?,No
+Phalacrotophora beuki (Not in UK),Thorax (side view),mesopleuron,Is there hair on the mesopleuron?,No
+Phalacrotophora pictofasciata (Not in UK),Thorax (side view),mesopleuron,Is there hair on the mesopleuron?,No
+Phalacrotophora spectabilis (Not in UK),Thorax (side view),mesopleuron,Is there hair on the mesopleuron?,No
+Phalacrotophora paradoxa (Not in UK),Thorax (side view),mesopleuron,Is there hair on the mesopleuron?,Yes
+Phalacrotophora pictofasciata (Not in UK),Thorax (top view),scutellum,Are the 4 setae on the scutellum almost equal?,Yes
+Phalacrotophora spectabilis (Not in UK),Thorax (top view),scutellum,Are the 4 setae on the scutellum almost equal?,Yes
+Phalacrotophora fasciata,Thorax (top view),scutellum,Are the 4 setae on the scutellum almost equal?,"No - the anterior pair (closest o the head) are almost hair like, while the posterior pair are much stronger."
+Phalacrotophora berolinensis,Thorax (top view),scutellum,Are the 4 setae on the scutellum almost equal?,"No - the anterior pair (closest o the head) are almost hair like, while the posterior pair are much stronger."
+Phalacrotophora delageae,Thorax (top view),scutellum,Are the 4 setae on the scutellum almost equal?,"No - the anterior pair (closest o the head) are almost hair like, while the posterior pair are much stronger."
+Phalacrotophora harveyi,Thorax (top view),scutellum,Are the 4 setae on the scutellum almost equal?,"No - the anterior pair (closest o the head) are almost hair like, while the posterior pair are much stronger."
+Phalacrotophora beuki (Not in UK),Thorax (top view),scutellum,Are the 4 setae on the scutellum almost equal?,"No - the anterior pair (closest o the head) are almost hair like, while the posterior pair are much stronger."
+=======
 Phalacrotophora fasciata,Ladybird,pupa,Which species of ladybird did the larvae emerge from?,"7-spot, Coccinella septempunctata"
 Phalacrotophora berolinensis,Ladybird,pupa,Which species of ladybird did the larvae emerge from?,"2-spot or 10-spot, Adalia spp."
 Phalacrotophora delageae,Ladybird,pupa,Which species of ladybird did the larvae emerge from?,"7-spot, Coccinella septempunctata"
@@ -27,6 +99,10 @@ Phalacrotophora fasciata,Females,ovipositor_hair,How long are the hairs on the u
 Phalacrotophora berolinensis,Females,ovipositor_hair,How long are the hairs on the underside of abdominal segment 8?,"Long (99)"
 Phalacrotophora delageae,Females,ovipositor_hair,How long are the hairs on the underside of abdominal segment 8?,"Long (99)"
 Phalacrotophora harveyi,Females,ovipositor_hair,How long are the hairs on the underside of abdominal segment 8?,"Intermediate"
+>>>>>>> e02bece8b6248b48bdf3098b5bd1e077ff11b4c8
+
+<<<<<<< HEAD
+=======
 
 
 
@@ -43,3 +119,4 @@ Phalacrotophora harveyi,Females,ovipositor_hair,How long are the hairs on the un
 
 
 
+>>>>>>> e02bece8b6248b48bdf3098b5bd1e077ff11b4c8
