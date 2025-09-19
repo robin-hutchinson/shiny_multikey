@@ -1,7 +1,7 @@
 # shiny_multikey
 Building a shiny app for online multiple entry keys
 
-The example is set up to identify flies in the genera Phalacrotophora (Diptera: Phoridae). To create a shiny app for your own taxon group, follow these steps:
+The example is set up to identify flies in the genus Phalacrotophora (Diptera: Phoridae). To create a shiny app for your own taxon group, follow these steps:
 
 1) Click "Use this template" to create a new version of the repo on your page.
 2) Go to the shiny/key subdirectory 
