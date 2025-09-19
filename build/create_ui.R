@@ -139,9 +139,9 @@ for(i in 1:length(sections)){
 }
 
 full_script <- c(full_script,
-                 "nav_panel('References',",
+                 "nav_panel('References',card(",
                  references,
-                 ")),",
+                 "))),",
                  "layout_columns(card(htmlOutput('results1')), 
                                  card(htmlOutput('results2'))))")
   
