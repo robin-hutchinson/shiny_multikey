@@ -112,6 +112,15 @@ radioButtons('scutellum', 'Are the 4 setae on the scutellum almost equal?', choi
 'Yes', 
 'No - the anterior pair (closest to the head) are almost hair like, while the posterior pair are much stronger.'), selected = character(0))),
 card(
-), col_widths = c(4,8)))),
+), col_widths = c(4,8))),
+nav_panel(
+tags$a('Disney, R.H.L. (1983) Handbook for the Identification of British Insects: Scuttle flies: Diptera, Phoridae (except Megaselia). Royal Entomological Society, 10(6)'),
+tags$a('Disney, R.H.L. & Beuk, P. (1997). European Phalacrotophora (Diptera: Phoridae). Entomologist's Gazette. 48: 185-192. '),
+tags$a('Disney, R.H.L. & Smith, D.A. (2016) A new species of Phalacrotophora Enderlein (Diptera: Phoridae) from England. Ent. Mon. Mag. 152(3): 189-192.'),
+tags$a('Durska, E., Ceryngier, P. & Disney, R.H.L. (2003) Phalacrotophora beuki (Diptera: Phoridae), a parasitoid of ladybird pupae (Coleoptera: Coccinellidae). European Journal of Entomology. 100: 627-630.'),
+tags$a('Irwin, A.G. and Harvey, M.C. (2014) Phalacrotophora delageae Disney (Diptera, Phoridae) new to Britain. Dipterists Digest, 21: 77-80.'),
+tags$a('Lengyel, G.D. (2009) Phalacrotophora species (Diptera: Phoridae) with four subequal scutellar setae and notes on the other European species. Zootaxa, 2172 (1), 59–68.'),
+tags$a('  ')
+))
 layout_columns(card(htmlOutput('results1')), 
                                  card(htmlOutput('results2'))))
