@@ -32,22 +32,13 @@ tags$a('Toggle between the tabs below and answer the questions to identify your 
 tags$a('Ladybird pupa species is included as Phalacrotophora do have a host preference, however they can parasitise other ladybird species and so this question should not be used in isolation.'),tags$br(),tags$br(),
 tags$a('Male specimens of P. delageae and P. berolinensis cannot be reliably separated - record these as an aggregate unless a female is also collected. P. harveyi has only been collected as a female, therefore they cannot yet be identified using male genitalia.'),tags$br(),tags$br(),
 navset_card_underline(
-nav_panel('Females',
+nav_panel('Ladybird',
                            layout_columns(card(
-radioButtons('ovipositor_hair', 'How long are the hairs on the underside of abdominal segment 8?', choices = c(
-'Short (100)', 
-'Long (99)', 
-'Intermediate'), selected = character(0)),
-radioButtons('ovipositor_hook', 'Is there a pair of dark, thorn-like points near the end of the ovipositor?', choices = c(
-'No (100)', 
-'Yes (99)'), selected = character(0)),
-radioButtons('tergite_colour', 'What colour are tergites 1 to 3?', choices = c(
-'Brown', 
-'Dark', 
-'Largely orange'), selected = character(0))),
+radioButtons('pupa', 'Which species of ladybird did the larvae emerge from?', choices = c(
+'7-spot, Coccinella septempunctata', 
+'2-spot or 10-spot, Adalia spp.', 
+'Eyed, Anatis ocellata'), selected = character(0))),
 card(
-layout_column_wrap(width = 1/3,img(src='100.jpeg'),
-img(src='99.jpeg'))
 ), col_widths = c(4,8))),
 nav_panel('Head',
                            layout_columns(card(
@@ -62,12 +53,18 @@ radioButtons('supraantennal_setae', 'How many supra-antennal setae are there?', 
 '2 (1 pair)'), selected = character(0))),
 card(
 ), col_widths = c(4,8))),
-nav_panel('Ladybird',
+nav_panel('Thorax (side view)',
                            layout_columns(card(
-radioButtons('pupa', 'Which species of ladybird did the larvae emerge from?', choices = c(
-'7-spot, Coccinella septempunctata', 
-'2-spot or 10-spot, Adalia spp.', 
-'Eyed, Anatis ocellata'), selected = character(0))),
+radioButtons('mesopleuron', 'Is there hair on the mesopleuron?', choices = c(
+'No', 
+'Yes'), selected = character(0))),
+card(
+), col_widths = c(4,8))),
+nav_panel('Thorax (top view)',
+                           layout_columns(card(
+radioButtons('scutellum', 'Are the 4 setae on the scutellum almost equal?', choices = c(
+'Yes', 
+'No - the anterior pair (closest to the head) are almost hair like, while the posterior pair are much stronger.'), selected = character(0))),
 card(
 ), col_widths = c(4,8))),
 nav_panel('Legs',
@@ -86,6 +83,23 @@ radioButtons('hind_metatarsus_shape', 'Does the hind metatarsus appear swollen?'
 'No - at most slightly swollen'), selected = character(0))),
 card(
 ), col_widths = c(4,8))),
+nav_panel('Females',
+                           layout_columns(card(
+radioButtons('ovipositor_hair', 'How long are the hairs on the underside of abdominal segment 8?', choices = c(
+'Short (100)', 
+'Long (99)', 
+'Intermediate'), selected = character(0)),
+radioButtons('ovipositor_hook', 'Is there a pair of dark, thorn-like points near the end of the ovipositor?', choices = c(
+'No (100)', 
+'Yes (99)'), selected = character(0)),
+radioButtons('tergite_colour', 'What colour are tergites 1 to 3?', choices = c(
+'Brown', 
+'Dark', 
+'Largely orange'), selected = character(0))),
+card(
+layout_column_wrap(width = 1/3,img(src='100.jpeg'),
+img(src='99.jpeg'))
+), col_widths = c(4,8))),
 nav_panel('Males',
                            layout_columns(card(
 radioButtons('hypandrium_microtrichia', 'How much of the left lobe of the hypandrium is covered in microsetae?', choices = c(
@@ -98,20 +112,6 @@ radioButtons('right_hypandrium', 'Are the two lobes of the hypandrium roughly th
 card(
 layout_column_wrap(width = 1/3,img(src='97.jpeg'),
 img(src='98.jpeg'))
-), col_widths = c(4,8))),
-nav_panel('Thorax (side view)',
-                           layout_columns(card(
-radioButtons('mesopleuron', 'Is there hair on the mesopleuron?', choices = c(
-'No', 
-'Yes'), selected = character(0))),
-card(
-), col_widths = c(4,8))),
-nav_panel('Thorax (top view)',
-                           layout_columns(card(
-radioButtons('scutellum', 'Are the 4 setae on the scutellum almost equal?', choices = c(
-'Yes', 
-'No - the anterior pair (closest to the head) are almost hair like, while the posterior pair are much stronger.'), selected = character(0))),
-card(
 ), col_widths = c(4,8))),
 nav_panel('References',card(
 tags$a('Disney, R.H.L. (1983) Handbook for the Identification of British Insects: Scuttle flies: Diptera, Phoridae (except Megaselia). Royal Entomological Society, 10(6)'),
