@@ -60,7 +60,7 @@ references[length(references)] <- gsub(",", "", references[length(references)], 
 
 species <- read.csv("shiny/key/features.csv") %>%
   distinct(taxa)%>%
-  mutate(taxa = paste("tags$a('", taxa, "'),", sep = "")) %>%
+  mutate(taxa = paste("tags$em('", taxa, "'),", sep = "")) %>%
   arrange(taxa)
 species <- species$taxa
 species[length(species)] <- gsub(",", "", species[length(species)], fixed = TRUE)
