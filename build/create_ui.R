@@ -151,10 +151,10 @@ full_script <- c(full_script,
                  "),card(tags$h2('References'),",
                  references,
                  "), col_widths = c(4,8)),",
-                 "layout_columns(card(tags$span('The second closest match is ',tags$em(textOutput('results2taxa')), "."),
+                 "layout_columns(card(tags$span('The second closest match is ',tags$em(textOutput('results2taxa')), '.'),
                                               textOutput('results1matched'),
                                               textOutput('results1unmatched')), 
-                                  card(tags$span('The second closest match is ',tags$em(textOutput('results2taxa')), "."),
+                                  card(tags$span('The second closest match is ',tags$em(textOutput('results2taxa')), '.'),
                                               textOutput('results2matched'),
                                               textOutput('results2unmatched')))))")
   
