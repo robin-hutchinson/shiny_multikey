@@ -1,5 +1,4 @@
 taxa,body_section,body_part,question,answer
-<<<<<<< HEAD
 Phalacrotophora fasciata,Females,ovipositor_hair,How long are the hairs on the underside of abdominal segment 8?,Short (100)
 Phalacrotophora berolinensis,Females,ovipositor_hair,How long are the hairs on the underside of abdominal segment 8?,Long (99)
 Phalacrotophora delageae,Females,ovipositor_hair,How long are the hairs on the underside of abdominal segment 8?,Long (99)
@@ -70,53 +69,3 @@ Phalacrotophora berolinensis,Thorax (top view),scutellum,Are the 4 setae on the 
 Phalacrotophora delageae,Thorax (top view),scutellum,Are the 4 setae on the scutellum almost equal?,"No - the anterior pair (closest o the head) are almost hair like, while the posterior pair are much stronger."
 Phalacrotophora harveyi,Thorax (top view),scutellum,Are the 4 setae on the scutellum almost equal?,"No - the anterior pair (closest o the head) are almost hair like, while the posterior pair are much stronger."
 Phalacrotophora beuki (Not in UK),Thorax (top view),scutellum,Are the 4 setae on the scutellum almost equal?,"No - the anterior pair (closest o the head) are almost hair like, while the posterior pair are much stronger."
-=======
-Phalacrotophora fasciata,Ladybird,pupa,Which species of ladybird did the larvae emerge from?,"7-spot, Coccinella septempunctata"
-Phalacrotophora berolinensis,Ladybird,pupa,Which species of ladybird did the larvae emerge from?,"2-spot or 10-spot, Adalia spp."
-Phalacrotophora delageae,Ladybird,pupa,Which species of ladybird did the larvae emerge from?,"7-spot, Coccinella septempunctata"
-Phalacrotophora delageae,Ladybird,pupa,Which species of ladybird did the larvae emerge from?,"2-spot or 10-spot, Adalia spp."
-Phalacrotophora beuki (Not in UK),Ladybird,pupa,Which species of ladybird did the larvae emerge from?,"Eyed, Anatis ocellata"
-Phalacrotophora fasciata,Legs,hind_metatarsus_shape,Does the hind metatarsus appear swollen?,"Yes - somewhat"
-Phalacrotophora berolinensis,Legs,hind_metatarsus_shape,Does the hind metatarsus appear swollen?,"No - at most slightly swollen"
-Phalacrotophora delageae,Legs,hind_metatarsus_shape,Does the hind metatarsus appear swollen?,"No - at most slightly swollen"
-Phalacrotophora harveyi,Legs,hind_metatarsus_shape,Does the hind metatarsus appear swollen?,"No - at most slightly swollen"
-Phalacrotophora fasciata,Legs,hind_metatarsus_colour,What colour is the hind metatarsus?,"Dark brown to black"
-Phalacrotophora berolinensis,Legs,hind_metatarsus_colour,What colour is the hind metatarsus?,"Yellow to yellow-brown"
-Phalacrotophora delageae,Legs,hind_metatarsus_colour,What colour is the hind metatarsus,"Yellow to yellow-brown"
-Phalacrotophora harveyi,Legs,hind_metatarsus_colour,What colour is the hind metatarsus,"Yellow to yellow-brown"
-Phalacrotophora fasciata,Legs,hind_femur_hair,Are the hairs on the basal half (nearest the body) of the hind femur long or short?,"Long (13, 14)"
-Phalacrotophora berolinensis,Legs,hind_femur_hair,Are the hairs on the basal half (nearest the body) of the hind femur long or short?,"Long (13, 14)"
-Phalacrotophora delageae,Legs,hind_femur_hair,Are the hairs on the basal half (nearest the body) of the hind femur long or short?,"Long (13, 14)"
-Phalacrotophora harveyi,Legs,hind_femur_hair,Are the hairs on the basal half (nearest the body) of the hind femur long or short?,"Short (10)"
-Phalacrotophora berolinensis,Males,right_hypandrium,Are the two lobes of the hypandrium roughly the same length?,"Yes (97)"
-Phalacrotophora delageae,Males,right_hypandrium,Are the two lobes of the hypandrium roughly the same length?,"Yes (97)"
-Phalacrotophora fasciata,Males,right_hypandrium,Are the two lobes of the hypandrium roughly the same length?,"No - the right lobe is clearly longer, extending to the tip or beyond the end of the epandrium (98)."
-Phalacrotophora fasciata,Females,ovipositor_hook,"Is there a pair of dark, thorn-like points near the end of the ovipositor?","No (100)"
-Phalacrotophora berolinensis,Females,ovipositor_hook,"Is there a pair of dark, thorn-like points near the end of the ovipositor?","Yes (99)"
-Phalacrotophora delageae,Females,ovipositor_hook,"Is there a pair of dark, thorn-like points near the end of the ovipositor?","No (100)"
-Phalacrotophora harveyi,Females,ovipositor_hook,"Is there a pair of dark, thorn-like points near the end of the ovipositor?","No (100)"
-Phalacrotophora fasciata,Females,ovipositor_hair,How long are the hairs on the underside of abdominal segment 8?,"Short (100)"
-Phalacrotophora berolinensis,Females,ovipositor_hair,How long are the hairs on the underside of abdominal segment 8?,"Long (99)"
-Phalacrotophora delageae,Females,ovipositor_hair,How long are the hairs on the underside of abdominal segment 8?,"Long (99)"
-Phalacrotophora harveyi,Females,ovipositor_hair,How long are the hairs on the underside of abdominal segment 8?,"Intermediate"
->>>>>>> e02bece8b6248b48bdf3098b5bd1e077ff11b4c8
-
-<<<<<<< HEAD
-=======
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> e02bece8b6248b48bdf3098b5bd1e077ff11b4c8
