@@ -363,52 +363,62 @@ total_matched_features <- total %>%
       arrange(desc(matched_features_count), unmatched_features_count) %>%
       ungroup() %>%
       mutate(matched_features = replace_na(matched_features, ''),
-             unmatched_features = replace_na(unmatched_features, ''),
-             matched_features = paste(matched_features, '<br/>', sep = ''),
-             unmatched_features = paste(unmatched_features, '<br/>', sep = ''))}
+             unmatched_features = replace_na(unmatched_features, ''))}
   )
-  
-  output$results1 <- renderUI({
+
+
+  output$results1taxa <- renderUI({
     
     results1 <- results() %>%
       filter(row_number() == 1)
     
-    HTML(paste('The  closest match is <i>',
-               results1$taxa,
-               '</i>.',
-               '<br/>This taxa matched on the following questions:<br/>',
-               results1$matched_features,
-               '<br/>It did not match on the questions below:<br/>',
-               results1$unmatched_features,
-               sep = ''
-               
-               
-               
-    ))
-    }
+    results1$taxa
     
-    )
-  
-  output$results2 <- renderUI({
+})
+
+  output$results1matched <- renderUI({
+    
+    results1 <- results() %>%
+      filter(row_number() == 1)
+    
+    results1$matched_features
+    
+})
+
+  output$results1unmatched <- renderUI({
+    
+    results1 <- results() %>%
+      filter(row_number() == 1)
+    
+    results1$unmatched_features
+    
+})
+
+    output$results2taxa <- renderUI({
     
     results2 <- results() %>%
       filter(row_number() == 2)
     
-    HTML(paste('The second closest match is <i>',
-               results2$taxa,
-               '</i>.',
-               '<br/>This taxa matched on the following questions:<br/>',
-               results2$matched_features,
-               '<br/>It did not match on the questions below:<br/>',
-               results2$unmatched_features,
-               sep = ''
-               
-               
-               
-    ))
-  }
-  
-  )
-  
+    results2$taxa
+    
+})
+
+  output$results2matched <- renderUI({
+    
+    results2 <- results() %>%
+      filter(row_number() == 2)
+    
+    results2$matched_features
+    
+})
+
+  output$results2unmatched <- renderUI({
+    
+    results2 <- results() %>%
+      filter(row_number() == 2)
+    
+    results2$unmatched_features
+    
+})
 }
 
