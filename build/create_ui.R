@@ -156,6 +156,6 @@ full_script <- c(full_script,
                                               tags$span('It did not match on these questions:', textOutput('results1unmatched'), '.')),
                                   card(tags$span('The second closest match is ',tags$em(textOutput('results2taxa')), '.'),
                                               tags$span('It matched on the following questions: ', textOutput('results2matched'), '.'),
-                                              tags$span('It did not match on these questions:', textOutput('results2unmatched'), '.'))))))")
+                                              tags$span('It did not match on these questions:', textOutput('results2unmatched'), '.')))))")
   
 write_lines(full_script, 'shiny/ui.R')
