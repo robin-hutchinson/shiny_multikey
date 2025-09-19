@@ -136,4 +136,4 @@ layout_columns(card(tag$a('results1taxa'),
                                       tag$a('results1unmatched')), 
                                  card(tag$a('results2taxa'),
                                       tag$a('results2matched'),
-                                      tag$a('results2unmatched'))))
+                                      tag$a('results2unmatched')))))
