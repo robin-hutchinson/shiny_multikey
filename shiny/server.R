@@ -423,9 +423,9 @@ total_matched_features <- total %>%
   if(length(results2$matched_features) >= 1){
 
       results2 <- results2 %>%
-              mutate(matched_features = paste('tags$ul(tags$li(', matched_features, '))', sep = '')
+              mutate(matched_features = paste('<li>', matched_features, '</li>', sep = '')
 
-      HTML(results2$matched_features)
+      HTML('<ul>', results2$matched_features, '</ul>')
 
     } else { HTML('') }
     
@@ -440,9 +440,9 @@ total_matched_features <- total %>%
     if(length(results2$unmatched_features) >= 1){
 
       results2 <- results2 %>%
-              mutate(unmatched_features = paste('tags$ul(tags$li(', unmatched_features, '))', sep = '')
+              mutate(unmatched_features = paste('<li>', unmatched_features, '</li>', sep = '')
 
-      HTML(results2$unmatched_features)
+      HTML('<ul>', results2$unmatched_features, '</ul>')
 
     } else { HTML('') }
     
