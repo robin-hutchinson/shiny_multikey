@@ -151,7 +151,8 @@ full_script <- c(full_script,
   output$results1matched <- renderUI({
     
     results1 <- results() %>%
-      filter(row_number() == 1) %>%
+      filter(row_number() == 1,
+              matched_features != '') %>%
       mutate(matched_features = paste('<ul><li>', matched_features, '</li></ul>', sep = ''))
     if(length(results1$matched_features) >= 1){
 
@@ -165,7 +166,8 @@ full_script <- c(full_script,
   output$results1unmatched <- renderUI({
     
     results1 <- results() %>%
-      filter(row_number() == 1) %>%
+      filter(row_number() == 1,
+              unmatched_features != '') %>%
       mutate(unmatched_features = paste('<ul><li>', unmatched_features, '</li></ul>', sep = ''))
     
     if(length(results1$unmatched_features) >= 1){
@@ -189,7 +191,8 @@ full_script <- c(full_script,
   output$results2matched <- renderUI({
     
     results2 <- results() %>%
-      filter(row_number() == 2) %>%
+      filter(row_number() == 2,
+              matched_features != '') %>%
       mutate(matched_features = paste('<ul><li>', matched_features, '</li></ul>', sep = ''))
    
   if(length(results2$matched_features) >= 1){
@@ -208,7 +211,8 @@ full_script <- c(full_script,
   output$results2unmatched <- renderUI({
 
     results2 <- results() %>%
-      filter(row_number() == 2) 
+      filter(row_number() == 2,
+              unmatched_features != '') 
     if(length(results2$unmatched_features) >= 1){
 
       results2 <- results2 %>%
