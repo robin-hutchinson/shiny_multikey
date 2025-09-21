@@ -144,7 +144,7 @@ full_script <- c(full_script,
     results1 <- results() %>%
       filter(row_number() == 1)
     
-    HTML(paste('<i>', results1$taxa, '</i>', sep = ''))
+    HTML(tags$em(results1$taxa))
     
 })
 
@@ -157,7 +157,7 @@ full_script <- c(full_script,
     if(length(results1$matched_features) >= 1){
 
       matched_features <- reactive({ results1$matched_features })
-      HTML(format_html_list(matched_features))
+      HTML(tags$ul(matched_features))
 
     } else { HTML('') }
     
@@ -173,7 +173,7 @@ full_script <- c(full_script,
     if(length(results1$unmatched_features) >= 1){
 
       unmatched_features <- reactive({ results1$unmatched_features })
-      HTML(format_html_list(unmatched_features))
+      HTML(tags$ul(unmatched_features))
 
     } else { HTML('') }
     
@@ -184,7 +184,7 @@ full_script <- c(full_script,
     results2 <- results() %>%
       filter(row_number() == 2)
     
-    HTML(paste('<i>', results2$taxa, '</i>', sep = ''))
+    HTML(tags$em(results2$taxa))
     
 })
 
@@ -200,7 +200,7 @@ full_script <- c(full_script,
       results2 <- results2 %>%
               mutate(matched_features = paste('<li>', matched_features, '</li>', sep = '')
 
-      HTML('<ul>', results2$matched_features, '</ul>')
+      HTML('tags$ul(', results2$matched_features, '</ul>')
 
     } else { HTML('') }
     
@@ -218,7 +218,7 @@ full_script <- c(full_script,
       results2 <- results2 %>%
               mutate(unmatched_features = paste('<li>', unmatched_features, '</li>', sep = '')
 
-      HTML('<ul>', results2$unmatched_features, '</ul>')
+      HTML('tags$ul(', results2$unmatched_features, ')')
 
     } else { HTML('') }
     
