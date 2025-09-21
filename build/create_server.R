@@ -143,7 +143,8 @@ full_script <- c(full_script,
     
     results1 <- results() %>%
       filter(row_number() == 1)%>%
-      distinct(taxa)
+      distinct(taxa)%>%
+      mutate(taxa = paste('<em>', taxa, '</em>', sep = ''))
     
     HTML(results1$taxa)
     
@@ -175,7 +176,8 @@ full_script <- c(full_script,
     
     results2 <- results() %>%
       filter(row_number() == 2) %>%
-      distinct(taxa)
+      distinct(taxa)%>%
+      mutate(taxa = paste('<em>', taxa, '</em>', sep = ''))
     
     HTML(results2$taxa)
     
