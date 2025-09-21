@@ -142,9 +142,10 @@ full_script <- c(full_script,
   output$results1taxa <- renderUI({
     
     results1 <- results() %>%
-      filter(row_number() == 1)
+      filter(row_number() == 1)%>%
+      distinct(taxa)
     
-    HTML(tags$em(results1$taxa))
+    HTML(results1$taxa)
     
 })
 
@@ -173,9 +174,10 @@ full_script <- c(full_script,
     output$results2taxa <- renderUI({
     
     results2 <- results() %>%
-      filter(row_number() == 2)
+      filter(row_number() == 2) %>%
+      distinct(taxa)
     
-    HTML(tags$em(results2$taxa))
+    HTML(results2$taxa)
     
 })
 
