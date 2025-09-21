@@ -153,7 +153,9 @@ full_script <- c(full_script,
     results1 <- results() %>%
       filter(row_number() == 1)
     
-    results1$matched_features
+    tags$ul(
+      lapply(reactiveVal(results1$matched_features), tags$li)
+    )
     
 })
 
@@ -162,7 +164,9 @@ full_script <- c(full_script,
     results1 <- results() %>%
       filter(row_number() == 1)
     
-    results1$unmatched_features
+    tags$ul(
+      lapply(reactiveVal(results1$unmatched_features), tags$li)
+    )
     
 })
 
@@ -180,7 +184,9 @@ full_script <- c(full_script,
     results2 <- results() %>%
       filter(row_number() == 2)
     
-    results2$matched_features
+    tags$ul(
+      lapply(reactiveVal(results2$matched_features), tags$li)
+    )
     
 })
 
@@ -189,9 +195,11 @@ full_script <- c(full_script,
     results2 <- results() %>%
       filter(row_number() == 2)
     
-    results2$unmatched_features
-    
-})
+    tags$ul(
+      lapply(reactiveVal(results2$unmatched_features), tags$li)
+    )
+
+  })
 }
 ")
 
