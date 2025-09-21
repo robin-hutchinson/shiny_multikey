@@ -145,9 +145,10 @@ full_script <- c(full_script,
       filter(row_number() == 1)%>%
       distinct(taxa)%>%
       mutate(taxa = paste('<em>', taxa, '</em>', sep = ''))
-    
+    if(nrow(results1))!= 0{
     HTML('The closest match is ', results1$taxa, '.')
     
+    } else {HTML('')}
 })
 
   output$results1matched <- renderUI({
@@ -156,9 +157,10 @@ full_script <- c(full_script,
       filter(row_number() == 1,
               matched_features != '')  %>%
       mutate(matched_features = paste('<ul><li>', matched_features, '</ul></li>', sep = ''))
-
+if(nrow(results1))!= 0{
     HTML('It matched on these questions:', results1$matched_features)
     
+    } else {HTML('')}
 })
 
   output$results1unmatched <- renderUI({
@@ -167,9 +169,10 @@ full_script <- c(full_script,
       filter(row_number() == 1,
               unmatched_features != '')  %>%
       mutate(unmatched_features = paste('<ul><li>', unmatched_features, '</ul></li>', sep = ''))
-
+if(nrow(results1))!= 0{
     HTML('It did not match on these questions:', results1$unmatched_features)
     
+    } else {HTML('')}
 })
 
     output$results2taxa <- renderUI({
@@ -178,9 +181,12 @@ full_script <- c(full_script,
       filter(row_number() == 2) %>%
       distinct(taxa)%>%
       mutate(taxa = paste('<em>', taxa, '</em>', sep = ''))
-    
+
+if(nrow(results2))!= 0{
+
     HTML('The second closest match is ', results2$taxa, '.')
     
+    } else {HTML('')}
 })
 
   output$results2matched <- renderUI({
@@ -189,9 +195,12 @@ full_script <- c(full_script,
       filter(row_number() == 2,
               matched_features != '')  %>%
       mutate(matched_features = paste('<ul><li>', matched_features, '</ul></li>', sep = ''))
-
-    HTML('It matched on these questions:', results2$matched_features)
     
+if(nrow(results2))!= 0{
+
+HTML('It matched on these questions:', results2$matched_features)
+    
+    } else {HTML('')}
 })
 
 
@@ -203,8 +212,9 @@ full_script <- c(full_script,
               unmatched_features != '') %>%
       mutate(unmatched_features = paste('<ul><li>', unmatched_features, '</ul></li>', sep = ''))
 
+    if(nrow(results2))!= 0{
     HTML('It did not match on these questions:', results2$unmatched_features)
-    
+    } else {HTML('')}
 
   })
 }
