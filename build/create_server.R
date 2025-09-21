@@ -146,7 +146,7 @@ full_script <- c(full_script,
       distinct(taxa)%>%
       mutate(taxa = paste('<em>', taxa, '</em>', sep = ''))
     
-    HTML(results1$taxa)
+    HTML('The closest match is ', results1$taxa, '.')
     
 })
 
@@ -157,7 +157,7 @@ full_script <- c(full_script,
               matched_features != '')  %>%
       mutate(matched_features = paste('<ul><li>', matched_features, '</ul></li>', sep = ''))
 
-    HTML(results1$matched_features)
+    HTML('It matched on these questions:', results1$matched_features)
     
 })
 
@@ -168,7 +168,7 @@ full_script <- c(full_script,
               unmatched_features != '')  %>%
       mutate(unmatched_features = paste('<ul><li>', unmatched_features, '</ul></li>', sep = ''))
 
-    HTML(results1$unmatched_features)
+    HTML('It did not match on these questions:', results1$unmatched_features)
     
 })
 
@@ -179,7 +179,7 @@ full_script <- c(full_script,
       distinct(taxa)%>%
       mutate(taxa = paste('<em>', taxa, '</em>', sep = ''))
     
-    HTML(results2$taxa)
+    HTML('The second closest match is ', results2$taxa, '.')
     
 })
 
@@ -190,7 +190,7 @@ full_script <- c(full_script,
               matched_features != '')  %>%
       mutate(matched_features = paste('<ul><li>', matched_features, '</ul></li>', sep = ''))
 
-    HTML(results2$matched_features)
+    HTML('It matched on these questions:', results2$matched_features)
     
 })
 
@@ -203,7 +203,7 @@ full_script <- c(full_script,
               unmatched_features != '') %>%
       mutate(unmatched_features = paste('<ul><li>', unmatched_features, '</ul></li>', sep = ''))
 
-    HTML(results2$unmatched_features)
+    HTML('It did not match on these questions:', results2$unmatched_features)
     
 
   })
