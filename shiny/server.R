@@ -370,7 +370,8 @@ total_matched_features <- total %>%
   output$results1taxa <- renderUI({
     
     results1 <- results() %>%
-      filter(row_number() == 1)%>%
+      filter(row_number() == 1,
+              matched_features != '')%>%
       distinct(taxa)%>%
       mutate(taxa = paste('<em>', taxa, '</em>', sep = ''))
     if(nrow(results1))!= 0{
@@ -406,7 +407,8 @@ if(nrow(results1))!= 0{
     output$results2taxa <- renderUI({
     
     results2 <- results() %>%
-      filter(row_number() == 2) %>%
+      filter(row_number() == 2,
+              matched_features != '') %>%
       distinct(taxa)%>%
       mutate(taxa = paste('<em>', taxa, '</em>', sep = ''))
 
