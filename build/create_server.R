@@ -150,16 +150,11 @@ full_script <- c(full_script,
 
   output$results1matched <- renderUI({
     
-    results1 <- results() %>%
+   results1 <- results() %>%
       filter(row_number() == 1,
-              matched_features != '') %>%
-      mutate(matched_features = paste('<ul><li>', matched_features, '</li></ul>', sep = ''))
-    if(length(results1$matched_features) >= 1){
+              matched_features != '') 
 
-      matched_features <- reactive({ results1$matched_features })
-      HTML(tags$ul(matched_features))
-
-    } else { HTML('') }
+    HTML('tags$ul(tags$li(', results1$matched_features, '))')
     
 })
 
@@ -167,15 +162,9 @@ full_script <- c(full_script,
     
     results1 <- results() %>%
       filter(row_number() == 1,
-              unmatched_features != '') %>%
-      mutate(unmatched_features = paste('<ul><li>', unmatched_features, '</li></ul>', sep = ''))
-    
-    if(length(results1$unmatched_features) >= 1){
+              unmatched_features != '') 
 
-      unmatched_features <- reactive({ results1$unmatched_features })
-      HTML(tags$ul(unmatched_features))
-
-    } else { HTML('') }
+    HTML('tags$ul(tags$li(', results1$unmatched_features, '))')
     
 })
 
@@ -192,17 +181,9 @@ full_script <- c(full_script,
     
     results2 <- results() %>%
       filter(row_number() == 2,
-              matched_features != '') %>%
-      mutate(matched_features = paste('<ul><li>', matched_features, '</li></ul>', sep = ''))
-   
-  if(length(results2$matched_features) >= 1){
+              matched_features != '') 
 
-      results2 <- results2 %>%
-              mutate(matched_features = paste('<li>', matched_features, '</li>', sep = '')
-
-      HTML('tags$ul(', results2$matched_features, '</ul>')
-
-    } else { HTML('') }
+    HTML('tags$ul(tags$li(', results2$matched_features, '))')
     
 })
 
@@ -213,14 +194,8 @@ full_script <- c(full_script,
     results2 <- results() %>%
       filter(row_number() == 2,
               unmatched_features != '') 
-    if(length(results2$unmatched_features) >= 1){
 
-      results2 <- results2 %>%
-              mutate(unmatched_features = paste('<li>', unmatched_features, '</li>', sep = '')
-
-      HTML('tags$ul(', results2$unmatched_features, ')')
-
-    } else { HTML('') }
+    HTML('tags$ul(tags$li(', results2$unmatched_features, '))')
     
 
   })
