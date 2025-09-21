@@ -384,7 +384,7 @@ total_matched_features <- total %>%
    results1 <- results() %>%
       filter(row_number() == 1,
               matched_features != '')  %>%
-      mutate(matched_features = paste('<ul><li>', matched_features, '</ul></li>', sep = ''))
+      mutate(matched_features = paste('<ul><li>', matched_features, '</li></ul>', sep = ''))
 
     HTML('It matched on these questions:', results1$matched_features)
     
@@ -395,7 +395,7 @@ total_matched_features <- total %>%
     results1 <- results() %>%
       filter(row_number() == 1,
               unmatched_features != '')  %>%
-      mutate(unmatched_features = paste('<ul><li>', unmatched_features, '</ul></li>', sep = ''))
+      mutate(unmatched_features = paste('<ul><li>', unmatched_features, '</li></ul>', sep = ''))
 
     HTML('It did not match on these questions:', results1$unmatched_features)
     
@@ -418,7 +418,7 @@ total_matched_features <- total %>%
     results2 <- results() %>%
       filter(row_number() == 2,
               matched_features != '')  %>%
-      mutate(matched_features = paste('<ul><li>', matched_features, '</ul></li>', sep = ''))
+      mutate(matched_features = paste('<ul><li>', matched_features, '</li></ul>', sep = ''))
 
 HTML('It matched on these questions:', results2$matched_features)
 })
@@ -430,7 +430,7 @@ HTML('It matched on these questions:', results2$matched_features)
     results2 <- results() %>%
       filter(row_number() == 2,
               unmatched_features != '') %>%
-      mutate(unmatched_features = paste('<ul><li>', unmatched_features, '</ul></li>', sep = ''))
+      mutate(unmatched_features = paste('<ul><li>', unmatched_features, '</li></ul>', sep = ''))
 
     HTML('It did not match on these questions:', results2$unmatched_features)
 
