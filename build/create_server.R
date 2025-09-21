@@ -196,8 +196,8 @@ full_script <- c(full_script,
 
     results2 <- results() %>%
       filter(row_number() == 2) %>%
-      mutate(unmatched_features = paste("<li>", unmatched_features, </li>))
-    unmatched_features <- paste("<ul>", results2$unmatched_features, "</ul>")
+      mutate(unmatched_features = paste('<li>', unmatched_features, '</li>'))
+    unmatched_features <- paste('<ul>', results2$unmatched_features, '</ul>')
 
     HTML(unmatched_features)
 
