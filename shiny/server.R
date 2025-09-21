@@ -374,10 +374,9 @@ total_matched_features <- total %>%
               matched_features != '')%>%
       distinct(taxa)%>%
       mutate(taxa = paste('<em>', taxa, '</em>', sep = ''))
-    if(nrow(results1)!= 0){
+
     HTML('The closest match is ', results1$taxa, '.')
     
-    } else {HTML('')}
 })
 
   output$results1matched <- renderUI({
@@ -386,10 +385,9 @@ total_matched_features <- total %>%
       filter(row_number() == 1,
               matched_features != '')  %>%
       mutate(matched_features = paste('<ul><li>', matched_features, '</ul></li>', sep = ''))
-if(nrow(results1)!= 0){
+
     HTML('It matched on these questions:', results1$matched_features)
     
-    } else {HTML('')}
 })
 
   output$results1unmatched <- renderUI({
@@ -398,10 +396,9 @@ if(nrow(results1)!= 0){
       filter(row_number() == 1,
               unmatched_features != '')  %>%
       mutate(unmatched_features = paste('<ul><li>', unmatched_features, '</ul></li>', sep = ''))
-if(nrow(results1)!= 0){
+
     HTML('It did not match on these questions:', results1$unmatched_features)
     
-    } else {HTML('')}
 })
 
     output$results2taxa <- renderUI({
@@ -412,11 +409,8 @@ if(nrow(results1)!= 0){
       distinct(taxa)%>%
       mutate(taxa = paste('<em>', taxa, '</em>', sep = ''))
 
-if(nrow(results2)!= 0){
-
     HTML('The second closest match is ', results2$taxa, '.')
     
-    } else {HTML('')}
 })
 
   output$results2matched <- renderUI({
@@ -425,12 +419,8 @@ if(nrow(results2)!= 0){
       filter(row_number() == 2,
               matched_features != '')  %>%
       mutate(matched_features = paste('<ul><li>', matched_features, '</ul></li>', sep = ''))
-    
-if(nrow(results2)!= 0){
 
 HTML('It matched on these questions:', results2$matched_features)
-    
-    } else {HTML('')}
 })
 
 
@@ -442,9 +432,7 @@ HTML('It matched on these questions:', results2$matched_features)
               unmatched_features != '') %>%
       mutate(unmatched_features = paste('<ul><li>', unmatched_features, '</ul></li>', sep = ''))
 
-    if(nrow(results2)!= 0){
     HTML('It did not match on these questions:', results2$unmatched_features)
-    } else {HTML('')}
 
   })
 }
