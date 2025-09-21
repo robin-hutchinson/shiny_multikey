@@ -370,9 +370,10 @@ total_matched_features <- total %>%
   output$results1taxa <- renderUI({
     
     results1 <- results() %>%
-      filter(row_number() == 1)
+      filter(row_number() == 1)%>%
+      distinct(taxa)
     
-    HTML(tags$em(results1$taxa))
+    HTML(results1$taxa)
     
 })
 
@@ -401,9 +402,10 @@ total_matched_features <- total %>%
     output$results2taxa <- renderUI({
     
     results2 <- results() %>%
-      filter(row_number() == 2)
+      filter(row_number() == 2) %>%
+      distinct(taxa)
     
-    HTML(tags$em(results2$taxa))
+    HTML(results2$taxa)
     
 })
 
