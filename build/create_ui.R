@@ -152,10 +152,10 @@ full_script <- c(full_script,
                  references,
                  "), col_widths = c(4,8)),",
                  "layout_columns(card(tags$span('The closest match is ',uiOutput('results1taxa'), '.'),
-                                      tags$span('It matched on the following questions: ', uiOutput('results1matched'), '.'),
-                                      tags$span('It did not match on these questions:', uiOutput('results1unmatched'), '.')),
+                                      tags$span('It matched on the following questions: ', uiOutput('results1matched')),
+                                      tags$span('It did not match on these questions:', uiOutput('results1unmatched'))),
                                   card(tags$span('The second closest match is ',tags$em(uiOutput('results2taxa')), '.'),
-                                       tags$span('It matched on the following questions: ', uiOutput('results2matched'), '.'),
-                                       tags$span('It did not match on these questions:', uiOutput('results2unmatched'), '.')))))")
+                                       tags$span('It matched on the following questions: ', uiOutput('results2matched')),
+                                       tags$span('It did not match on these questions:', uiOutput('results2unmatched'))))))")
   
 write_lines(full_script, 'shiny/ui.R')
