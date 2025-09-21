@@ -381,7 +381,9 @@ total_matched_features <- total %>%
     results1 <- results() %>%
       filter(row_number() == 1)
     
-    results1$matched_features
+    tags$ul(
+      lapply(reactiveVal(results1$matched_features), tags$li)
+    )
     
 })
 
@@ -390,7 +392,9 @@ total_matched_features <- total %>%
     results1 <- results() %>%
       filter(row_number() == 1)
     
-    results1$unmatched_features
+    tags$ul(
+      lapply(reactiveVal(results1$unmatched_features), tags$li)
+    )
     
 })
 
@@ -408,7 +412,9 @@ total_matched_features <- total %>%
     results2 <- results() %>%
       filter(row_number() == 2)
     
-    results2$matched_features
+    tags$ul(
+      lapply(reactiveVal(results2$matched_features), tags$li)
+    )
     
 })
 
@@ -417,8 +423,10 @@ total_matched_features <- total %>%
     results2 <- results() %>%
       filter(row_number() == 2)
     
-    results2$unmatched_features
-    
-})
+    tags$ul(
+      lapply(reactiveVal(results2$unmatched_features), tags$li)
+    )
+
+  })
 }
 

@@ -132,8 +132,8 @@ tags$a('Lengyel, G.D. (2009) Phalacrotophora species (Diptera: Phoridae) with fo
 tags$a('  ')
 ), col_widths = c(4,8)),
 layout_columns(card(tags$span('The closest match is ',tags$em(verbatimTextOutput('results1taxa')), '.'),
-                                              tags$span('It matched on the following questions: ', verbatimTextOutput('results1matched'), '.'),
-                                              tags$span('It did not match on these questions:', verbatimTextOutput('results1unmatched'), '.')),
+                                              tags$span('It matched on the following questions: ', uiOutput('results1matched'), '.'),
+                                              tags$span('It did not match on these questions:', uiOutput('results1unmatched'), '.')),
                                   card(tags$span('The second closest match is ',tags$em(verbatimTextOutput('results2taxa')), '.'),
-                                              tags$span('It matched on the following questions: ', verbatimTextOutput('results2matched'), '.'),
-                                              tags$span('It did not match on these questions:', verbatimTextOutput('results2unmatched'), '.')))))
+                                              tags$span('It matched on the following questions: ', uiOutput('results2matched'), '.'),
+                                              tags$span('It did not match on these questions:', uiOutput('results2unmatched'), '.')))))
