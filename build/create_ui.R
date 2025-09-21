@@ -151,10 +151,10 @@ full_script <- c(full_script,
                  "),card(tags$h2('References'),",
                  references,
                  "), col_widths = c(4,8)),",
-                 "layout_columns(card(tags$span('The closest match is ',tags$em(verbatimTextOutput('results1taxa')), '.'),
+                 "layout_columns(card(tags$span('The closest match is ',uiOutput('results1taxa'), '.'),
                                               tags$span('It matched on the following questions: ', uiOutput('results1matched'), '.'),
                                               tags$span('It did not match on these questions:', uiOutput('results1unmatched'), '.')),
-                                  card(tags$span('The second closest match is ',tags$em(verbatimTextOutput('results2taxa')), '.'),
+                                  card(tags$span('The second closest match is ',tags$em(uiOutput('results2taxa')), '.'),
                                               tags$span('It matched on the following questions: ', uiOutput('results2matched'), '.'),
                                               tags$span('It did not match on these questions:', uiOutput('results2unmatched'), '.')))))")
   
