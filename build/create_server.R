@@ -194,8 +194,10 @@ full_script <- c(full_script,
    
   if(length(results2$matched_features) >= 1){
 
-      matched_features <- reactive({ results2$matched_features })
-      HTML(format_html_list(matched_features))
+      results2 <- results2 %>%
+              mutate(matched_features = paste('tags$ul(tags$li(', matched_features, '))', sep = '')
+
+      HTML(results2$matched_features)
 
     } else { HTML('') }
     
@@ -209,8 +211,10 @@ full_script <- c(full_script,
       filter(row_number() == 2) 
     if(length(results2$unmatched_features) >= 1){
 
-      unmatched_features <- reactive({ results2$unmatched_features })
-      HTML(format_html_list(unmatched_features))
+      results2 <- results2 %>%
+              mutate(unmatched_features = paste('tags$ul(tags$li(', unmatched_features, '))', sep = '')
+
+      HTML(results2$unmatched_features)
 
     } else { HTML('') }
     
