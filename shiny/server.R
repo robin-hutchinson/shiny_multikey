@@ -10,6 +10,8 @@ library(tidyverse)
 
 server <- function(input, output) {
 
+  theme <- bs_theme(bootswatch = 'readable')
+
   features <- read.csv('key/features.csv')
   
   question_results <- reactive({
