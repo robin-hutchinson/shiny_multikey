@@ -144,7 +144,7 @@ full_script <- c(full_script,
     results1 <- results() %>%
       filter(row_number() == 1)
     
-    results1$taxa
+    HTML(paste('<i>', results1$taxa, '</i>', sep = ''))
     
 })
 
@@ -152,8 +152,8 @@ full_script <- c(full_script,
     
     results1 <- results() %>%
       filter(row_number() == 1) %>%
-      mutate(matched_features = paste('<li>', matched_features, '</li>'))
-    matched_features <- paste('<ul>', results1$matched_features, '</ul>')
+      mutate(matched_features = paste('<li>', matched_features, '</li>', sep = ''))
+    matched_features <- paste('<ul>', results1$matched_features, '</ul>', sep = '')
 
     HTML(matched_features)
     
@@ -163,8 +163,8 @@ full_script <- c(full_script,
     
     results1 <- results() %>%
       filter(row_number() == 1) %>%
-      mutate(unmatched_features = paste('<li>', unmatched_features, '</li>'))
-    unmatched_features <- paste('<ul>', results1$unmatched_features, '</ul>')
+      mutate(unmatched_features = paste('<li>', unmatched_features, '</li>', sep = ''))
+    unmatched_features <- paste('<ul>', results1$unmatched_features, '</ul>', sep = '')
 
     HTML(unmatched_features)
     
@@ -175,7 +175,7 @@ full_script <- c(full_script,
     results2 <- results() %>%
       filter(row_number() == 2)
     
-    results2$taxa
+    HTML(paste('<i>', results2$taxa, '</i>', sep = ''))
     
 })
 
@@ -183,8 +183,8 @@ full_script <- c(full_script,
     
     results2 <- results() %>%
       filter(row_number() == 2) %>%
-      mutate(matched_features = paste('<li>', matched_features, '</li>'))
-    matched_features <- paste('<ul>', results2$matched_features, '</ul>')
+      mutate(matched_features = paste('<li>', matched_features, '</li>', sep = ''))
+    matched_features <- paste('<ul>', results2$matched_features, '</ul>', sep = '')
 
     HTML(matched_features)
     
@@ -196,8 +196,8 @@ full_script <- c(full_script,
 
     results2 <- results() %>%
       filter(row_number() == 2) %>%
-      mutate(unmatched_features = paste('<li>', unmatched_features, '</li>'))
-    unmatched_features <- paste('<ul>', results2$unmatched_features, '</ul>')
+      mutate(unmatched_features = paste('<li>', unmatched_features, '</li>', sep = ''))
+    unmatched_features <- paste('<ul>', results2$unmatched_features, '</ul>', sep = '')
 
     HTML(unmatched_features)
 
