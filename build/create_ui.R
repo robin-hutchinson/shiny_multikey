@@ -73,7 +73,9 @@ library(knitr)
 library(kableExtra)
 library(tidyverse)
 
-ui <- bslib::page_fluid(tags$h1('",
+ui <- bslib::page_fluid(theme = bs_theme(version = 5, bootswatch = 'readable'),
+                 
+                tags$h1('",
 
                  title,
                  
