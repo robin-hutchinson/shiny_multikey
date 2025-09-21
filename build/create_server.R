@@ -190,20 +190,16 @@ full_script <- c(full_script,
     
 })
 
-unmatched2 <- reactiveVal(
 
-    results2 <- results() %>%
-      filter(row_number() == 2)
-
-    results2$unmatched_features
-
-)
 
   output$results2unmatched <- renderUI({
-    
-    tags$ul(
-      lapply(unmatched2(), tags$li)
-    )
+
+    results2 <- results() %>%
+      filter(row_number() == 2) %>%
+      mutate(unmatched_features = paste("<li>", unmatched_features, </li>))
+    unmatched_features <- paste("<ul>", results2$unmatched_features, "</ul>")
+
+    HTML(unmatched_features)
 
   })
 }
