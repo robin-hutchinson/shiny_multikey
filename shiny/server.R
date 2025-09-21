@@ -379,22 +379,22 @@ total_matched_features <- total %>%
   output$results1matched <- renderUI({
     
     results1 <- results() %>%
-      filter(row_number() == 1)
-    
-    tags$ul(
-      lapply(reactiveVal(results1$matched_features), tags$li)
-    )
+      filter(row_number() == 1) %>%
+      mutate(matched_features = paste('<li>', matched_features, '</li>'))
+    matched_features <- paste('<ul>', results1$matched_features, '</ul>')
+
+    HTML(matched_features)
     
 })
 
   output$results1unmatched <- renderUI({
     
     results1 <- results() %>%
-      filter(row_number() == 1)
-    
-    tags$ul(
-      lapply(reactiveVal(results1$unmatched_features), tags$li)
-    )
+      filter(row_number() == 1) %>%
+      mutate(unmatched_features = paste('<li>', unmatched_features, '</li>'))
+    unmatched_features <- paste('<ul>', results1$unmatched_features, '</ul>')
+
+    HTML(unmatched_features)
     
 })
 
@@ -410,11 +410,11 @@ total_matched_features <- total %>%
   output$results2matched <- renderUI({
     
     results2 <- results() %>%
-      filter(row_number() == 2)
-    
-    tags$ul(
-      lapply(reactiveVal(results2$matched_features), tags$li)
-    )
+      filter(row_number() == 2) %>%
+      mutate(matched_features = paste('<li>', matched_features, '</li>'))
+    matched_features <- paste('<ul>', results2$matched_features, '</ul>')
+
+    HTML(matched_features)
     
 })
 
