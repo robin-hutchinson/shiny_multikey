@@ -9,8 +9,8 @@ library(curl)
 
 ui <- bslib::page_fluid(
                  
-                theme = bs_theme(bg = '#0b3d91', 
-                                fg = 'white',
+                theme = bs_theme(bg = '#99CCFF', 
+                                fg = 'black',
                                 primary = '#E69F00',
                                 secondary = '#0072B2',
                                 success = '#009E73'),
