@@ -100,7 +100,7 @@ UKCEH_titlePanel <- function(title = 'UKCEH Shiny app', windowTitle = title){
       title,
       style ='vertical-align:middle; display:inline;padding-left:40px;'
     ),
-    tagList(tags$head(tags$title(paste0(windowTitle," | UK Centre for Ecology & Hydrology")),
+    tagList(tags$head(tags$title(paste0(windowTitle,' | UK Centre for Ecology & Hydrology')),
                       tags$link(rel='shortcut icon', href='https://brandroom.ceh.ac.uk/themes/custom/ceh/favicon.ico'))),
     style = 'padding: 30px;'
   )
