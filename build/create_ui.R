@@ -77,7 +77,10 @@ library(curl)
 ui <- bslib::page_fluid(
                  
                 theme = bs_theme(bg = '#0b3d91', 
-                                fg = 'white'),
+                                fg = 'white',
+                                primary = "#E69F00",
+                                secondary = "#0072B2",
+                                success = "#009E73"),
                  
                 tags$h1('",
 
