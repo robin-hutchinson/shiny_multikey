@@ -193,6 +193,7 @@ full_script <- c(full_script,
       mutate(matched_features = paste('<ul><li>', matched_features, '</li></ul>', sep = ''))
 
 HTML('It matched on these questions:', results2$matched_features)
+
 })
 
 
