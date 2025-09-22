@@ -10,8 +10,7 @@ library(curl)
 ui <- bslib::page_fluid(
                  
                 theme = bs_theme(bg = '#0b3d91', 
-                                fg = 'white', 
-                                base_font = font_google('OpenDyslexic')),
+                                fg = 'white'),
                  
                 tags$h1('
 UK Phalacrotophora
