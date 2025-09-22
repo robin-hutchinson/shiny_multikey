@@ -33,6 +33,7 @@ server <- function(input, output) {
     g <- features
     
                  ")
+
 for(i in 1:length(qs)) {
   
   q <- qs[i]
