@@ -27,6 +27,7 @@ server <- function(input, output) {
                         'matched_features',
                         'unmatched_features')%>%
       filter(row_number() != 1)
+
     colnames(total) <- c('taxa',
                          'matched_features',
                          'unmatched_features')
