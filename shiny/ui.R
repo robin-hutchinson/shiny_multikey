@@ -7,7 +7,7 @@ library(kableExtra)
 library(tidyverse)
 
 
-ui <- bslib::page_fluid(theme = bs_theme('flatly'),
+ui <- bslib::page_fluid(theme = bs_theme(version = 5, preset = 'flatly'),
                  
                 tags$h1('
 UK Phalacrotophora
