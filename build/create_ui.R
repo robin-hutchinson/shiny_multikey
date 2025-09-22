@@ -74,7 +74,11 @@ library(kableExtra)
 library(tidyverse)
 
 
-ui <- bslib::page_fluid(theme = bs_theme(version = 5, preset = 'flatly'),
+ui <- bslib::page_fluid(
+                 
+                theme = bs_theme(bg = '#0b3d91', 
+                                fg = 'white', 
+                                base_font = font_google('OpenDyslexic')),
                  
                 tags$h1('",
 
