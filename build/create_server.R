@@ -206,7 +206,7 @@ HTML('It matched on these questions:', results2$matched_features)
 
     HTML('It did not match on these questions:', results2$unmatched_features)
 
-  })
+  })  
 }
 ")
 
