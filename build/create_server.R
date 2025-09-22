@@ -13,6 +13,7 @@ library(DT)
 library(knitr)
 library(kableExtra)
 library(tidyverse)
+library(curl)
 
 server <- function(input, output) {
 
