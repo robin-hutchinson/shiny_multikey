@@ -124,7 +124,7 @@ img(src='98.jpeg'))
 ), col_widths = c(4,8))),
 nav_panel('About',card(tags$h2('This key includes the following species:'),
 tags$em('Phalacrotophora berolinensis'),
-tags$em('Phalacrotophora beuki (Not in UK)'),
+tags$em('Phalacrotophora beuki'),
 tags$em('Phalacrotophora delageae'),
 tags$em('Phalacrotophora fasciata'),
 tags$em('Phalacrotophora harveyi'),
