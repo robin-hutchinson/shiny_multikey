@@ -61,7 +61,8 @@ Phalacrotophora delageae,Females,ovipositor_hook,"Is there a pair of dark, thorn
 Phalacrotophora harveyi,Females,ovipositor_hook,"Is there a pair of dark, thorn-like points near the end of the ovipositor?",No (100)
 Phalacrotophora berolinensis,Females,tergite_colour,What colour are tergites 1 to 3?,Brown
 Phalacrotophora delageae,Females,tergite_colour,What colour are tergites 1 to 3?,Dark
-Phalacrotophora beuki,Females,tergite_colour,What colour are tergites 1 to 3?,Largely orange
+Phalacrotophora beuki,Females,tergite_colour,What colour are tergites 1 to 3?,"Largely orange, with dark spots on either side of T4"
+Phalacrotophora beuki,Females,tergite_hair,Is there a dense covering of short hairs on the lateral edges of segments 5 and 6?,Yes
 Phalacrotophora beuki,Males,hypandrium_microtrichia,How much of the left lobe of the hypandrium is covered in microsetae?,"Just apically (at the tip), in a distinct patch."
 Phalacrotophora delageae,Males,hypandrium_microtrichia,How much of the left lobe of the hypandrium is covered in microsetae?,"In the side view, the top half is covered along the entire length, but the bottom half is only covered apically."
 Phalacrotophora berolinensis,Males,hypandrium_microtrichia,How much of the left lobe of the hypandrium is covered in microsetae?,The side view is entirely covered in microsetae.
@@ -69,4 +70,5 @@ Phalacrotophora berolinensis,Males,right_hypandrium,Are the two lobes of the hyp
 Phalacrotophora delageae,Males,right_hypandrium,Are the two lobes of the hypandrium roughly the same length?,Yes (97)
 Phalacrotophora beuki,Males,right_hypandrium,Are the two lobes of the hypandrium roughly the same length?,Yes (97)
 Phalacrotophora fasciata,Males,right_hypandrium,Are the two lobes of the hypandrium roughly the same length?,"No - the right lobe is clearly longer, extending to the tip or beyond the end of the epandrium (98)."
+
 
