@@ -104,7 +104,11 @@ radioButtons('ovipositor_hook', 'Is there a pair of dark, thorn-like points near
 radioButtons('tergite_colour', 'What colour are tergites 1 to 3?', choices = c(
 'Brown', 
 'Dark', 
-'Largely orange'), selected = character(0))),
+'Largely orange, with dark spots on either side of T4'), selected = character(0)),
+radioButtons('tergite_hair', 'Is there a dense covering of short hairs on the lateral edges of segments 5 and 6?', choices = c(
+'Yes', 
+'', 
+'Yes'), selected = character(0))),
 card(
 layout_column_wrap(width = 1/3,img(src='100.jpeg'),
 img(src='99.jpeg'))
