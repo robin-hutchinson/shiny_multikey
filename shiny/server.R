@@ -6,6 +6,7 @@ library(bslib)
 library(DT)
 library(knitr)
 library(kableExtra)
+update.packages('tidyverse')
 library(tidyverse)
 library(curl)
 
