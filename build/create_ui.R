@@ -1,9 +1,9 @@
 
 library(tidyverse)
 
-features <- read.csv("shiny/key/features.csv")
+features <- read.csv("key/features.csv")
 
-images <- read.csv("shiny/key/images.csv") %>%
+images <- read.csv("key/images.csv") %>%
   mutate(image = paste(as.character(image), image_type, sep = "."))
 
 static_images <- images %>%
@@ -59,7 +59,7 @@ references <- references %>%
 references <- references$V1
 references[length(references)] <- gsub(",", "", references[length(references)], fixed = TRUE)
 
-species <- read.csv("shiny/key/features.csv") %>%
+species <- read.csv("key/features.csv") %>%
   distinct(taxa)%>%
   mutate(taxa = paste("tags$em('", taxa, "'),", sep = "")) %>%
   arrange(taxa)
@@ -172,4 +172,4 @@ full_script <- c(full_script,
                                        tags$span(uiOutput('results2matched')),
                                        tags$span(uiOutput('results2unmatched'))))))")
   
-write_lines(full_script, 'shiny/ui.R')
+write_lines(full_script, 'ui.R')
