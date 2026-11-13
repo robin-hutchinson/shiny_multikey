@@ -1,6 +1,6 @@
 library(tidyverse)
 
-features <- read.csv("shiny/key/features.csv")
+features <- read.csv("key/features.csv")
 
 qs <- unique(features$body_part)
 
@@ -217,4 +217,4 @@ HTML('It matched on these questions:', results2$matched_features)
 }
 ")
 
-write_lines(full_script, 'shiny/server.R')
+write_lines(full_script, 'server.R')
