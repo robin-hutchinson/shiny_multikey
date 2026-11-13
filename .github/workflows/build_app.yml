@@ -20,11 +20,6 @@ jobs:
             any::tidyverse 
             any::httpuv
 
-      - name: Install package from GitHub
-        uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          command: devtools::install_github('posit-dev/r-shinylive')
-
       - name: Check out repository
         uses: actions/checkout@v4
 
@@ -41,15 +36,4 @@ jobs:
           git add shiny/ui.R
           git add shiny/server.R
           git commit -am 'Shiny updated via github push' || echo "No changes to commit"
-          git push origin main || echo "No changes to commit"
-          
-      - name: Create web app
-        run: Rscript -e 'source("build/create_docs.R")'
-        
-      - name: Commit website
-        run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          git add .
-          git commit -am 'Website updated via github push' || echo "No changes to commit"
           git push origin main || echo "No changes to commit"
