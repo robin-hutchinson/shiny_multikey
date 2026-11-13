@@ -1,16 +1,13 @@
 
 
-install.packages('rlang')
-install.packages('tidyr')
-install.packages('dplyr')
 library(shiny)
-install.packages('munsell')
 library(bslib)
 library(DT)
 library(knitr)
 library(kableExtra)
 library(tidyr)
 library(dplyr)
+library(stringr)
 library(curl)
 
 ui <- bslib::page_fluid(
