@@ -5,6 +5,8 @@ features <- read.csv("shiny/key/features.csv")
 qs <- unique(features$body_part)
 
 full_script <- c("
+
+install.packages('rlang')
 library(shiny)
 install.packages('munsell')
 library(hms)
