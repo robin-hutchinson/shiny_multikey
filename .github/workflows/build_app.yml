@@ -16,12 +16,13 @@ jobs:
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
           cache: true
+          dependencies: 'all'
           packages: |
             any::webr
             any::tidyverse 
             any::shinylive
             any::httpuv
-            any::munsell
+            any::kableExtra
 
       - name: Check out repository
         uses: actions/checkout@v4
