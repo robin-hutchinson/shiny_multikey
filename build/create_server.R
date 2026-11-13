@@ -6,11 +6,7 @@ qs <- unique(features$body_part)
 
 full_script <- c("
 
-install.packages('rlang')
-install.packages('tidyr')
-install.packages('dplyr')
 library(shiny)
-install.packages('munsell')
 library(hms)
 library(bslib)
 library(DT)
@@ -18,6 +14,7 @@ library(knitr)
 library(kableExtra)
 library(tidyr)
 library(dplyr)
+library(stringr)
 library(curl)
 
 server <- function(input, output) {
