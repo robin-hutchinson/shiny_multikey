@@ -1,3 +1,5 @@
+
+install.packages('rlang')
 library(tidyverse)
 
 features <- read.csv("shiny/key/features.csv")
@@ -65,7 +67,10 @@ species <- read.csv("shiny/key/features.csv") %>%
 species <- species$taxa
 species[length(species)] <- gsub(",", "", species[length(species)], fixed = TRUE)
 
-full_script <- c("library(shiny)
+full_script <- c("
+
+install.packages('rlang')
+library(shiny)
 install.packages('munsell')
 library(bslib)
 library(DT)
