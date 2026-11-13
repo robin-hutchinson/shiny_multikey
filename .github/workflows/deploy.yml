@@ -1,8 +1,9 @@
 on:
-  push:
-     paths:
-        - 'server.R'
-        - 'ui.R'
+  workflow_dispatch:
+    inputs:
+      example:
+        description: "Optional input"
+        required: false
 
 name: Deploy template app to shinyapps.io
 
