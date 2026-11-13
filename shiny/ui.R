@@ -1,5 +1,8 @@
 
 
+install.packages('rlang')
+install.packages('tidyr')
+install.packages('dplyr')
 library(shiny)
 install.packages('munsell')
 library(bslib)
