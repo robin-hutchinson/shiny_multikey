@@ -59,6 +59,8 @@ radioButtons('frons_colour', 'What colour is the frons?', choices = c(
 'Shiny brownish, getting darker to the dorsal margin.', 
 'Shiny yellow, with dark patches around the ocelli.', 
 'Brown but with a pale median band bordering the median furrow.', 
+'Bright orangey yellow (matching the scutum), but the ocellar triangle is black.', 
+'Brown, the median furrow is orange', 
 'Brown, but paler (almost orange) ventrally.', 
 'The upper half is brown, orange from the level of the antero-bristles forwards.'), selected = character(0)),
 radioButtons('supraantennal_setae', 'How many supra-antennal setae are there?', choices = c(
@@ -105,10 +107,9 @@ radioButtons('ovipositor_hair', 'How long are the hairs on the underside of abdo
 radioButtons('ovipositor_hook', 'Is there a pair of dark, thorn-like points near the end of the ovipositor?', choices = c(
 'No (100)', 
 'Yes (99)'), selected = character(0)),
-radioButtons('tergite_colour', 'What colour are tergites 1 to 3?', choices = c(
-'Brown', 
-'Dark', 
-'Largely orange, with dark spots on either side of T4'), selected = character(0)),
+radioButtons('tergite_colour', 'What colour are tergites 2 and 3?', choices = c(
+'Brown/Dark', 
+'Largely orange'), selected = character(0)),
 radioButtons('tergite_hair', 'Is there a dense covering of short hairs on the lateral edges of segments 5 and 6?', choices = c(
 'Yes', 
 '', 
