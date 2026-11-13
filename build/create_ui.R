@@ -68,17 +68,14 @@ species[length(species)] <- gsub(",", "", species[length(species)], fixed = TRUE
 
 full_script <- c("
 
-install.packages('rlang')
-install.packages('tidyr')
-install.packages('dplyr')
 library(shiny)
-install.packages('munsell')
 library(bslib)
 library(DT)
 library(knitr)
 library(kableExtra)
 library(tidyr)
 library(dplyr)
+library(stringr)
 library(curl)
 
 ui <- bslib::page_fluid(
