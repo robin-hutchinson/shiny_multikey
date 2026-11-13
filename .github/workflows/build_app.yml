@@ -23,7 +23,6 @@ jobs:
       - name: Install package from GitHub
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          dependencies: .
           command: devtools::install_github('posit-dev/r-shinylive')
 
       - name: Check out repository
