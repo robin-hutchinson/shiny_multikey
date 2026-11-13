@@ -20,7 +20,7 @@ UK Phalacrotophora
 '),
                  tags$br(), # line break
                  layout_columns(card(
-tags$a('This multikey is designed to separate out the 4 species of Phalacrotophora (Diptera: Phoridae) known to occur in the UK, and includes species known to occur in Europe for comparison.'),
+tags$a('This multikey is designed to separate out the 5 species of Phalacrotophora (Diptera: Phoridae) known to occur in the UK, and includes species known to occur in Europe for comparison.'),
 tags$a('Phalacrotophora is a cosmopolitan genus of flies, known for parasitising the pupal stage of ladybirds (Coleoptera: Coccinellidae).'),
 tags$a('Flies in this genus share the following morphological characters:')
 ,
@@ -142,7 +142,6 @@ tags$a('Disney, R.H.L. & Smith, D.A. (2016) A new species of Phalacrotophora End
 tags$a('Durska, E., Ceryngier, P. & Disney, R.H.L. (2003) Phalacrotophora beuki (Diptera: Phoridae), a parasitoid of ladybird pupae (Coleoptera: Coccinellidae). European Journal of Entomology. 100: 627-630.'),
 tags$a('Irwin, A.G. & Harvey, M.C. (2014) Phalacrotophora delageae Disney (Diptera, Phoridae) new to Britain. Dipterists Digest, 21: 77-80.'),
 tags$a('Lengyel, G.D. (2009) Phalacrotophora species (Diptera: Phoridae) with four subequal scutellar setae and notes on the other European species. Zootaxa, 2172(1), 59–68.'),
-tags$a('  '),
 tags$a('Welch M. and Perry I. (2025) Phalacrotophora beuki Disney (Diptera Phoridae) new to the British Isles. Dipterists Digest 32(2): 131-133')
 ), col_widths = c(4,8)),
 layout_columns(card(tags$span(uiOutput('results1taxa')),
